@@ -1428,6 +1428,8 @@ static void DecoderPlayVideo( decoder_t *p_dec, picture_t *p_picture,
 
         if( p_owner->b_buffering && !p_owner->buffer.b_first )
         {
+            *pi_lost_sum += 1;
+            vout_ReleasePicture( p_vout, p_picture );
             vlc_mutex_unlock( &p_owner->lock );
             return;
         }
@@ -2132,7 +2134,7 @@ static void DeleteDecoder( decoder_t * p_dec )
 
         /* */
         input_resource_RequestVout( p_owner->p_resource, p_owner->p_vout, NULL,
-                                    0, true );
+                                    0, false );
         if( p_owner->p_input != NULL )
             input_SendEventVout( p_owner->p_input );
     }

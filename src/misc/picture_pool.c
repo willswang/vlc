@@ -265,6 +265,9 @@ static void Release(picture_t *picture)
 {
     assert(picture->i_refcount > 0);
 
+    if (!picture->i_refcount)
+        return;
+
     if (--picture->i_refcount > 0)
         return;
     Unlock(picture);

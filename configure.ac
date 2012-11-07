@@ -2338,6 +2338,24 @@ if test "${enable_crystalhd}" != "no"; then
 fi
 
 dnl
+dnl Cedar codec plugin
+dnl
+AC_ARG_ENABLE(cedar,
+  [  --enable-cedar      	cedar codec plugin (default auto)])
+if test "${enable_cedar}" != "no"; then
+    AC_CHECK_HEADERS(libcedarx/libcedarx.h, [
+      VLC_ADD_PLUGIN([cedar])
+      VLC_ADD_PLUGIN([cedarfb])
+      VLC_ADD_LIBS([cedar], [-lcedarx -lstdc++])
+      VLC_ADD_LIBS([cedarfb], [-lcedarx -lstdc++])
+    ],[
+	  AC_MSG_ERROR("Could not find Cedar development headers")
+	],[
+       #include <libcedarx/libcedarx.h>
+      ])
+fi
+
+dnl
 dnl  mad plugin
 dnl
 AC_ARG_ENABLE(mad,

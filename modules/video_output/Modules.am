@@ -6,6 +6,7 @@ LIBTOOL=@LIBTOOL@ --tag=CC
 
 SOURCES_aa = aa.c
 SOURCES_fb = fb.c
+SOURCES_cedarfb = cedarfb.c
 SOURCES_vout_sdl = sdl.c
 SOURCES_directfb = directfb.c
 SOURCES_vmem = vmem.c
