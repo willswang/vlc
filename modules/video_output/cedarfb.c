@@ -83,6 +83,7 @@ static int Open(vlc_object_t *object)
 {
     vout_display_t *vd = (vout_display_t *)object;
     vout_display_sys_t *sys;
+    u32 width, height;
 
     switch (vd->fmt.i_chroma) {
         case VLC_CODEC_MV12:
@@ -102,7 +103,16 @@ static int Open(vlc_object_t *object)
     sys->picture = NULL;
     sys->pool = NULL;
     
-    if (libcedarx_display_open() < 0)
+    width = vd->source.i_width;
+    height = vd->source.i_height;
+    if (vd->source.i_sar_num && vd->source.i_sar_den) {
+        if (vd->source.i_sar_num > vd->source.i_sar_den) {
+            width = width * vd->source.i_sar_num / vd->source.i_sar_den;
+        } else {
+            height = height * vd->source.i_sar_den / vd->source.i_sar_num;
+        }
+    }
+    if (libcedarx_display_open(width, height) < 0)
         goto free_out;
 
     if (libcedarx_display_request_layer() < 0)
