@@ -69,7 +69,6 @@ struct decoder_sys_t
 #ifdef DECODE_USE_ASYNC_THREAD
     vlc_thread_t thread;
 #endif
-    /* Video decoder specific part */
 };
 
 #ifdef DECODE_USE_ASYNC_THREAD
@@ -101,7 +100,16 @@ static int OpenDecoder(vlc_object_t *p_this)
     switch (p_dec->fmt_in.i_codec)
     {
         case VLC_CODEC_H264:
-            info.stream = CEDARX_STREAM_FORMAT_H264;
+            switch(p_dec->fmt_in.i_original_fourcc)
+            {
+                case VLC_FOURCC('a','v','c','1'):
+                case VLC_FOURCC('A','V','C','1'):
+                    info.stream = CEDARX_STREAM_FORMAT_AVC1;
+                    break;
+                default:
+                    info.stream = CEDARX_STREAM_FORMAT_H264;
+                    break;
+            }
             break;
         case VLC_CODEC_VC1:
         case VLC_CODEC_WMV3:
