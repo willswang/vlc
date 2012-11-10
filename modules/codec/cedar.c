@@ -333,6 +333,8 @@ static picture_t *DecodeBlock(decoder_t *p_dec, block_t **pp_block)
     {
         if (p_block->i_pts > VLC_TS_INVALID) {
             i_pts = p_block->i_pts;
+        } else if (p_block->i_dts > VLC_TS_INVALID) {
+            i_pts = p_block->i_dts;
         } else {
             i_pts = -1;
         }
