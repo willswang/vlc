@@ -68,13 +68,22 @@ struct decoder_sys_t
 	int dummy;
 #ifdef DECODE_USE_ASYNC_THREAD
     vlc_thread_t thread;
+    vlc_mutex_t mutex;
+    vlc_cond_t cond;
+    bool b_start;
 #endif
+    bool b_delay;
 };
 
 #ifdef DECODE_USE_ASYNC_THREAD
 static void *DecoderThread(void *data)
 {
     decoder_t *p_dec = data;
+    decoder_sys_t *p_sys = p_dec->p_sys;
+
+    vlc_mutex_lock(&p_sys->mutex);
+    vlc_cond_wait(&p_sys->cond, &p_sys->mutex);
+    vlc_mutex_unlock(&p_sys->mutex);
 
     for(;;)
     {
@@ -95,6 +104,14 @@ static int OpenDecoder(vlc_object_t *p_this)
     decoder_sys_t *p_sys;
     cedarx_info_t info;
 
+    /* Allocate the memory needed to store the decoder's structure */
+    p_sys = malloc(sizeof(decoder_sys_t));
+    if(!p_sys)
+        return VLC_ENOMEM;
+
+    /* Fill decoder_sys_t */
+    p_dec->p_sys = p_sys;
+    p_sys->b_delay = false;
     memset(&info, 0, sizeof(cedarx_info_t));
     /* Codec specifics */
     switch (p_dec->fmt_in.i_codec)
@@ -110,6 +127,7 @@ static int OpenDecoder(vlc_object_t *p_this)
                     info.stream = CEDARX_STREAM_FORMAT_H264;
                     break;
             }
+            p_sys->b_delay = true;
             break;
         case VLC_CODEC_VC1:
         case VLC_CODEC_WMV3:
@@ -198,6 +216,7 @@ static int OpenDecoder(vlc_object_t *p_this)
             }
             break;
         default:
+            free(p_sys);
             return VLC_EGENERIC;
     }
 
@@ -216,42 +235,43 @@ static int OpenDecoder(vlc_object_t *p_this)
     }
 
     /* Open the device */
-    if(libcedarx_decoder_open(&info) < 0)
-    {
+    if(libcedarx_decoder_open(&info) < 0) {
         msg_Err(p_dec, "Couldn't find and open the Cedar device");  
-        return VLC_EGENERIC;
+		goto out;
     }
 
-    /* Allocate the memory needed to store the decoder's structure */
-    p_sys = malloc(sizeof(decoder_sys_t));
-    if(!p_sys)
-        return VLC_ENOMEM;
-
-    /* Fill decoder_sys_t */
-    p_dec->p_sys = p_sys;
-
 #ifdef DECODE_USE_ASYNC_THREAD
+    p_sys->b_start = false;
+    vlc_mutex_init(&p_sys->mutex);
+    vlc_cond_init(&p_sys->cond);
     if(vlc_clone(&p_sys->thread, DecoderThread, p_dec, VLC_THREAD_PRIORITY_VIDEO)) {
-        free(p_sys);
-        libcedarx_decoder_close();
-        return VLC_EGENERIC;
+        msg_Err(p_dec, "Couldn't create decode thread");  
+	    libcedarx_decoder_close();
+        goto out;
     }
 #endif
         
     /* Set output properties */
-    p_dec->fmt_out.i_cat          = VIDEO_ES;
-    p_dec->fmt_out.i_codec        = VLC_CODEC_MV12;
-    p_dec->fmt_out.video.i_width  = p_dec->fmt_in.video.i_width;
-    p_dec->fmt_out.video.i_height = p_dec->fmt_in.video.i_height;
+    p_dec->fmt_out.i_cat            = VIDEO_ES;
+    p_dec->fmt_out.i_codec          = VLC_CODEC_MV12;
+    p_dec->fmt_out.video.i_width    = p_dec->fmt_in.video.i_width;
+    p_dec->fmt_out.video.i_height   = p_dec->fmt_in.video.i_height;
     p_dec->fmt_out.video.i_sar_num  = p_dec->fmt_in.video.i_sar_num;
     p_dec->fmt_out.video.i_sar_den  = p_dec->fmt_in.video.i_sar_den;
-    p_dec->b_need_packetized      = false;//true;
+    p_dec->b_need_packetized        = true;
 
     /* Set callbacks */
     p_dec->pf_decode_video = DecodeBlock;
     msg_Dbg(p_dec, "Opened Cedar device with success");
 
     return VLC_SUCCESS;
+
+out:
+	if (p_sys->data && p_sys->data_size)
+		free(p_sys->data);
+
+	free(p_sys);
+	return VLC_EGENERIC;
 }
 
 /*****************************************************************************
@@ -267,6 +287,8 @@ static void CloseDecoder(vlc_object_t *p_this)
 #ifdef DECODE_USE_ASYNC_THREAD
         vlc_cancel(p_sys->thread);
         vlc_join(p_sys->thread, NULL);
+        vlc_cond_destroy(&p_sys->cond);
+        vlc_mutex_destroy(&p_sys->mutex);
 #endif
         libcedarx_decoder_close();
         free(p_sys);
@@ -323,10 +345,21 @@ static picture_t *DecodeBlock(decoder_t *p_dec, block_t **pp_block)
         block_Release(p_block);
         *pp_block = NULL;
 
-#ifndef DECODE_USE_ASYNC_THREAD
-        if (libcedarx_decoder_decode_stream() < 0)
-            msg_Warn(p_dec, "Failed to decode stream!");
+        if (p_sys->b_delay) {
+            p_sys->b_delay = false;    
+        } else {
+#ifdef DECODE_USE_ASYNC_THREAD
+            if (!p_sys->b_start) {
+                vlc_mutex_lock(&p_sys->mutex);
+                vlc_cond_signal(&p_sys->cond);
+                vlc_mutex_unlock(&p_sys->mutex);
+                p_sys->b_start = true;
+            }
+#else
+            if (libcedarx_decoder_decode_stream() < 0)
+                msg_Warn(p_dec, "Failed to decode stream!");
 #endif
+        }
     }
 
     if (!libcedarx_display_request_frame(&id, &pts, &frame_rate, &width, &height)) {
