@@ -289,8 +289,9 @@ static picture_t *DecodeBlock(decoder_t *p_dec, block_t **pp_block)
     decoder_sys_t *p_sys = p_dec->p_sys;
     block_t *p_block;
     picture_t *p_pic;
-    cedarx_picture_t picture;
     mtime_t i_pts;
+    u64 pts;
+    u32 id, frame_rate, width, height;
 
     if(!p_sys || !pp_block)
         return NULL;
@@ -317,22 +318,19 @@ static picture_t *DecodeBlock(decoder_t *p_dec, block_t **pp_block)
             msg_Warn(p_dec, "Failed to decode stream!");
 #endif
     }
-    
-    if (!libcedarx_display_request_frame(&picture)) {
+
+    if (!libcedarx_display_request_frame(&id, &pts, &frame_rate, &width, &height)) {
         if (!p_dec->fmt_out.video.i_width || !p_dec->fmt_out.video.i_height) {
-            p_dec->fmt_out.video.i_width = picture.width;
-            p_dec->fmt_out.video.i_height = picture.height;
+            p_dec->fmt_out.video.i_width = width;
+            p_dec->fmt_out.video.i_height = height;
         }
         
         p_pic = decoder_NewPicture(p_dec);
         if (p_pic) {
-            p_pic->b_progressive     = picture.interlaced ? false : true;
-            p_pic->b_top_field_first = picture.top_field_first ? true : false;
-            p_pic->i_nb_fields       = picture.interlaced ? 2 : 1;
-            p_pic->p[0].p_pixels     = picture.id;
+            p_pic->p[0].p_pixels     = id;
             p_pic->p[1].p_pixels     = p_pic->pf_release;
             p_pic->pf_release        = Release;
-            p_pic->date              = picture.pts;
+            p_pic->date              = pts;
             return p_pic;
         }
     }
