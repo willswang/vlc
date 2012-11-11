@@ -2346,7 +2346,7 @@ if test "${enable_cedar}" != "no"; then
     AC_CHECK_HEADERS(libcedarx/libcedarx.h, [
       VLC_ADD_PLUGIN([cedar])
       VLC_ADD_PLUGIN([cedarfb])
-      VLC_ADD_LIBS([cedar], [-lcedarx -lstdc++])
+      VLC_ADD_LIBS([cedar], [-lcedarx -lvecore -lstdc++])
       VLC_ADD_LIBS([cedarfb], [-lcedarx -lstdc++])
     ],[
 	  AC_MSG_ERROR("Could not find Cedar development headers")
