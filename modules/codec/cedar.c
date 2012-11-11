@@ -267,9 +267,6 @@ static int OpenDecoder(vlc_object_t *p_this)
     return VLC_SUCCESS;
 
 out:
-	if (p_sys->data && p_sys->data_size)
-		free(p_sys->data);
-
 	free(p_sys);
 	return VLC_EGENERIC;
 }
