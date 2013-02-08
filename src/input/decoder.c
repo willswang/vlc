@@ -924,7 +924,7 @@ static void *DecoderThread( void *p_data )
         {
             int canc = vlc_savecancel();
 
-            if( p_block->i_flags & BLOCK_FLAG_CORE_EOS )
+            if( !p_dec->b_need_eos && (p_block->i_flags & BLOCK_FLAG_END_OF_STREAM) )
             {
                 /* calling DecoderProcess() with NULL block will make
                  * decoders/packetizers flush their buffers */
@@ -1428,8 +1428,6 @@ static void DecoderPlayVideo( decoder_t *p_dec, picture_t *p_picture,
 
         if( p_owner->b_buffering && !p_owner->buffer.b_first )
         {
-            *pi_lost_sum += 1;
-            vout_ReleasePicture( p_vout, p_picture );
             vlc_mutex_unlock( &p_owner->lock );
             return;
         }
@@ -1852,37 +1850,41 @@ static void DecoderProcessVideo( decoder_t *p_dec, block_t *p_block, bool b_flus
 
     if( p_owner->p_packetizer )
     {
-        block_t *p_packetized_block;
-        decoder_t *p_packetizer = p_owner->p_packetizer;
+        if( p_dec->b_need_eos && p_block && (p_block->i_flags & BLOCK_FLAG_END_OF_STREAM) ) {
+            DecoderDecodeVideo( p_dec, p_block );
+        } else {
+            block_t *p_packetized_block;
+            decoder_t *p_packetizer = p_owner->p_packetizer;
 
-        while( (p_packetized_block =
-                p_packetizer->pf_packetize( p_packetizer, p_block ? &p_block : NULL )) )
-        {
-            if( p_packetizer->fmt_out.i_extra && !p_dec->fmt_in.i_extra )
+            while( (p_packetized_block =
+                    p_packetizer->pf_packetize( p_packetizer, p_block ? &p_block : NULL )) )
             {
-                es_format_Clean( &p_dec->fmt_in );
-                es_format_Copy( &p_dec->fmt_in, &p_packetizer->fmt_out );
+                if( p_packetizer->fmt_out.i_extra && !p_dec->fmt_in.i_extra )
+                {
+                    es_format_Clean( &p_dec->fmt_in );
+                    es_format_Copy( &p_dec->fmt_in, &p_packetizer->fmt_out );
+                }
+                if( p_packetizer->pf_get_cc )
+                    DecoderGetCc( p_dec, p_packetizer );
+    
+                while( p_packetized_block )
+                {
+                    block_t *p_next = p_packetized_block->p_next;
+                    p_packetized_block->p_next = NULL;
+    
+                    DecoderDecodeVideo( p_dec, p_packetized_block );
+    
+                    p_packetized_block = p_next;
+                }
             }
-            if( p_packetizer->pf_get_cc )
-                DecoderGetCc( p_dec, p_packetizer );
-
-            while( p_packetized_block )
+            /* The packetizer does not output a block that tell the decoder to flush
+             * do it ourself */
+            if( b_flush )
             {
-                block_t *p_next = p_packetized_block->p_next;
-                p_packetized_block->p_next = NULL;
-
-                DecoderDecodeVideo( p_dec, p_packetized_block );
-
-                p_packetized_block = p_next;
+                block_t *p_null = DecoderBlockFlushNew();
+                if( p_null )
+                    DecoderDecodeVideo( p_dec, p_null );
             }
-        }
-        /* The packetizer does not output a block that tell the decoder to flush
-         * do it ourself */
-        if( b_flush )
-        {
-            block_t *p_null = DecoderBlockFlushNew();
-            if( p_null )
-                DecoderDecodeVideo( p_dec, p_null );
         }
     }
     else if( p_block )
@@ -1902,35 +1904,39 @@ static void DecoderProcessAudio( decoder_t *p_dec, block_t *p_block, bool b_flus
 
     if( p_owner->p_packetizer )
     {
-        block_t *p_packetized_block;
-        decoder_t *p_packetizer = p_owner->p_packetizer;
-
-        while( (p_packetized_block =
-                p_packetizer->pf_packetize( p_packetizer, p_block ? &p_block : NULL )) )
-        {
-            if( p_packetizer->fmt_out.i_extra && !p_dec->fmt_in.i_extra )
+        if( p_dec->b_need_eos && p_block && (p_block->i_flags & BLOCK_FLAG_END_OF_STREAM) ) {
+            DecoderDecodeVideo( p_dec, p_block );
+        } else {
+            block_t *p_packetized_block;
+            decoder_t *p_packetizer = p_owner->p_packetizer;
+    
+            while( (p_packetized_block =
+                    p_packetizer->pf_packetize( p_packetizer, p_block ? &p_block : NULL )) )
             {
-                es_format_Clean( &p_dec->fmt_in );
-                es_format_Copy( &p_dec->fmt_in, &p_packetizer->fmt_out );
+                if( p_packetizer->fmt_out.i_extra && !p_dec->fmt_in.i_extra )
+                {
+                    es_format_Clean( &p_dec->fmt_in );
+                    es_format_Copy( &p_dec->fmt_in, &p_packetizer->fmt_out );
+                }
+    
+                while( p_packetized_block )
+                {
+                    block_t *p_next = p_packetized_block->p_next;
+                    p_packetized_block->p_next = NULL;
+    
+                    DecoderDecodeAudio( p_dec, p_packetized_block );
+    
+                    p_packetized_block = p_next;
+                }
             }
-
-            while( p_packetized_block )
+            /* The packetizer does not output a block that tell the decoder to flush
+             * do it ourself */
+            if( b_flush )
             {
-                block_t *p_next = p_packetized_block->p_next;
-                p_packetized_block->p_next = NULL;
-
-                DecoderDecodeAudio( p_dec, p_packetized_block );
-
-                p_packetized_block = p_next;
+                block_t *p_null = DecoderBlockFlushNew();
+                if( p_null )
+                    DecoderDecodeAudio( p_dec, p_null );
             }
-        }
-        /* The packetizer does not output a block that tell the decoder to flush
-         * do it ourself */
-        if( b_flush )
-        {
-            block_t *p_null = DecoderBlockFlushNew();
-            if( p_null )
-                DecoderDecodeAudio( p_dec, p_null );
         }
     }
     else if( p_block )

@@ -69,6 +69,9 @@ struct decoder_t
     /* Tell the decoder if it is allowed to drop frames */
     bool                b_pace_control;
 
+    /* Some decoders need empty packet queue at the end of stream */
+    bool                b_need_eos;
+
     /* */
     picture_t *         ( * pf_decode_video )( decoder_t *, block_t ** );
     aout_buffer_t *     ( * pf_decode_audio )( decoder_t *, block_t ** );

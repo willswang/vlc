@@ -2692,11 +2692,11 @@ static int EsOutControlLocked( es_out_t *out, int i_query, va_list args )
                 decoder_t *p_dec = id->p_dec;
                 if (!p_dec)
                     continue;
-                block_t *p_block = block_Alloc(0);
+                block_t *p_block = block_Alloc(128);
                 if( !p_block )
                     break;
 
-                p_block->i_flags |= BLOCK_FLAG_CORE_EOS;
+                p_block->i_flags |= BLOCK_FLAG_END_OF_STREAM;
                 input_DecoderDecode(p_dec, p_block, false);
             }
             return VLC_SUCCESS;

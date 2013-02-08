@@ -83,6 +83,8 @@ typedef struct block_sys_t block_sys_t;
 #define BLOCK_FLAG_TOP_FIELD_FIRST 0x2000
 /** This block contains an interlaced picture with bottom field first */
 #define BLOCK_FLAG_BOTTOM_FIELD_FIRST 0x4000
+/** This is the last block of the stream */
+#define BLOCK_FLAG_END_OF_STREAM 0x8000
 
 /** This block contains an interlaced picture */
 #define BLOCK_FLAG_INTERLACED_MASK \
