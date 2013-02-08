@@ -728,11 +728,11 @@ void matroska_segment_c::Seek( mtime_t i_date, mtime_t i_time_offset, int64_t i_
         }
     }
 
-#ifndef WIN32
     /* Don't try complex seek if we seek to 0 */
     if( i_date == 0 )
     {
-        es_out_Control( sys.demuxer.out, ES_OUT_SET_NEXT_DISPLAY_TIME, 0 );
+        es_out_Control( sys.demuxer.out, ES_OUT_SET_NEXT_DISPLAY_TIME,
+                        INT64_C(0) );
         es_out_Control( sys.demuxer.out, ES_OUT_SET_PCR, VLC_TS_0 );
         es.I_O().setFilePointer( i_start_pos );
 
@@ -744,7 +744,6 @@ void matroska_segment_c::Seek( mtime_t i_date, mtime_t i_time_offset, int64_t i_
         sys.i_pcr = 0;
         return;       
     }
-#endif
 
     int i_idx = 0;
     if ( i_index > 0 )

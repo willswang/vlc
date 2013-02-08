@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: VLC - Trans\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2012-10-15 17:10+0200\n"
+"POT-Creation-Date: 2012-12-11 15:41+0100\n"
 "PO-Revision-Date: 2012-09-07 09:26+0000\n"
 "Last-Translator: youknowone <transifex@youknowone.org>\n"
 "Language-Team: Korean (http://www.transifex.com/projects/p/vlc-trans/"
@@ -65,7 +65,7 @@ msgstr "메인 인터페이스"
 msgid "Settings for the main interface"
 msgstr "메인 인터페이스 설정"
 
-#: include/vlc_config_cat.h:45 src/libvlc-module.c:216
+#: include/vlc_config_cat.h:45 src/libvlc-module.c:220
 msgid "Control interfaces"
 msgstr "제어 인터페이스"
 
@@ -79,7 +79,7 @@ msgid "Hotkeys settings"
 msgstr "단축키 설정"
 
 #: include/vlc_config_cat.h:52 src/input/es_out.c:2893 src/input/es_out.c:2934
-#: src/libvlc-module.c:1611 modules/access/imem.c:64
+#: src/libvlc-module.c:1615 modules/access/imem.c:64
 #: modules/gui/macosx/MainMenu.m:292 modules/gui/macosx/output.m:170
 #: modules/gui/macosx/playlistinfo.m:116 modules/gui/macosx/simple_prefs.m:182
 #: modules/gui/macosx/wizard.m:383
@@ -125,7 +125,7 @@ msgstr "출력 모듈"
 msgid "General settings for audio output modules."
 msgstr "오디오 출력 모듈 일반 설정."
 
-#: include/vlc_config_cat.h:66 src/libvlc-module.c:2124
+#: include/vlc_config_cat.h:66 src/libvlc-module.c:2128
 #: modules/gui/macosx/VideoEffects.m:73
 #: modules/stream_out/transcode/transcode.c:223
 msgid "Miscellaneous"
@@ -136,7 +136,7 @@ msgid "Miscellaneous audio settings and modules."
 msgstr "기타 오디오 설정 및 모듈"
 
 #: include/vlc_config_cat.h:70 src/input/es_out.c:2896 src/input/es_out.c:2981
-#: src/libvlc-module.c:1662 modules/access/imem.c:64
+#: src/libvlc-module.c:1666 modules/access/imem.c:64
 #: modules/gui/macosx/MainMenu.m:305 modules/gui/macosx/output.m:160
 #: modules/gui/macosx/playlistinfo.m:106 modules/gui/macosx/simple_prefs.m:186
 #: modules/gui/macosx/simple_prefs.m:319 modules/gui/macosx/wizard.m:384
@@ -246,7 +246,7 @@ msgstr "일반 입력"
 msgid "General input settings. Use with care..."
 msgstr "일반 입력 설정. 조심해서 사용하세요..."
 
-#: include/vlc_config_cat.h:124 src/libvlc-module.c:2056
+#: include/vlc_config_cat.h:124 src/libvlc-module.c:2060
 msgid "Stream output"
 msgstr "스트림 출력"
 
@@ -352,7 +352,7 @@ msgstr "VOD"
 msgid "VLC's implementation of Video On Demand"
 msgstr "VLC의 VOD (Video On Demand) 구현"
 
-#: include/vlc_config_cat.h:175 src/libvlc-module.c:2173
+#: include/vlc_config_cat.h:175 src/libvlc-module.c:2177
 #: src/playlist/engine.c:230 modules/demux/playlist/playlist.c:63
 #: modules/demux/playlist/playlist.c:64 modules/gui/macosx/MainWindow.m:408
 #: modules/gui/qt4/components/controller.hpp:116
@@ -385,7 +385,7 @@ msgid ""
 "playlist."
 msgstr "서비스 검색 모듈은 재생목록에 항목을 자동으로 추가해 줍니다."
 
-#: include/vlc_config_cat.h:186 src/libvlc-module.c:1957
+#: include/vlc_config_cat.h:186 src/libvlc-module.c:1961
 #: modules/gui/qt4/ui/video_effects.h:1395
 msgid "Advanced"
 msgstr "고급"
@@ -598,7 +598,7 @@ msgstr "하나 반복"
 msgid "No Repeat"
 msgstr "반복 안함"
 
-#: include/vlc_intf_strings.h:84 src/libvlc-module.c:1533
+#: include/vlc_intf_strings.h:84 src/libvlc-module.c:1537
 #: modules/gui/macosx/MainMenu.m:278 modules/gui/macosx/MainMenu.m:1171
 #: modules/gui/qt4/components/controller.hpp:118
 #: modules/gui/qt4/components/controller.hpp:131
@@ -782,7 +782,7 @@ msgstr ""
 "body></html>"
 
 #: src/audio_output/common.c:85 src/audio_output/common.c:125
-#: src/input/es_out.c:934 src/libvlc-module.c:693
+#: src/input/es_out.c:934 src/libvlc-module.c:697
 #: src/video_output/postprocessing.c:98 modules/gui/macosx/MainWindow.m:2429
 #: modules/video_filter/postproc.c:228
 msgid "Disable"
@@ -809,7 +809,7 @@ msgstr "Vu 미터"
 msgid "Equalizer"
 msgstr "이퀄라이저"
 
-#: src/audio_output/common.c:141 src/libvlc-module.c:345
+#: src/audio_output/common.c:141 src/libvlc-module.c:349
 msgid "Audio filters"
 msgstr "음성 필터"
 
@@ -843,9 +843,9 @@ msgid "Stereo"
 msgstr "스테레오"
 
 #: src/audio_output/output.c:105 src/audio_output/output.c:142
-#: src/libvlc-module.c:439 src/libvlc-module.c:517
+#: src/libvlc-module.c:443 src/libvlc-module.c:521
 #: modules/audio_filter/channel_mixer/mono.c:94 modules/codec/dvbsub.c:102
-#: modules/codec/subsdec.c:162 modules/codec/zvbi.c:77
+#: modules/codec/subsdec.c:164 modules/codec/zvbi.c:77
 #: modules/control/gestures.c:97 modules/gui/fbosd.c:163
 #: modules/gui/macosx/VideoEffects.m:90 modules/gui/macosx/VideoEffects.m:150
 #: modules/gui/macosx/VideoEffects.m:172
@@ -859,9 +859,9 @@ msgid "Left"
 msgstr "왼쪽"
 
 #: src/audio_output/output.c:107 src/audio_output/output.c:144
-#: src/libvlc-module.c:439 src/libvlc-module.c:517
+#: src/libvlc-module.c:443 src/libvlc-module.c:521
 #: modules/audio_filter/channel_mixer/mono.c:94 modules/codec/dvbsub.c:102
-#: modules/codec/subsdec.c:162 modules/codec/zvbi.c:77
+#: modules/codec/subsdec.c:164 modules/codec/zvbi.c:77
 #: modules/control/gestures.c:97 modules/gui/fbosd.c:163
 #: modules/gui/macosx/VideoEffects.m:91 modules/gui/macosx/VideoEffects.m:152
 #: modules/gui/macosx/VideoEffects.m:174
@@ -1014,8 +1014,8 @@ msgstr "디코더"
 
 #: src/input/decoder.c:276 src/input/decoder.c:467
 #: modules/codec/avcodec/encoder.c:237 modules/codec/avcodec/encoder.c:245
-#: modules/codec/avcodec/encoder.c:282 modules/codec/avcodec/encoder.c:769
-#: modules/codec/avcodec/encoder.c:778 modules/stream_out/es.c:363
+#: modules/codec/avcodec/encoder.c:282 modules/codec/avcodec/encoder.c:772
+#: modules/codec/avcodec/encoder.c:781 modules/stream_out/es.c:363
 #: modules/stream_out/es.c:378
 msgid "Streaming / Transcoding failed"
 msgstr "스트리밍 / 트랜스코딩 실패"
@@ -1042,7 +1042,7 @@ msgstr ""
 "VLC 가 \"%4.4s\" 오디오 또는 비디오 형식을 지원하지 않습니다. 이 문제는 해결"
 "할 수 없습니다."
 
-#: src/input/es_out.c:954 src/input/es_out.c:959 src/libvlc-module.c:383
+#: src/input/es_out.c:954 src/input/es_out.c:959 src/libvlc-module.c:387
 #: modules/access/vcdx/access.c:458 modules/access/vcdx/info.c:226
 #: modules/gui/qt4/components/open_panels.cpp:525
 msgid "Track"
@@ -1054,7 +1054,7 @@ msgid "%s [%s %d]"
 msgstr "%s [%s %d]"
 
 #: src/input/es_out.c:1165 src/input/es_out.c:1170 src/input/var.c:167
-#: src/libvlc-module.c:717 modules/gui/macosx/MainMenu.m:285
+#: src/libvlc-module.c:721 modules/gui/macosx/MainMenu.m:285
 #: modules/gui/macosx/MainMenu.m:286
 msgid "Program"
 msgstr "프로그램"
@@ -1096,7 +1096,7 @@ msgstr "원본 ID"
 msgid "Codec"
 msgstr "코덱"
 
-#: src/input/es_out.c:2925 src/input/meta.c:65 src/libvlc-module.c:243
+#: src/input/es_out.c:2925 src/input/meta.c:65 src/libvlc-module.c:247
 #: modules/access/imem.c:71 modules/gui/macosx/simple_prefs.m:273
 #: modules/stream_out/setid.c:49 modules/gui/qt4/ui/sprefs_interface.h:517
 msgid "Language"
@@ -1200,7 +1200,7 @@ msgid "Title"
 msgstr "제목"
 
 #: src/input/meta.c:55 modules/gui/macosx/playlistinfo.m:79
-#: modules/gui/macosx/playlist.m:1188
+#: modules/gui/macosx/playlist.m:1190
 msgid "Artist"
 msgstr "아티스트"
 
@@ -1212,7 +1212,7 @@ msgstr "장르"
 msgid "Copyright"
 msgstr "저작권"
 
-#: src/input/meta.c:58 src/libvlc-module.c:383 modules/access/vcdx/info.c:63
+#: src/input/meta.c:58 src/libvlc-module.c:387 modules/access/vcdx/info.c:63
 msgid "Album"
 msgstr "앨범"
 
@@ -1261,7 +1261,7 @@ msgstr "트랙 ID"
 msgid "Bookmark"
 msgstr "북마크"
 
-#: src/input/var.c:172 src/libvlc-module.c:723
+#: src/input/var.c:172 src/libvlc-module.c:727
 msgid "Programs"
 msgstr "프로그램"
 
@@ -1360,33 +1360,33 @@ msgstr ""
 "기본 인터페이스로 vlc 실행. vlc 인터페이스 없이 사용하려면 'cvlc' 을 사용하세"
 "요."
 
-#: src/libvlc.h:154 src/libvlc-module.c:1536 src/libvlc-module.c:1537
-#: src/libvlc-module.c:2686 src/video_output/vout_intf.c:182
+#: src/libvlc.h:154 src/libvlc-module.c:1540 src/libvlc-module.c:1541
+#: src/libvlc-module.c:2690 src/video_output/vout_intf.c:182
 msgid "Zoom"
 msgstr "축소/확대"
 
-#: src/libvlc.h:155 src/libvlc-module.c:1460 src/video_output/vout_intf.c:83
+#: src/libvlc.h:155 src/libvlc-module.c:1464 src/video_output/vout_intf.c:83
 msgid "1:4 Quarter"
 msgstr "1:4 1/4"
 
-#: src/libvlc.h:156 src/libvlc-module.c:1461 src/video_output/vout_intf.c:84
+#: src/libvlc.h:156 src/libvlc-module.c:1465 src/video_output/vout_intf.c:84
 msgid "1:2 Half"
 msgstr "1:2 절반"
 
-#: src/libvlc.h:157 src/libvlc-module.c:1462 src/video_output/vout_intf.c:85
+#: src/libvlc.h:157 src/libvlc-module.c:1466 src/video_output/vout_intf.c:85
 msgid "1:1 Original"
 msgstr "1:1 원본"
 
-#: src/libvlc.h:158 src/libvlc-module.c:1463 src/video_output/vout_intf.c:86
+#: src/libvlc.h:158 src/libvlc-module.c:1467 src/video_output/vout_intf.c:86
 msgid "2:1 Double"
 msgstr "2:1 2배"
 
-#: src/libvlc-module.c:117 src/libvlc-module.c:342
+#: src/libvlc-module.c:119 src/libvlc-module.c:346
 #: modules/audio_output/kai.c:78 modules/video_output/kva.c:62
 msgid "Auto"
 msgstr "자동"
 
-#: src/libvlc-module.c:199
+#: src/libvlc-module.c:203
 msgid ""
 "These options allow you to configure the interfaces used by VLC. You can "
 "select the main interface, additional interface modules, and define various "
@@ -1396,11 +1396,11 @@ msgstr ""
 "메인 인터페이스 및 부가적인 인터페이스 모듈을 선택하거나 관련된 여러 옵션들"
 "을 정의할 수 있습니다."
 
-#: src/libvlc-module.c:203
+#: src/libvlc-module.c:207
 msgid "Interface module"
 msgstr "인터페이스 모듈"
 
-#: src/libvlc-module.c:205
+#: src/libvlc-module.c:209
 msgid ""
 "This is the main interface used by VLC. The default behavior is to "
 "automatically select the best module available."
@@ -1408,11 +1408,11 @@ msgstr ""
 "VLC에서 사용하는 메인 인터페이스 입니다. 기본적으로 최적인 모듈을 자동으로 선"
 "택합니다."
 
-#: src/libvlc-module.c:209 modules/control/ntservice.c:57
+#: src/libvlc-module.c:213 modules/control/ntservice.c:57
 msgid "Extra interface modules"
 msgstr "그 외의 인터페이스 모듈"
 
-#: src/libvlc-module.c:211
+#: src/libvlc-module.c:215
 msgid ""
 "You can select \"additional interfaces\" for VLC. They will be launched in "
 "the background in addition to the default interface. Use a colon separated "
@@ -1420,25 +1420,25 @@ msgid ""
 "\", \"gestures\" ...)"
 msgstr ""
 
-#: src/libvlc-module.c:218
+#: src/libvlc-module.c:222
 msgid "You can select control interfaces for VLC."
 msgstr "VLC 제어 인터페이스를 선택할 수 있습니다."
 
-#: src/libvlc-module.c:220
+#: src/libvlc-module.c:224
 msgid "Verbosity (0,1,2)"
 msgstr "상세설명 (0,1,2)"
 
-#: src/libvlc-module.c:222
+#: src/libvlc-module.c:226
 msgid ""
 "This is the verbosity level (0=only errors and standard messages, "
 "1=warnings, 2=debug)."
 msgstr "상세설명 수준을 입니다 (0=에러 및 표준 메시지만, 1=경고, 2=디버그)."
 
-#: src/libvlc-module.c:225
+#: src/libvlc-module.c:229
 msgid "Choose which objects should print debug message"
 msgstr "어떤 객체가 디버그 메시지를 출력할지 선택"
 
-#: src/libvlc-module.c:228
+#: src/libvlc-module.c:232
 msgid ""
 "This is a ',' separated string, each object should be prefixed by a '+' or a "
 "'-' to respectively enable or disable it. The keyword 'all' refers to all "
@@ -1448,23 +1448,23 @@ msgid ""
 "message."
 msgstr ""
 
-#: src/libvlc-module.c:235
+#: src/libvlc-module.c:239
 msgid "Be quiet"
 msgstr "메시지 표시 안함"
 
-#: src/libvlc-module.c:237
+#: src/libvlc-module.c:241
 msgid "Turn off all warning and information messages."
 msgstr "모든 경고와 정보 메시지를 보여주지 않습니다. "
 
-#: src/libvlc-module.c:239
+#: src/libvlc-module.c:243
 msgid "Default stream"
 msgstr "기본 스트림"
 
-#: src/libvlc-module.c:241
+#: src/libvlc-module.c:245
 msgid "This stream will always be opened at VLC startup."
 msgstr "이 스트림은 VLC가 시작될 때 항상 열려질 것입니다."
 
-#: src/libvlc-module.c:244
+#: src/libvlc-module.c:248
 msgid ""
 "You can manually select a language for the interface. The system language is "
 "auto-detected if \"auto\" is specified here."
@@ -1472,11 +1472,11 @@ msgstr ""
 "인터페이스에서 사용할 언어를 직접 선택할 수 있습니다. 만약 \"자동\"으로 설정"
 "된 경우에는, 시스템의 언어를 자동으로 인식합니다."
 
-#: src/libvlc-module.c:248
+#: src/libvlc-module.c:252
 msgid "Color messages"
 msgstr "색상 메시지"
 
-#: src/libvlc-module.c:250
+#: src/libvlc-module.c:254
 msgid ""
 "This enables colorization of the messages sent to the console Your terminal "
 "needs Linux color support for this to work."
@@ -1485,11 +1485,11 @@ msgstr ""
 "작은 사용하는 터미널에서 리눅스 색상 지원 기능을 제공하는 경우에만 가능합니"
 "다."
 
-#: src/libvlc-module.c:253
+#: src/libvlc-module.c:257
 msgid "Show advanced options"
 msgstr "고급 옵션 보기"
 
-#: src/libvlc-module.c:255
+#: src/libvlc-module.c:259
 msgid ""
 "When this is enabled, the preferences and/or interfaces will show all "
 "available options, including those that most users should never touch."
@@ -1497,11 +1497,11 @@ msgstr ""
 "이 옵션을 선택하면, 설정 창과 인터페이스에서 대부분의 사용자들은 거의 이용하"
 "지 않는 옵션들을 포함한 모든 옵션 항목들을 보여줄 것입니다."
 
-#: src/libvlc-module.c:259
+#: src/libvlc-module.c:263
 msgid "Interface interaction"
 msgstr "인터페이스 상호작용"
 
-#: src/libvlc-module.c:261
+#: src/libvlc-module.c:265
 msgid ""
 "When this is enabled, the interface will show a dialog box each time some "
 "user input is required."
@@ -1509,7 +1509,7 @@ msgstr ""
 "이 옵션을 선택하면, 인터페이스에서 사용자의 입력이 필요할 때마다 대화상자를 "
 "띄울 것입니다."
 
-#: src/libvlc-module.c:271
+#: src/libvlc-module.c:275
 msgid ""
 "These options allow you to modify the behavior of the audio subsystem, and "
 "to add audio filters which can be used for post processing or visual effects "
@@ -1521,11 +1521,11 @@ msgstr ""
 "필터들의 사용 여부는 여기서 설정하고, 각 필터들의 설정은 \"음성 필터\" 모듈 "
 "부분에서 할 수 있습니다."
 
-#: src/libvlc-module.c:277
+#: src/libvlc-module.c:281
 msgid "Audio output module"
 msgstr "음성 출력 모듈"
 
-#: src/libvlc-module.c:279
+#: src/libvlc-module.c:283
 msgid ""
 "This is the audio output method used by VLC. The default behavior is to "
 "automatically select the best method available."
@@ -1533,12 +1533,12 @@ msgstr ""
 "VLC 이 사용하는 오디오 출력 방식입니다. 기본 동작은 자동으로 사용가능한 최상"
 "의 방식이 선택됩니다."
 
-#: src/libvlc-module.c:283 modules/stream_out/display.c:40
+#: src/libvlc-module.c:287 modules/stream_out/display.c:40
 #: modules/gui/qt4/ui/sprefs_audio.h:430
 msgid "Enable audio"
 msgstr "오디오 사용"
 
-#: src/libvlc-module.c:285
+#: src/libvlc-module.c:289
 msgid ""
 "You can completely disable the audio output. The audio decoding stage will "
 "not take place, thus saving some processing power."
@@ -1546,38 +1546,38 @@ msgstr ""
 "음성을 아주 끌 수 있습니다. 음성을 디코딩하는 과정이 생략되기 때문에, 처리량"
 "이 어느 정도 줄어듭니다."
 
-#: src/libvlc-module.c:289
+#: src/libvlc-module.c:293
 msgid "Force mono audio"
 msgstr "강제 모노 음성"
 
-#: src/libvlc-module.c:290
+#: src/libvlc-module.c:294
 msgid "This will force a mono audio output."
 msgstr "음성을 강제로 모노로 바꾸어 출력합니다."
 
-#: src/libvlc-module.c:293
+#: src/libvlc-module.c:297
 msgid "Default audio volume"
 msgstr "기본 오디오 음량"
 
-#: src/libvlc-module.c:295
+#: src/libvlc-module.c:299
 msgid ""
 "You can set the default audio output volume here, in a range from 0 to 1024."
 msgstr "0에서 1024까지의 범위 내에서 기본 음량을 정합니다."
 
-#: src/libvlc-module.c:298
+#: src/libvlc-module.c:302
 msgid "Audio output volume step"
 msgstr "음량 조절 단계"
 
-#: src/libvlc-module.c:300
+#: src/libvlc-module.c:304
 msgid ""
 "The step size of the volume is adjustable using this option, in a range from "
 "0 to 1024."
 msgstr "0에서 1024까지 음량 조절 단계를 정합니다."
 
-#: src/libvlc-module.c:304
+#: src/libvlc-module.c:308
 msgid "Audio output frequency (Hz)"
 msgstr "음성 출력 주파수(Hz)"
 
-#: src/libvlc-module.c:306
+#: src/libvlc-module.c:310
 msgid ""
 "You can force the audio output frequency here. Common values are 0 "
 "(undefined), 48000, 44100, 32000, 22050, 16000, 11025, 8000."
@@ -1585,11 +1585,11 @@ msgstr ""
 "음성 출력의 주파수를 강제로 설정할 수 있습니다. 보통 0 (미정), 48000, 44100, "
 "32000, 22050, 16000, 11025, 8000 이 사용됩니다."
 
-#: src/libvlc-module.c:310
+#: src/libvlc-module.c:314
 msgid "High quality audio resampling"
 msgstr "고품질 오디오 리샘플링"
 
-#: src/libvlc-module.c:312
+#: src/libvlc-module.c:316
 msgid ""
 "This uses a high quality audio resampling algorithm. High quality audio "
 "resampling can be processor intensive so you can disable it and a cheaper "
@@ -1599,11 +1599,11 @@ msgstr ""
 "스 집약적이어서 사용안함으로 할수있고 대신 가벼운 리샘플링 알고리즘을 사용할"
 "수 있습니다."
 
-#: src/libvlc-module.c:317
+#: src/libvlc-module.c:321
 msgid "Audio desynchronization compensation"
 msgstr "오디오 비동기화 보정"
 
-#: src/libvlc-module.c:319
+#: src/libvlc-module.c:323
 msgid ""
 "This delays the audio output. The delay must be given in milliseconds. This "
 "can be handy if you notice a lag between the video and the audio."
@@ -1611,11 +1611,11 @@ msgstr ""
 "오디오 출력을 지연시킵니다. 지연은 밀리초로 주어져야 합니다. 비디오와 오디오 "
 "사이의 지연을 인지한다면 조정할수 있습니다."
 
-#: src/libvlc-module.c:322
+#: src/libvlc-module.c:326
 msgid "Audio output channels mode"
 msgstr "오디오 출력 채널 모드"
 
-#: src/libvlc-module.c:324
+#: src/libvlc-module.c:328
 msgid ""
 "This sets the audio output channels mode that will be used by default when "
 "possible (ie. if your hardware supports it as well as the audio stream being "
@@ -1624,12 +1624,12 @@ msgstr ""
 "가능하면 이 오디오 출력 채널 모드 설정이 기본으로 사용됩니다. (다시 말하면, "
 "오디오 스트림이 재생되는 동시에 하드웨어가 지원한다면)."
 
-#: src/libvlc-module.c:328 modules/gui/macosx/simple_prefs.m:233
+#: src/libvlc-module.c:332 modules/gui/macosx/simple_prefs.m:233
 #: modules/gui/qt4/ui/sprefs_audio.h:439
 msgid "Use S/PDIF when available"
 msgstr "가능하면 S/PDIF 사용"
 
-#: src/libvlc-module.c:330
+#: src/libvlc-module.c:334
 msgid ""
 "S/PDIF can be used by default when your hardware supports it as well as the "
 "audio stream being played."
@@ -1637,11 +1637,11 @@ msgstr ""
 "하드웨어와 재생 중인 오디오 스트림이 S/PDIF를 지원하면 음성을 출력할 때 S/"
 "PDIF를 기본으로 사용합니다"
 
-#: src/libvlc-module.c:333 modules/gui/macosx/simple_prefs.m:225
+#: src/libvlc-module.c:337 modules/gui/macosx/simple_prefs.m:225
 msgid "Force detection of Dolby Surround"
 msgstr "돌비 서라운드 강제 검출"
 
-#: src/libvlc-module.c:335
+#: src/libvlc-module.c:339
 msgid ""
 "Use this when you know your stream is (or is not) encoded with Dolby "
 "Surround but fails to be detected as such. Even if the stream is not "
@@ -1653,75 +1653,75 @@ msgstr ""
 "운드로 인코딩되지 않았더라도, 이 옵션을 켜는것이 당신의 경험을 향상시킬것입니"
 "다, 특히 헤드폰 채널 믹서와 결합할때."
 
-#: src/libvlc-module.c:342 modules/access/dtv/access.c:92
+#: src/libvlc-module.c:346 modules/access/dtv/access.c:92
 #: modules/access/v4l2/video.c:219
 msgid "On"
 msgstr "켜짐"
 
-#: src/libvlc-module.c:342 modules/access/dtv/access.c:92
+#: src/libvlc-module.c:346 modules/access/dtv/access.c:92
 #: modules/access/v4l2/video.c:145 modules/access/v4l2/video.c:219
 #: modules/video_filter/deinterlace/algo_phosphor.h:55
 msgid "Off"
 msgstr "꺼짐"
 
-#: src/libvlc-module.c:347
+#: src/libvlc-module.c:351
 msgid "This adds audio post processing filters, to modify the sound rendering."
 msgstr "사운드 렌더링 변경하기위해 이 오디오 후처리 필터 추가."
 
-#: src/libvlc-module.c:350
+#: src/libvlc-module.c:354
 msgid "Audio visualizations "
 msgstr "오디오 시각화 "
 
-#: src/libvlc-module.c:352
+#: src/libvlc-module.c:356
 msgid "This adds visualization modules (spectrum analyzer, etc.)."
 msgstr "시각화 모듈을 추가합니다 (스펙트럼 분석기, 기타)."
 
-#: src/libvlc-module.c:356
+#: src/libvlc-module.c:360
 msgid "Replay gain mode"
 msgstr "리플레이 게인 모드"
 
-#: src/libvlc-module.c:358
+#: src/libvlc-module.c:362
 msgid "Select the replay gain mode"
 msgstr "리플레이 게인 모드를 선택합니다"
 
-#: src/libvlc-module.c:360
+#: src/libvlc-module.c:364
 msgid "Replay preamp"
 msgstr "리플레이 프리앰프"
 
-#: src/libvlc-module.c:362
+#: src/libvlc-module.c:366
 msgid ""
 "This allows you to change the default target level (89 dB) for stream with "
 "replay gain information"
 msgstr ""
 "리플레이 게인 정보있는 스트림의 기본 대상 레벨 (89 dB) 의 변경을 허용합니다"
 
-#: src/libvlc-module.c:365
+#: src/libvlc-module.c:369
 msgid "Default replay gain"
 msgstr "기본 리플레이 게인"
 
-#: src/libvlc-module.c:367
+#: src/libvlc-module.c:371
 msgid "This is the gain used for stream without replay gain information"
 msgstr "리플레이 게인 정보가 없는 스트림에 사용되는 이득입니다."
 
-#: src/libvlc-module.c:369
+#: src/libvlc-module.c:373
 msgid "Peak protection"
 msgstr "최고점 보호"
 
-#: src/libvlc-module.c:371
+#: src/libvlc-module.c:375
 msgid "Protect against sound clipping"
 msgstr "사운드 짤림 방지"
 
-#: src/libvlc-module.c:374
+#: src/libvlc-module.c:378
 msgid "Enable time stretching audio"
 msgstr ""
 
-#: src/libvlc-module.c:376
+#: src/libvlc-module.c:380
 msgid ""
 "This allows playing audio at lower or higher speed without affecting the "
 "audio pitch"
 msgstr ""
 
-#: src/libvlc-module.c:383 modules/access/dshow/dshow.cpp:91
+#: src/libvlc-module.c:387 modules/access/dshow/dshow.cpp:91
 #: modules/access/dshow/dshow.cpp:94 modules/access/dtv/access.c:107
 #: modules/access/dtv/access.c:141 modules/access/v4l2/video.c:171
 #: modules/codec/avcodec/avcodec.c:71 modules/codec/kate.c:202
@@ -1731,7 +1731,7 @@ msgstr ""
 msgid "None"
 msgstr "없음"
 
-#: src/libvlc-module.c:391
+#: src/libvlc-module.c:395
 msgid ""
 "These options allow you to modify the behavior of the video output "
 "subsystem. You can for example enable video filters (deinterlacing, image "
@@ -1744,11 +1744,11 @@ msgstr ""
 "에서 그 필터들을 사용함으로 하고 \"비디오 필터\" 모듈 섹션에서 설정하세요. 여"
 "러 잡다한 비디오 옵션들도 설정할수 있습니다."
 
-#: src/libvlc-module.c:397
+#: src/libvlc-module.c:401
 msgid "Video output module"
 msgstr "영상 출력 모듈"
 
-#: src/libvlc-module.c:399
+#: src/libvlc-module.c:403
 msgid ""
 "This is the the video output method used by VLC. The default behavior is to "
 "automatically select the best method available."
@@ -1756,12 +1756,12 @@ msgstr ""
 "VLC 이 사용하는 비디오 출력 방식 입니다. 기본 동작은 자동적으로 최적인 방식"
 "이 선택됩니다. "
 
-#: src/libvlc-module.c:402 modules/stream_out/display.c:42
+#: src/libvlc-module.c:406 modules/stream_out/display.c:42
 #: modules/gui/qt4/ui/sprefs_video.h:335
 msgid "Enable video"
 msgstr "비디오 사용"
 
-#: src/libvlc-module.c:404
+#: src/libvlc-module.c:408
 msgid ""
 "You can completely disable the video output. The video decoding stage will "
 "not take place, thus saving some processing power."
@@ -1769,14 +1769,14 @@ msgstr ""
 "영상을 아주 끌 수 있습니다. 영상을 추출하는 과정이 생략되기 때문에, 처리량이 "
 "어느 정도 줄어듭니다."
 
-#: src/libvlc-module.c:407 modules/stream_out/mosaic_bridge.c:109
+#: src/libvlc-module.c:411 modules/stream_out/mosaic_bridge.c:109
 #: modules/stream_out/transcode/transcode.c:66
 #: modules/visualization/projectm.cpp:62
 #: modules/visualization/visual/visual.c:48
 msgid "Video width"
 msgstr "영상 너비"
 
-#: src/libvlc-module.c:409
+#: src/libvlc-module.c:413
 msgid ""
 "You can enforce the video width. By default (-1) VLC will adapt to the video "
 "characteristics."
@@ -1784,14 +1784,14 @@ msgstr ""
 "영상의 너비를 강제적으로 지정할 수가 있습니다. 기본값인 -1은 영상의 특성에 맞"
 "춥니다."
 
-#: src/libvlc-module.c:412 modules/stream_out/mosaic_bridge.c:112
+#: src/libvlc-module.c:416 modules/stream_out/mosaic_bridge.c:112
 #: modules/stream_out/transcode/transcode.c:69
 #: modules/visualization/projectm.cpp:65
 #: modules/visualization/visual/visual.c:52
 msgid "Video height"
 msgstr "영상 높이"
 
-#: src/libvlc-module.c:414
+#: src/libvlc-module.c:418
 msgid ""
 "You can enforce the video height. By default (-1) VLC will adapt to the "
 "video characteristics."
@@ -1799,42 +1799,42 @@ msgstr ""
 "영상의 높이를 강제적으로 지정할 수가 있습니다. 기본값인 -1은 영상의 특성에 맞"
 "춥니다. "
 
-#: src/libvlc-module.c:417
+#: src/libvlc-module.c:421
 msgid "Video X coordinate"
 msgstr "비디오 X 좌표"
 
-#: src/libvlc-module.c:419
+#: src/libvlc-module.c:423
 msgid ""
 "You can enforce the position of the top left corner of the video window (X "
 "coordinate)."
 msgstr "비디오 윈도우 상단 왼쪽 모서리의 위치를 강제할수 있습니다 (X 좌표)."
 
-#: src/libvlc-module.c:422
+#: src/libvlc-module.c:426
 msgid "Video Y coordinate"
 msgstr "비디오 Y 좌표"
 
-#: src/libvlc-module.c:424
+#: src/libvlc-module.c:428
 msgid ""
 "You can enforce the position of the top left corner of the video window (Y "
 "coordinate)."
 msgstr "비디오 윈도우 상단 오른쪽 모서리의 위치를 강제할수 있습니다 (Y 좌표)."
 
-#: src/libvlc-module.c:427
+#: src/libvlc-module.c:431
 msgid "Video title"
 msgstr "비디오 제목"
 
-#: src/libvlc-module.c:429
+#: src/libvlc-module.c:433
 msgid ""
 "Custom title for the video window (in case the video is not embedded in the "
 "interface)."
 msgstr ""
 "비디오 윈도우의 사용자 지정 제목 (비디오가 인터페이스에 내장되지 않은 경우)."
 
-#: src/libvlc-module.c:432
+#: src/libvlc-module.c:436
 msgid "Video alignment"
 msgstr "영상 위치 정렬"
 
-#: src/libvlc-module.c:434
+#: src/libvlc-module.c:438
 msgid ""
 "Enforce the alignment of the video in its window. By default (0) it will be "
 "centered (0=center, 1=left, 2=right, 4=top, 8=bottom, you can also use "
@@ -1844,9 +1844,9 @@ msgstr ""
 "4=상단, 8=하단, 또한 이 값들을 조합해서 사용할수 있습니다, 6=4+2 가 상단-오른"
 "쪽을 의미하는 것처럼 )."
 
-#: src/libvlc-module.c:439 src/libvlc-module.c:517
+#: src/libvlc-module.c:443 src/libvlc-module.c:521
 #: modules/audio_filter/channel_mixer/mono.c:96 modules/codec/dvbsub.c:102
-#: modules/codec/subsdec.c:162 modules/codec/zvbi.c:77 modules/gui/fbosd.c:163
+#: modules/codec/subsdec.c:164 modules/codec/zvbi.c:77 modules/gui/fbosd.c:163
 #: modules/gui/macosx/VideoEffects.m:148 modules/gui/macosx/VideoEffects.m:170
 #: modules/video_filter/audiobargraph_v.c:73 modules/video_filter/logo.c:79
 #: modules/video_filter/marq.c:136 modules/video_filter/mosaic.c:170
@@ -1854,7 +1854,7 @@ msgstr ""
 msgid "Center"
 msgstr "가운데"
 
-#: src/libvlc-module.c:439 src/libvlc-module.c:517 modules/codec/dvbsub.c:102
+#: src/libvlc-module.c:443 src/libvlc-module.c:521 modules/codec/dvbsub.c:102
 #: modules/codec/zvbi.c:77 modules/gui/fbosd.c:163
 #: modules/gui/macosx/VideoEffects.m:89 modules/gui/macosx/VideoEffects.m:154
 #: modules/gui/macosx/VideoEffects.m:176
@@ -1867,7 +1867,7 @@ msgstr "가운데"
 msgid "Top"
 msgstr "위"
 
-#: src/libvlc-module.c:439 src/libvlc-module.c:517 modules/codec/dvbsub.c:102
+#: src/libvlc-module.c:443 src/libvlc-module.c:521 modules/codec/dvbsub.c:102
 #: modules/codec/zvbi.c:77 modules/gui/fbosd.c:163
 #: modules/gui/macosx/VideoEffects.m:92 modules/gui/macosx/VideoEffects.m:156
 #: modules/gui/macosx/VideoEffects.m:178
@@ -1878,7 +1878,7 @@ msgstr "위"
 msgid "Bottom"
 msgstr "아래"
 
-#: src/libvlc-module.c:440 src/libvlc-module.c:518 modules/codec/dvbsub.c:103
+#: src/libvlc-module.c:444 src/libvlc-module.c:522 modules/codec/dvbsub.c:103
 #: modules/codec/zvbi.c:78 modules/gui/fbosd.c:164
 #: modules/gui/macosx/VideoEffects.m:158 modules/gui/macosx/VideoEffects.m:180
 #: modules/video_filter/audiobargraph_v.c:74 modules/video_filter/logo.c:80
@@ -1887,7 +1887,7 @@ msgstr "아래"
 msgid "Top-Left"
 msgstr "왼쪽-위"
 
-#: src/libvlc-module.c:440 src/libvlc-module.c:518 modules/codec/dvbsub.c:103
+#: src/libvlc-module.c:444 src/libvlc-module.c:522 modules/codec/dvbsub.c:103
 #: modules/codec/zvbi.c:78 modules/gui/fbosd.c:164
 #: modules/gui/macosx/VideoEffects.m:160 modules/gui/macosx/VideoEffects.m:182
 #: modules/video_filter/audiobargraph_v.c:74 modules/video_filter/logo.c:80
@@ -1896,7 +1896,7 @@ msgstr "왼쪽-위"
 msgid "Top-Right"
 msgstr "오른쪽-위"
 
-#: src/libvlc-module.c:440 src/libvlc-module.c:518 modules/codec/dvbsub.c:103
+#: src/libvlc-module.c:444 src/libvlc-module.c:522 modules/codec/dvbsub.c:103
 #: modules/codec/zvbi.c:78 modules/gui/fbosd.c:164
 #: modules/gui/macosx/VideoEffects.m:162 modules/gui/macosx/VideoEffects.m:184
 #: modules/video_filter/audiobargraph_v.c:74 modules/video_filter/logo.c:80
@@ -1905,7 +1905,7 @@ msgstr "오른쪽-위"
 msgid "Bottom-Left"
 msgstr "왼쪽-아래"
 
-#: src/libvlc-module.c:440 src/libvlc-module.c:518 modules/codec/dvbsub.c:103
+#: src/libvlc-module.c:444 src/libvlc-module.c:522 modules/codec/dvbsub.c:103
 #: modules/codec/zvbi.c:78 modules/gui/fbosd.c:164
 #: modules/gui/macosx/VideoEffects.m:164 modules/gui/macosx/VideoEffects.m:186
 #: modules/video_filter/audiobargraph_v.c:74 modules/video_filter/logo.c:80
@@ -1914,19 +1914,19 @@ msgstr "왼쪽-아래"
 msgid "Bottom-Right"
 msgstr "오른쪽-아래"
 
-#: src/libvlc-module.c:442
+#: src/libvlc-module.c:446
 msgid "Zoom video"
 msgstr "비디오 확대/축소"
 
-#: src/libvlc-module.c:444
+#: src/libvlc-module.c:448
 msgid "You can zoom the video by the specified factor."
 msgstr "지정된 요소로 비디오를 축소/확대 할수 잇습니다."
 
-#: src/libvlc-module.c:446
+#: src/libvlc-module.c:450
 msgid "Grayscale video output"
 msgstr "회색조 비디오 출력"
 
-#: src/libvlc-module.c:448
+#: src/libvlc-module.c:452
 msgid ""
 "Output video in grayscale. As the color information aren't decoded, this can "
 "save some processing power."
@@ -1934,27 +1934,27 @@ msgstr ""
 "회색조 출력 비디오. 색깔 정보가 복호화 되지 않기 때문에, 처리 전원을 절약할"
 "수 있습니다."
 
-#: src/libvlc-module.c:451
+#: src/libvlc-module.c:455
 msgid "Embedded video"
 msgstr "영상 내장"
 
-#: src/libvlc-module.c:453
+#: src/libvlc-module.c:457
 msgid "Embed the video output in the main interface."
 msgstr "메인 인터페이스에 영상 출력을 포함시킵니다."
 
-#: src/libvlc-module.c:455
+#: src/libvlc-module.c:459
 msgid "Fullscreen video output"
 msgstr "전체화면 비디오 출력"
 
-#: src/libvlc-module.c:457
+#: src/libvlc-module.c:461
 msgid "Start video in fullscreen mode"
 msgstr "전체화면 모드로 비디오 시작"
 
-#: src/libvlc-module.c:459
+#: src/libvlc-module.c:463
 msgid "Overlay video output"
 msgstr "중첩 비디오 출력"
 
-#: src/libvlc-module.c:461
+#: src/libvlc-module.c:465
 msgid ""
 "Overlay is the hardware acceleration capability of your video card (ability "
 "to render video directly). VLC will try to use it by default."
@@ -1962,57 +1962,57 @@ msgstr ""
 "중첩은 비디오 카드의 하드웨어 가속 기능입니다 (직접 비디오 렌더링하는 기능). "
 "VLC 기본으로 사용하려고 시도 합니다."
 
-#: src/libvlc-module.c:464 src/video_output/vout_intf.c:292
+#: src/libvlc-module.c:468 src/video_output/vout_intf.c:292
 #: modules/gui/macosx/simple_prefs.m:308 modules/gui/qt4/ui/sprefs_video.h:338
 msgid "Always on top"
 msgstr "항상 맨 앞"
 
-#: src/libvlc-module.c:466
+#: src/libvlc-module.c:470
 msgid "Always place the video window on top of other windows."
 msgstr "항상 영상 출력창을 다른 창보다 위에 둡니다."
 
-#: src/libvlc-module.c:468
+#: src/libvlc-module.c:472
 msgid "Enable wallpaper mode "
 msgstr "바탕화면 모드 사용"
 
-#: src/libvlc-module.c:470
+#: src/libvlc-module.c:474
 msgid ""
 "The wallpaper mode allows you to display the video as the desktop background."
 msgstr ""
 
-#: src/libvlc-module.c:473
+#: src/libvlc-module.c:477
 msgid "Show media title on video"
 msgstr "비디오에 미디어 제목 보이기"
 
-#: src/libvlc-module.c:475
+#: src/libvlc-module.c:479
 msgid "Display the title of the video on top of the movie."
 msgstr "영화 상단에 비디오 제목 표시."
 
-#: src/libvlc-module.c:477
+#: src/libvlc-module.c:481
 msgid "Show video title for x milliseconds"
 msgstr "x 밀리초 동안 비디오 제목 보이기"
 
-#: src/libvlc-module.c:479
+#: src/libvlc-module.c:483
 msgid "Show the video title for n milliseconds, default is 5000 ms (5 sec.)"
 msgstr "n 밀리초 동안 비디오 제목 보이기, 기본값 5000 밀리초 (5 초)"
 
-#: src/libvlc-module.c:481
+#: src/libvlc-module.c:485
 msgid "Position of video title"
 msgstr "비디오 제목 위치"
 
-#: src/libvlc-module.c:483
+#: src/libvlc-module.c:487
 msgid "Place on video where to display the title (default bottom center)."
 msgstr "제목이 표시되는 비디오에 놓기 (기본값 하단 가운데)."
 
-#: src/libvlc-module.c:485
+#: src/libvlc-module.c:489
 msgid "Hide cursor and fullscreen controller after x milliseconds"
 msgstr "x 밀리초 후 커서 및 전체화면 제어기 숨김"
 
-#: src/libvlc-module.c:488
+#: src/libvlc-module.c:492
 msgid "Hide mouse cursor and fullscreen controller after n milliseconds."
 msgstr "n 밀리초 후 마우스 커서 및 전체화면 제어기 숨김"
 
-#: src/libvlc-module.c:491 src/libvlc-module.c:493
+#: src/libvlc-module.c:495 src/libvlc-module.c:497
 #: src/video_output/interlacing.c:180 modules/gui/macosx/MainMenu.m:324
 #: modules/gui/macosx/MainMenu.m:325 modules/gui/macosx/simple_prefs.m:317
 #: modules/gui/qt4/dialogs/convert.cpp:86
@@ -2021,59 +2021,59 @@ msgstr "n 밀리초 후 마우스 커서 및 전체화면 제어기 숨김"
 msgid "Deinterlace"
 msgstr "디인터레이스"
 
-#: src/libvlc-module.c:501 src/video_output/interlacing.c:195
+#: src/libvlc-module.c:505 src/video_output/interlacing.c:195
 #: modules/gui/macosx/MainMenu.m:326 modules/gui/macosx/MainMenu.m:327
 #: modules/gui/macosx/simple_prefs.m:318
 #: modules/video_filter/deinterlace/deinterlace.c:53
 msgid "Deinterlace mode"
 msgstr "디인터레이스 모드"
 
-#: src/libvlc-module.c:503
+#: src/libvlc-module.c:507
 msgid "Deinterlace method to use for video processing."
 msgstr "비디오 처리에 사용할 디인터레이스 방식"
 
-#: src/libvlc-module.c:510 modules/video_filter/deinterlace/deinterlace.h:57
+#: src/libvlc-module.c:514 modules/video_filter/deinterlace/deinterlace.h:57
 msgid "Discard"
 msgstr "버림"
 
-#: src/libvlc-module.c:510 modules/video_filter/deinterlace/algo_phosphor.h:47
+#: src/libvlc-module.c:514 modules/video_filter/deinterlace/algo_phosphor.h:47
 #: modules/video_filter/deinterlace/deinterlace.h:57
 msgid "Blend"
 msgstr "혼합"
 
-#: src/libvlc-module.c:510 modules/video_filter/deinterlace/deinterlace.h:57
+#: src/libvlc-module.c:514 modules/video_filter/deinterlace/deinterlace.h:57
 msgid "Mean"
 msgstr "평균"
 
-#: src/libvlc-module.c:510 modules/video_filter/deinterlace/deinterlace.h:57
+#: src/libvlc-module.c:514 modules/video_filter/deinterlace/deinterlace.h:57
 msgid "Bob"
 msgstr "Bob"
 
-#: src/libvlc-module.c:511 modules/video_filter/deinterlace/deinterlace.h:57
+#: src/libvlc-module.c:515 modules/video_filter/deinterlace/deinterlace.h:57
 msgid "Linear"
 msgstr "선형"
 
-#: src/libvlc-module.c:511 modules/video_filter/deinterlace/deinterlace.h:58
+#: src/libvlc-module.c:515 modules/video_filter/deinterlace/deinterlace.h:58
 msgid "Phosphor"
 msgstr ""
 
-#: src/libvlc-module.c:512 modules/video_filter/deinterlace/deinterlace.h:58
+#: src/libvlc-module.c:516 modules/video_filter/deinterlace/deinterlace.h:58
 msgid "Film NTSC (IVTC)"
 msgstr ""
 
-#: src/libvlc-module.c:520
+#: src/libvlc-module.c:524
 msgid "Disable screensaver"
 msgstr "화면 보호기 끄기"
 
-#: src/libvlc-module.c:521
+#: src/libvlc-module.c:525
 msgid "Disable the screensaver during video playback."
 msgstr "비디오 재생중 화면보호기 사용안함."
 
-#: src/libvlc-module.c:523
+#: src/libvlc-module.c:527
 msgid "Inhibit the power management daemon during playback"
 msgstr "재생중에 전원 관리 데몬 제한"
 
-#: src/libvlc-module.c:524
+#: src/libvlc-module.c:528
 msgid ""
 "Inhibits the power management daemon during any playback, to avoid the "
 "computer being suspended because of inactivity."
@@ -2081,12 +2081,12 @@ msgstr ""
 "비활동으로 인해 컴퓨터가 대기모드가 되는것을 방지하기위해 모든 재생하는 동안 "
 "전원 관리 데몬 제한."
 
-#: src/libvlc-module.c:527 modules/gui/macosx/simple_prefs.m:307
+#: src/libvlc-module.c:531 modules/gui/macosx/simple_prefs.m:307
 #: modules/gui/qt4/ui/sprefs_video.h:340
 msgid "Window decorations"
 msgstr "창 장식"
 
-#: src/libvlc-module.c:529
+#: src/libvlc-module.c:533
 msgid ""
 "VLC can avoid creating window caption, frames, etc... around the video, "
 "giving a \"minimal\" window."
@@ -2094,19 +2094,19 @@ msgstr ""
 "VLC 는 \"최소\" 윈도우를 지정하여 비디오 주변에 윈도우 제목, 프레임, 기타 를 "
 "만들지 않을수 있습니다."
 
-#: src/libvlc-module.c:532
+#: src/libvlc-module.c:536
 msgid "Video splitter module"
 msgstr ""
 
-#: src/libvlc-module.c:534
+#: src/libvlc-module.c:538
 msgid "This adds video splitters like clone or wall"
 msgstr ""
 
-#: src/libvlc-module.c:536
+#: src/libvlc-module.c:540
 msgid "Video filter module"
 msgstr "영상 필터 모듈"
 
-#: src/libvlc-module.c:538
+#: src/libvlc-module.c:542
 msgid ""
 "This adds post-processing filters to enhance the picture quality, for "
 "instance deinterlacing, or distort the video."
@@ -2114,47 +2114,47 @@ msgstr ""
 "사진의 인스턴스 디인터레이싱 또는 비디오 왜곡의 품질 향상하기 위해 후처리 필"
 "터를 추가합니다."
 
-#: src/libvlc-module.c:542
+#: src/libvlc-module.c:546
 msgid "Video snapshot directory (or filename)"
 msgstr "비디오 스냅샷 디렉토리 (또는 파일명)"
 
-#: src/libvlc-module.c:544
+#: src/libvlc-module.c:548
 msgid "Directory where the video snapshots will be stored."
 msgstr "비디오 스냅샷이 저장될 디렉토리."
 
-#: src/libvlc-module.c:546 src/libvlc-module.c:548
+#: src/libvlc-module.c:550 src/libvlc-module.c:552
 msgid "Video snapshot file prefix"
 msgstr "비디오 스냅샷 파일 접두사"
 
-#: src/libvlc-module.c:550
+#: src/libvlc-module.c:554
 msgid "Video snapshot format"
 msgstr "비디오 스냅샷 형식"
 
-#: src/libvlc-module.c:552
+#: src/libvlc-module.c:556
 msgid "Image format which will be used to store the video snapshots"
 msgstr "비디오 스탭샷 저장에 사용되는 이미지 형식"
 
-#: src/libvlc-module.c:554
+#: src/libvlc-module.c:558
 msgid "Display video snapshot preview"
 msgstr "비디오 스냅샷 미리보기 표시"
 
-#: src/libvlc-module.c:556
+#: src/libvlc-module.c:560
 msgid "Display the snapshot preview in the screen's top-left corner."
 msgstr "화면의 상단-왼쪽 모서리에 스냅샷 미리보기 표시."
 
-#: src/libvlc-module.c:558
+#: src/libvlc-module.c:562
 msgid "Use sequential numbers instead of timestamps"
 msgstr "타임스탬프 대신 순차 번호 사용"
 
-#: src/libvlc-module.c:560
+#: src/libvlc-module.c:564
 msgid "Use sequential numbers instead of timestamps for snapshot numbering"
 msgstr "스냅샷 번호매기기에 타임스탬프 대신 일련 번호 사용"
 
-#: src/libvlc-module.c:562
+#: src/libvlc-module.c:566
 msgid "Video snapshot width"
 msgstr "비디오 스냅샷 너비"
 
-#: src/libvlc-module.c:564
+#: src/libvlc-module.c:568
 msgid ""
 "You can enforce the width of the video snapshot. By default it will keep the "
 "original width (-1). Using 0 will scale the width to keep the aspect ratio."
@@ -2162,11 +2162,11 @@ msgstr ""
 "비디오 스냅샷의 너비를 강제할수 있습니다. 기본적으로 원본 너비를 유지합니다"
 "(-1). 0을 사용하면 너비의 배율을 가로세로비로 유지합니다."
 
-#: src/libvlc-module.c:568
+#: src/libvlc-module.c:572
 msgid "Video snapshot height"
 msgstr "비디오 스냅샷 높이"
 
-#: src/libvlc-module.c:570
+#: src/libvlc-module.c:574
 msgid ""
 "You can enforce the height of the video snapshot. By default it will keep "
 "the original height (-1). Using 0 will scale the height to keep the aspect "
@@ -2175,11 +2175,11 @@ msgstr ""
 "비디오 스냅샷의 높이를 강제할수 있습니다. 기본적으로 원본 높이를 유지합니다"
 "(-1). 0을 사용하면 높이의 배율을 가로세로비로 유지합니다."
 
-#: src/libvlc-module.c:574
+#: src/libvlc-module.c:578
 msgid "Video cropping"
 msgstr "비디오 잘라내기"
 
-#: src/libvlc-module.c:576
+#: src/libvlc-module.c:580
 msgid ""
 "This forces the cropping of the source video. Accepted formats are x:y (4:3, "
 "16:9, etc.) expressing the global image aspect."
@@ -2187,11 +2187,11 @@ msgstr ""
 "비디오 소스의 잘라내기를 강제합니다. 허용 형식은 전체적인 이미지 모양을 표현"
 "하는 x:y (4:3, 16:9, 기타) 입니다."
 
-#: src/libvlc-module.c:580
+#: src/libvlc-module.c:584
 msgid "Source aspect ratio"
 msgstr "원본 가로세로비"
 
-#: src/libvlc-module.c:582
+#: src/libvlc-module.c:586
 msgid ""
 "This forces the source aspect ratio. For instance, some DVDs claim to be "
 "16:9 while they are actually 4:3. This can also be used as a hint for VLC "
@@ -2200,19 +2200,19 @@ msgid ""
 "(1.25, 1.3333, etc.) expressing pixel squareness."
 msgstr ""
 
-#: src/libvlc-module.c:589
+#: src/libvlc-module.c:593
 msgid "Video Auto Scaling"
 msgstr "비디오 자동 크기조정"
 
-#: src/libvlc-module.c:591
+#: src/libvlc-module.c:595
 msgid "Let the video scale to fit a given window or fullscreen."
 msgstr "지정된 윈도우 또는 전체화면에 비디오 배율 맞춤 허용"
 
-#: src/libvlc-module.c:593
+#: src/libvlc-module.c:597
 msgid "Video scaling factor"
 msgstr "비디오 크기조정 요소"
 
-#: src/libvlc-module.c:595
+#: src/libvlc-module.c:599
 msgid ""
 "Scaling factor used when Auto Scaling is disabled.\n"
 "Default value is 1.0 (original video size)."
@@ -2220,148 +2220,148 @@ msgstr ""
 "크기조정 요소는 자동 크기조정을 사용하지 않을때 사용됩니다.\n"
 "기본값 1.0 (원본 비디오 크기)."
 
-#: src/libvlc-module.c:598
+#: src/libvlc-module.c:602
 msgid "Custom crop ratios list"
 msgstr "사용자 지정 잘라내기 비율 목록"
 
-#: src/libvlc-module.c:600
+#: src/libvlc-module.c:604
 msgid ""
 "Comma separated list of crop ratios which will be added in the interface's "
 "crop ratios list."
 msgstr ""
 
-#: src/libvlc-module.c:603
+#: src/libvlc-module.c:607
 msgid "Custom aspect ratios list"
 msgstr "사용자 지정 가로세로비 목록"
 
-#: src/libvlc-module.c:605
+#: src/libvlc-module.c:609
 msgid ""
 "Comma separated list of aspect ratios which will be added in the interface's "
 "aspect ratio list."
 msgstr ""
 
-#: src/libvlc-module.c:608
+#: src/libvlc-module.c:612
 msgid "Fix HDTV height"
 msgstr "HDTV 높이 조정"
 
-#: src/libvlc-module.c:610
+#: src/libvlc-module.c:614
 msgid ""
 "This allows proper handling of HDTV-1080 video format even if broken encoder "
 "incorrectly sets height to 1088 lines. You should only disable this option "
 "if your video has a non-standard format requiring all 1088 lines."
 msgstr ""
 
-#: src/libvlc-module.c:615
+#: src/libvlc-module.c:619
 msgid "Monitor pixel aspect ratio"
 msgstr "모니터 픽셀 가로세로비"
 
-#: src/libvlc-module.c:617
+#: src/libvlc-module.c:621
 msgid ""
 "This forces the monitor aspect ratio. Most monitors have square pixels "
 "(1:1). If you have a 16:9 screen, you might need to change this to 4:3 in "
 "order to keep proportions."
 msgstr ""
 
-#: src/libvlc-module.c:621 modules/gui/macosx/simple_prefs.m:310
+#: src/libvlc-module.c:625 modules/gui/macosx/simple_prefs.m:310
 msgid "Skip frames"
 msgstr "프레임 건너뛰기"
 
-#: src/libvlc-module.c:623
+#: src/libvlc-module.c:627
 msgid ""
 "Enables framedropping on MPEG2 stream. Framedropping occurs when your "
 "computer is not powerful enough"
 msgstr ""
 
-#: src/libvlc-module.c:626
+#: src/libvlc-module.c:630
 msgid "Drop late frames"
 msgstr "늦은 프레임 버림"
 
-#: src/libvlc-module.c:628
+#: src/libvlc-module.c:632
 msgid ""
 "This drops frames that are late (arrive to the video output after their "
 "intended display date)."
 msgstr ""
 
-#: src/libvlc-module.c:631
+#: src/libvlc-module.c:635
 msgid "Quiet synchro"
 msgstr "조용한 동기화"
 
-#: src/libvlc-module.c:633
+#: src/libvlc-module.c:637
 msgid ""
 "This avoids flooding the message log with debug output from the video output "
 "synchronization mechanism."
 msgstr ""
 
-#: src/libvlc-module.c:636
+#: src/libvlc-module.c:640
 msgid "Key press events"
 msgstr "키 누름 이벤트"
 
-#: src/libvlc-module.c:638
+#: src/libvlc-module.c:642
 msgid "This enables VLC hotkeys from the (non-embedded) video window."
 msgstr "(내장이 아닌) 비디오 창에서 VLC 단축키를 사용합니다."
 
-#: src/libvlc-module.c:640 modules/video_filter/remoteosd.c:90
+#: src/libvlc-module.c:644 modules/video_filter/remoteosd.c:90
 msgid "Mouse events"
 msgstr "마우스 이벤트"
 
-#: src/libvlc-module.c:642
+#: src/libvlc-module.c:646
 msgid "This enables handling of mouse clicks on the video."
 msgstr "비디오에서 마우스 클릭 처리를 사용합니다."
 
-#: src/libvlc-module.c:650
+#: src/libvlc-module.c:654
 msgid ""
 "These options allow you to modify the behavior of the input subsystem, such "
 "as the DVD or VCD device, the network interface settings or the subtitle "
 "channel."
 msgstr ""
 
-#: src/libvlc-module.c:654
+#: src/libvlc-module.c:658
 msgid "File caching (ms)"
 msgstr "파일 캐싱 (ms)"
 
-#: src/libvlc-module.c:656
+#: src/libvlc-module.c:660
 msgid "Caching value for local files, in milliseconds."
 msgstr "로컬 파일 캐싱 값, 밀리초"
 
-#: src/libvlc-module.c:658
+#: src/libvlc-module.c:662
 msgid "Live capture caching (ms)"
 msgstr "실시간 갈무리 캐싱 (ms)"
 
-#: src/libvlc-module.c:660
+#: src/libvlc-module.c:664
 msgid "Caching value for cameras and microphones, in milliseconds."
 msgstr "카메라 및 마이크 캐싱 값, 밀리초"
 
-#: src/libvlc-module.c:662
+#: src/libvlc-module.c:666
 msgid "Disc caching (ms)"
 msgstr "디스크 캐싱 (ms)"
 
-#: src/libvlc-module.c:664
+#: src/libvlc-module.c:668
 msgid "Caching value for optical media, in milliseconds."
 msgstr "광학 미디어 캐싱 값, 밀리초"
 
-#: src/libvlc-module.c:666
+#: src/libvlc-module.c:670
 msgid "Network caching (ms)"
 msgstr "네트워크 캐싱 (ms)"
 
-#: src/libvlc-module.c:668
+#: src/libvlc-module.c:672
 msgid "Caching value for network resources, in milliseconds."
 msgstr "네트워크 자원 캐싱 값, 밀리초"
 
-#: src/libvlc-module.c:670
+#: src/libvlc-module.c:674
 msgid "Clock reference average counter"
 msgstr "클럭 참조 평균 카운터"
 
-#: src/libvlc-module.c:672
+#: src/libvlc-module.c:676
 msgid ""
 "When using the PVR input (or a very irregular source), you should set this "
 "to 10000."
 msgstr ""
 
-#: src/libvlc-module.c:675
+#: src/libvlc-module.c:679
 msgid "Clock synchronisation"
 msgstr "클럭 동기화"
 
-#: src/libvlc-module.c:677
+#: src/libvlc-module.c:681
 msgid ""
 "It is possible to disable the input clock synchronisation for real-time "
 "sources. Use this if you experience jerky playback of network streams."
@@ -2369,21 +2369,21 @@ msgstr ""
 "실시간 소스의 입력 클럭 동기화를 사용하지 않을수 있습니다. 네트워크 스트림의 "
 "불규칙한 재생을 경험했으면 사용하세요."
 
-#: src/libvlc-module.c:681
+#: src/libvlc-module.c:685
 msgid "Clock jitter"
 msgstr ""
 
-#: src/libvlc-module.c:683
+#: src/libvlc-module.c:687
 msgid ""
 "This defines the maximum input delay jitter that the synchronization "
 "algorithms should try to compensate (in milliseconds)."
 msgstr ""
 
-#: src/libvlc-module.c:686
+#: src/libvlc-module.c:690
 msgid "Network synchronisation"
 msgstr "네트워크 동기화"
 
-#: src/libvlc-module.c:687
+#: src/libvlc-module.c:691
 msgid ""
 "This allows you to remotely synchronise clocks for server and client. The "
 "detailed settings are available in Advanced / Network Sync."
@@ -2391,7 +2391,7 @@ msgstr ""
 "서버와 클라이언트의 원격 시간 동기를 허용합니다. 상세 설정은 고급 / 네트워크 "
 "동기화 에서 사용가능합니다."
 
-#: src/libvlc-module.c:693 src/video_output/vout_intf.c:94
+#: src/libvlc-module.c:697 src/video_output/vout_intf.c:94
 #: src/video_output/vout_intf.c:112 modules/access/dshow/dshow.cpp:91
 #: modules/access/dshow/dshow.cpp:94 modules/access/dshow/dshow.cpp:98
 #: modules/access/dshow/dshow.cpp:105 modules/access/dshow/dshow.cpp:125
@@ -2406,17 +2406,17 @@ msgstr ""
 msgid "Default"
 msgstr "기본"
 
-#: src/libvlc-module.c:693 modules/gui/macosx/AudioEffects.m:66
+#: src/libvlc-module.c:697 modules/gui/macosx/AudioEffects.m:66
 #: modules/gui/macosx/MainWindow.m:2427 modules/gui/macosx/wizard.m:357
 #: modules/gui/qt4/ui/equalizer.h:133 modules/gui/qt4/ui/vlm.h:290
 msgid "Enable"
 msgstr "사용"
 
-#: src/libvlc-module.c:695
+#: src/libvlc-module.c:699
 msgid "MTU of the network interface"
 msgstr "네트워크 인터페이스 MTU"
 
-#: src/libvlc-module.c:697
+#: src/libvlc-module.c:701
 msgid ""
 "This is the maximum application-layer packet size that can be transmitted "
 "over the network (in bytes)."
@@ -2424,11 +2424,11 @@ msgstr ""
 "네트워크를 통하여 전송할수 있는 최대 응용프로그램-계층 패킷 크기 입니다 (바이"
 "트)."
 
-#: src/libvlc-module.c:702 modules/stream_out/rtp.c:128
+#: src/libvlc-module.c:706 modules/stream_out/rtp.c:128
 msgid "Hop limit (TTL)"
 msgstr "최대 Hop (TTL)"
 
-#: src/libvlc-module.c:704 modules/stream_out/rtp.c:130
+#: src/libvlc-module.c:708 modules/stream_out/rtp.c:130
 msgid ""
 "This is the hop limit (also known as \"Time-To-Live\" or TTL) of the "
 "multicast packets sent by the stream output (-1 = use operating system built-"
@@ -2437,25 +2437,25 @@ msgstr ""
 "스트림 출력이 전송한 멀티캐스팅 패킷의 홉 제한 (\"Time-To-Live\" 또는 TTL 라"
 "고 알려진) 입니다 (-1 = 운영체제 내장 기본값)."
 
-#: src/libvlc-module.c:708
+#: src/libvlc-module.c:712
 msgid "Multicast output interface"
 msgstr "멀티캐스트 출력 인터페이스"
 
-#: src/libvlc-module.c:710
+#: src/libvlc-module.c:714
 msgid "Default multicast interface. This overrides the routing table."
 msgstr "기본 멀티캐스트 인터페이스. 이것은 라우팅 테이블을 재정의 합니다."
 
-#: src/libvlc-module.c:712
+#: src/libvlc-module.c:716
 msgid "DiffServ Code Point"
 msgstr "DiffServ Code Point"
 
-#: src/libvlc-module.c:713
+#: src/libvlc-module.c:717
 msgid ""
 "Differentiated Services Code Point for outgoing UDP streams (or IPv4 Type Of "
 "Service, or IPv6 Traffic Class). This is used for network Quality of Service."
 msgstr ""
 
-#: src/libvlc-module.c:719
+#: src/libvlc-module.c:723
 msgid ""
 "Choose the program to select by giving its Service ID. Only use this option "
 "if you want to read a multi-program stream (like DVB streams for example)."
@@ -2463,7 +2463,7 @@ msgstr ""
 "주어진 서비스 ID에 대한 프로그램을 선택합니다. 이 옵션은 (DVB 스트림과 같은) "
 "멀티-프로그램 스트림을 읽고 싶은 경우에만 사용하십시오."
 
-#: src/libvlc-module.c:725
+#: src/libvlc-module.c:729
 msgid ""
 "Choose the programs to select by giving a comma-separated list of Service "
 "IDs (SIDs). Only use this option if you want to read a multi-program stream "
@@ -2472,27 +2472,27 @@ msgstr ""
 "쉼표로 구분된 서비스 ID (SIDs) 목록에서 선택할 프로그램 선택. 다중-프로그램 "
 "스트림 (예를 들어 DVB 스트림 같은) 을 읽기 원할때만 이 옵션을 사용하세요."
 
-#: src/libvlc-module.c:731 modules/gui/qt4/ui/open_disk.h:313
+#: src/libvlc-module.c:735 modules/gui/qt4/ui/open_disk.h:313
 msgid "Audio track"
 msgstr "오디오 트랙"
 
-#: src/libvlc-module.c:733
+#: src/libvlc-module.c:737
 msgid "Stream number of the audio track to use (from 0 to n)."
 msgstr "사용할 오디오 트랙의 스트림 번호 (0부터 n까지)."
 
-#: src/libvlc-module.c:736 modules/gui/qt4/ui/open_disk.h:314
+#: src/libvlc-module.c:740 modules/gui/qt4/ui/open_disk.h:314
 msgid "Subtitles track"
 msgstr "자막 트랙"
 
-#: src/libvlc-module.c:738
+#: src/libvlc-module.c:742
 msgid "Stream number of the subtitle track to use (from 0 to n)."
 msgstr "사용할 자막 트랙의 스트림 번호 (0부터 n까지)."
 
-#: src/libvlc-module.c:741
+#: src/libvlc-module.c:745
 msgid "Audio language"
 msgstr "음성 언어"
 
-#: src/libvlc-module.c:743
+#: src/libvlc-module.c:747
 msgid ""
 "Language of the audio track you want to use (comma separated, two or three "
 "letter country code, you may use 'none' to avoid a fallback to another "
@@ -2501,11 +2501,11 @@ msgstr ""
 "사용할 오디오 트랙의 언어 (쉼표로 분리된 2 또는 3 문자의 지역 코드. 다른 언어"
 "로 추측하지 않도록 하려면 'none'을 쓰세요.)"
 
-#: src/libvlc-module.c:746
+#: src/libvlc-module.c:750
 msgid "Subtitle language"
 msgstr "자막 언어"
 
-#: src/libvlc-module.c:748
+#: src/libvlc-module.c:752
 msgid ""
 "Language of the subtitle track you want to use (comma separated, two or "
 "three letters country code, you may use 'any' as a fallback)."
@@ -2513,27 +2513,27 @@ msgstr ""
 "사용할 자막 트랙의 언어 (쉼표로 분리된 2 또는 3 문자의 지역 코드. 추측을 사용"
 "하려면 'any'를 쓰세요.)"
 
-#: src/libvlc-module.c:752
+#: src/libvlc-module.c:756
 msgid "Audio track ID"
 msgstr "오디오 트랙 ID"
 
-#: src/libvlc-module.c:754
+#: src/libvlc-module.c:758
 msgid "Stream ID of the audio track to use."
 msgstr "사용할 음성 트랙의 스트림 ID."
 
-#: src/libvlc-module.c:756
+#: src/libvlc-module.c:760
 msgid "Subtitles track ID"
 msgstr "자막 트랙 ID"
 
-#: src/libvlc-module.c:758
+#: src/libvlc-module.c:762
 msgid "Stream ID of the subtitle track to use."
 msgstr "사용할 자막 트랙의 스트림 ID."
 
-#: src/libvlc-module.c:760
+#: src/libvlc-module.c:764
 msgid "Preferred video resolution"
 msgstr "선호하는 비디오 해상도"
 
-#: src/libvlc-module.c:762
+#: src/libvlc-module.c:766
 msgid ""
 "When several video formats are available, select one whose resolution is "
 "closest to (but not higher than) this setting, in number of lines. Use this "
@@ -2541,89 +2541,89 @@ msgid ""
 "higher resolutions."
 msgstr ""
 
-#: src/libvlc-module.c:768
+#: src/libvlc-module.c:772
 msgid "Best available"
 msgstr "사용가능한 최적"
 
-#: src/libvlc-module.c:768
+#: src/libvlc-module.c:772
 msgid "Full HD (1080p)"
 msgstr "Full HD (1080p)"
 
-#: src/libvlc-module.c:768
+#: src/libvlc-module.c:772
 msgid "HD (720p)"
 msgstr "HD (720p)"
 
-#: src/libvlc-module.c:769
+#: src/libvlc-module.c:773
 msgid "Standard Definition (576 or 480 lines)"
 msgstr ""
 
-#: src/libvlc-module.c:770
+#: src/libvlc-module.c:774
 msgid "Low definition (320 lines)"
 msgstr ""
 
-#: src/libvlc-module.c:773
+#: src/libvlc-module.c:777
 msgid "Input repetitions"
 msgstr "입력 반복"
 
-#: src/libvlc-module.c:775
+#: src/libvlc-module.c:779
 msgid "Number of time the same input will be repeated"
 msgstr "동일한 입력이 반복될 횟수"
 
-#: src/libvlc-module.c:777
+#: src/libvlc-module.c:781
 msgid "Start time"
 msgstr "시작 시간"
 
-#: src/libvlc-module.c:779
+#: src/libvlc-module.c:783
 msgid "The stream will start at this position (in seconds)."
 msgstr "(초 단위)"
 
-#: src/libvlc-module.c:781
+#: src/libvlc-module.c:785
 msgid "Stop time"
 msgstr "정지 시간"
 
-#: src/libvlc-module.c:783
+#: src/libvlc-module.c:787
 msgid "The stream will stop at this position (in seconds)."
 msgstr "(초 단위)"
 
-#: src/libvlc-module.c:785
+#: src/libvlc-module.c:789
 msgid "Run time"
 msgstr "재생 시간"
 
-#: src/libvlc-module.c:787
+#: src/libvlc-module.c:791
 msgid "The stream will run this duration (in seconds)."
 msgstr "(초 단위)"
 
-#: src/libvlc-module.c:789
+#: src/libvlc-module.c:793
 msgid "Fast seek"
 msgstr "빠른 찾기"
 
-#: src/libvlc-module.c:791
+#: src/libvlc-module.c:795
 msgid "Favor speed over precision while seeking"
 msgstr "검색시 선호하는 속도 정밀도"
 
-#: src/libvlc-module.c:793 modules/gui/qt4/dialogs/toolbar.cpp:455
+#: src/libvlc-module.c:797 modules/gui/qt4/dialogs/toolbar.cpp:455
 msgid "Playback speed"
 msgstr "재생 속도"
 
-#: src/libvlc-module.c:795
+#: src/libvlc-module.c:799
 msgid "This defines the playback speed (nominal speed is 1.0)."
 msgstr "재생 속도를 정합니다. (일반적으로 1.0)"
 
-#: src/libvlc-module.c:797
+#: src/libvlc-module.c:801
 msgid "Input list"
 msgstr "입력 목록"
 
-#: src/libvlc-module.c:799
+#: src/libvlc-module.c:803
 msgid ""
 "You can give a comma-separated list of inputs that will be concatenated "
 "together after the normal one."
 msgstr ""
 
-#: src/libvlc-module.c:802
+#: src/libvlc-module.c:806
 msgid "Input slave (experimental)"
 msgstr "입력 슬레이브 (실험적)"
 
-#: src/libvlc-module.c:804
+#: src/libvlc-module.c:808
 msgid ""
 "This allows you to play from several inputs at the same time. This feature "
 "is experimental, not all formats are supported. Use a '#' separated list of "
@@ -2632,59 +2632,59 @@ msgstr ""
 "동시에 여러 입력에서 재생을 허용합니다. 이 기능은 실험적이며, 모든 형식을 지"
 "원하지 않습니다. '#' 로 구분된 입력 목록을 사용하세요."
 
-#: src/libvlc-module.c:808
+#: src/libvlc-module.c:812
 msgid "Bookmarks list for a stream"
 msgstr "스트림에 대한 북마크 목록"
 
-#: src/libvlc-module.c:810
+#: src/libvlc-module.c:814
 msgid ""
 "You can manually give a list of bookmarks for a stream in the form "
 "\"{name=bookmark-name,time=optional-time-offset,bytes=optional-byte-offset},"
 "{...}\""
 msgstr ""
 
-#: src/libvlc-module.c:814 modules/gui/macosx/simple_prefs.m:249
+#: src/libvlc-module.c:818 modules/gui/macosx/simple_prefs.m:249
 #: modules/gui/qt4/ui/sprefs_input.h:344
 msgid "Record directory or filename"
 msgstr "녹음 디렉토리 또는 파일명"
 
-#: src/libvlc-module.c:816 modules/gui/macosx/simple_prefs.m:251
+#: src/libvlc-module.c:820 modules/gui/macosx/simple_prefs.m:251
 msgid "Directory or filename where the records will be stored"
 msgstr "녹음이 저장될 디렉토리 또는 파일명"
 
-#: src/libvlc-module.c:818
+#: src/libvlc-module.c:822
 msgid "Prefer native stream recording"
 msgstr "기본 스트림 녹음 우선"
 
-#: src/libvlc-module.c:820
+#: src/libvlc-module.c:824
 msgid ""
 "When possible, the input stream will be recorded instead of using the stream "
 "output module"
 msgstr ""
 
-#: src/libvlc-module.c:823
+#: src/libvlc-module.c:827
 msgid "Timeshift directory"
 msgstr "타임시프트 디렉토리"
 
-#: src/libvlc-module.c:825
+#: src/libvlc-module.c:829
 msgid "Directory used to store the timeshift temporary files."
 msgstr "타임시프트 임시 파일 저장에 사용되는 디렉토리"
 
-#: src/libvlc-module.c:827
+#: src/libvlc-module.c:831
 msgid "Timeshift granularity"
 msgstr "타임시프트 단위"
 
-#: src/libvlc-module.c:829
+#: src/libvlc-module.c:833
 msgid ""
 "This is the maximum size in bytes of the temporary files that will be used "
 "to store the timeshifted streams."
 msgstr "타임시프트된 스트림 저장에 사용될 임시 파일의 최대 바이트 크기입니다."
 
-#: src/libvlc-module.c:832
+#: src/libvlc-module.c:836
 msgid "Change title according to current media"
 msgstr ""
 
-#: src/libvlc-module.c:833
+#: src/libvlc-module.c:837
 msgid ""
 "This option allows you to set the title according to what's being played<br>"
 "$a: Artist<br>$b: Album<br>$c: Copyright<br>$t: Title<br>$g: Genre<br>$n: "
@@ -2692,7 +2692,7 @@ msgid ""
 "\" (Fall back on Title - Artist)"
 msgstr ""
 
-#: src/libvlc-module.c:840
+#: src/libvlc-module.c:844
 msgid ""
 "These options allow you to modify the behavior of the subpictures subsystem. "
 "You can for example enable subpictures sources (logo, etc.). Enable these "
@@ -2700,11 +2700,11 @@ msgid ""
 "section. You can also set many miscellaneous subpictures options."
 msgstr ""
 
-#: src/libvlc-module.c:846 modules/gui/qt4/ui/sprefs_subtitles.h:286
+#: src/libvlc-module.c:850 modules/gui/qt4/ui/sprefs_subtitles.h:286
 msgid "Force subtitle position"
 msgstr "자막 위치 강제"
 
-#: src/libvlc-module.c:848
+#: src/libvlc-module.c:852
 msgid ""
 "You can use this option to place the subtitles under the movie, instead of "
 "over the movie. Try several positions."
@@ -2712,22 +2712,22 @@ msgstr ""
 "이 옵션을 이용해 영상 내의 자막 위치를 지정할 수 있습니다. 몇 가지 위치를 시"
 "험해 주세요."
 
-#: src/libvlc-module.c:851
+#: src/libvlc-module.c:855
 msgid "Enable sub-pictures"
 msgstr "자막 사용"
 
-#: src/libvlc-module.c:853
+#: src/libvlc-module.c:857
 msgid "You can completely disable the sub-picture processing."
 msgstr "완벽하게 자막 프로세싱을 사용안하게 할수 있습니다."
 
-#: src/libvlc-module.c:855 src/libvlc-module.c:1792 src/text/iso-639_def.h:145
+#: src/libvlc-module.c:859 src/libvlc-module.c:1796 src/text/iso-639_def.h:145
 #: modules/gui/macosx/simple_prefs.m:294
 #: modules/stream_out/transcode/transcode.c:219
 #: modules/gui/qt4/ui/sprefs_subtitles.h:271
 msgid "On Screen Display"
 msgstr "화면표시메뉴"
 
-#: src/libvlc-module.c:857
+#: src/libvlc-module.c:861
 msgid ""
 "VLC can display messages on the video. This is called OSD (On Screen "
 "Display)."
@@ -2735,11 +2735,11 @@ msgstr ""
 "VLC 는 비디오에 메시지를 표시할수 있습니다. 이것을 OSD (On Screen Display) 라"
 "고 합니다."
 
-#: src/libvlc-module.c:860
+#: src/libvlc-module.c:864
 msgid "Text rendering module"
 msgstr "텍스트 렌더링 모듈"
 
-#: src/libvlc-module.c:862
+#: src/libvlc-module.c:866
 msgid ""
 "VLC normally uses Freetype for rendering, but this allows you to use svg for "
 "instance."
@@ -2747,42 +2747,42 @@ msgstr ""
 "VLC 는 보통 렌더링에 Freetype 을 사용합니다, 그러나 예를 들어 svg 사용을 허용"
 "합니다."
 
-#: src/libvlc-module.c:864
+#: src/libvlc-module.c:868
 msgid "Subpictures source module"
 msgstr ""
 
-#: src/libvlc-module.c:866
+#: src/libvlc-module.c:870
 msgid ""
 "This adds so-called \"subpicture sources\". These filters overlay some "
 "images or text over the video (like a logo, arbitrary text, ...)."
 msgstr ""
 
-#: src/libvlc-module.c:869
+#: src/libvlc-module.c:873
 msgid "Subpictures filter module"
 msgstr "부화면 필터 모듈"
 
-#: src/libvlc-module.c:871
+#: src/libvlc-module.c:875
 msgid ""
 "This adds so-called \"subpicture filters\". These filter subpictures created "
 "by subtitles decoders or other subpictures sources."
 msgstr ""
 
-#: src/libvlc-module.c:874
+#: src/libvlc-module.c:878
 msgid "Autodetect subtitle files"
 msgstr "자막 파일 자동 인식"
 
-#: src/libvlc-module.c:876
+#: src/libvlc-module.c:880
 msgid ""
 "Automatically detect a subtitle file, if no subtitle filename is specified "
 "(based on the filename of the movie)."
 msgstr ""
 "자막 파일명이 지정되지 않으면, 자막파일 자동 감지 (영화의 파일명에 기반)."
 
-#: src/libvlc-module.c:879
+#: src/libvlc-module.c:883
 msgid "Subtitle autodetection fuzziness"
 msgstr "자막 자동 인식 수준"
 
-#: src/libvlc-module.c:881
+#: src/libvlc-module.c:885
 msgid ""
 "This determines how fuzzy subtitle and movie filename matching will be. "
 "Options are:\n"
@@ -2799,11 +2799,11 @@ msgstr ""
 "3 = 추가 문자를 포함한 영화 이름이 일치하는 자막 파일\n"
 "4 = 영화 이름과 정확히 일치하는 자막 파일"
 
-#: src/libvlc-module.c:889
+#: src/libvlc-module.c:893
 msgid "Subtitle autodetection paths"
 msgstr "자막 자동 인식 경로"
 
-#: src/libvlc-module.c:891
+#: src/libvlc-module.c:895
 msgid ""
 "Look for a subtitle file in those paths too, if your subtitle file was not "
 "found in the current directory."
@@ -2811,29 +2811,29 @@ msgstr ""
 "만약 자막 파일이 현재 디렉토리에 발견되지 않으면, 이 경로에서도 자막 파일 찾"
 "기."
 
-#: src/libvlc-module.c:894
+#: src/libvlc-module.c:898
 msgid "Use subtitle file"
 msgstr "자막 파일 이용"
 
-#: src/libvlc-module.c:896
+#: src/libvlc-module.c:900
 msgid ""
 "Load this subtitle file. To be used when autodetect cannot detect your "
 "subtitle file."
 msgstr "이 자막 파일 읽기. 자막 파일을 감지하지 못할경우 사용하기 위해."
 
-#: src/libvlc-module.c:900
+#: src/libvlc-module.c:904
 msgid "DVD device"
 msgstr "DVD 장치"
 
-#: src/libvlc-module.c:901
+#: src/libvlc-module.c:905
 msgid "VCD device"
 msgstr "VCD 장치"
 
-#: src/libvlc-module.c:902
+#: src/libvlc-module.c:906
 msgid "Audio CD device"
 msgstr "음악 CD 장치"
 
-#: src/libvlc-module.c:906
+#: src/libvlc-module.c:910
 msgid ""
 "This is the default DVD drive (or file) to use. Don't forget the colon after "
 "the drive letter (e.g. D:)"
@@ -2841,7 +2841,7 @@ msgstr ""
 "사용할 기본 DVD 드라이브(또는 파일)입니다. 드라이브 문자 뒤에 콜론을 추가하"
 "는 것을 잊지 말아 주세요. (예 D:)"
 
-#: src/libvlc-module.c:909
+#: src/libvlc-module.c:913
 msgid ""
 "This is the default VCD drive (or file) to use. Don't forget the colon after "
 "the drive letter (e.g. D:)"
@@ -2849,48 +2849,48 @@ msgstr ""
 "사용할 기본 VCD 드라이브(또는 파일)입니다. 드라이브 문자 뒤에 콜론을 추가하"
 "는 것을 잊지 말아 주세요. (예 D:)"
 
-#: src/libvlc-module.c:912
+#: src/libvlc-module.c:916
 msgid ""
 "This is the default Audio CD drive (or file) to use. Don't forget the colon "
 "after the drive letter (e.g. D:)"
 msgstr ""
 
-#: src/libvlc-module.c:919
+#: src/libvlc-module.c:923
 msgid "This is the default DVD device to use."
 msgstr "사용할 기본 DVD 장치입니다."
 
-#: src/libvlc-module.c:921
+#: src/libvlc-module.c:925
 msgid "This is the default VCD device to use."
 msgstr "사용할 기본 VCD 장치입니다."
 
-#: src/libvlc-module.c:923
+#: src/libvlc-module.c:927
 msgid "This is the default Audio CD device to use."
 msgstr "사용할 기본 오디오 CD 장치입니다."
 
-#: src/libvlc-module.c:937
+#: src/libvlc-module.c:941
 msgid "TCP connection timeout"
 msgstr "TCP 연결 시간제한"
 
-#: src/libvlc-module.c:939
+#: src/libvlc-module.c:943
 msgid "Default TCP connection timeout (in milliseconds). "
 msgstr "기본 TCP 연결 시간제한 (밀리초). "
 
-#: src/libvlc-module.c:941
+#: src/libvlc-module.c:945
 msgid "HTTP server address"
 msgstr "HTTP 서버 주소"
 
-#: src/libvlc-module.c:943
+#: src/libvlc-module.c:947
 msgid ""
 "By default, the server will listen on any local IP address. Specify an IP "
 "address (e.g. ::1 or 127.0.0.1) or a host name (e.g. localhost) to restrict "
 "them to a specific network interface."
 msgstr ""
 
-#: src/libvlc-module.c:947
+#: src/libvlc-module.c:951
 msgid "RTSP server address"
 msgstr "RTSP 서버 주소"
 
-#: src/libvlc-module.c:949
+#: src/libvlc-module.c:953
 msgid ""
 "This defines the address the RTSP server will listen on, along with the base "
 "path of the RTSP VOD media. Syntax is address/path. By default, the server "
@@ -2899,80 +2899,80 @@ msgid ""
 "network interface."
 msgstr ""
 
-#: src/libvlc-module.c:955
+#: src/libvlc-module.c:959
 msgid "HTTP server port"
 msgstr "HTTP 서버 포트"
 
-#: src/libvlc-module.c:957
+#: src/libvlc-module.c:961
 msgid ""
 "The HTTP server will listen on this TCP port. The standard HTTP port number "
 "is 80. However allocation of port numbers below 1025 is usually restricted "
 "by the operating system."
 msgstr ""
 
-#: src/libvlc-module.c:962
+#: src/libvlc-module.c:966
 msgid "HTTPS server port"
 msgstr "HTTPS 서버 포트"
 
-#: src/libvlc-module.c:964
+#: src/libvlc-module.c:968
 msgid ""
 "The HTTPS server will listen on this TCP port. The standard HTTPS port "
 "number is 443. However allocation of port numbers below 1025 is usually "
 "restricted by the operating system."
 msgstr ""
 
-#: src/libvlc-module.c:969
+#: src/libvlc-module.c:973
 msgid "RTSP server port"
 msgstr "RTSP 서버 포트"
 
-#: src/libvlc-module.c:971
+#: src/libvlc-module.c:975
 msgid ""
 "The RTSP server will listen on this TCP port. The standard RTSP port number "
 "is 554. However allocation of port numbers below 1025 is usually restricted "
 "by the operating system."
 msgstr ""
 
-#: src/libvlc-module.c:976
+#: src/libvlc-module.c:980
 msgid "HTTP/TLS server certificate"
 msgstr "HTTP/TLS 서버 인증서"
 
-#: src/libvlc-module.c:978
+#: src/libvlc-module.c:982
 msgid "This X.509 certicate file (PEM format) is used for server-side TLS."
 msgstr ""
 
-#: src/libvlc-module.c:980
+#: src/libvlc-module.c:984
 msgid "HTTP/TLS server private key"
 msgstr "HTTP/TLS 서버 개인 키"
 
-#: src/libvlc-module.c:982
+#: src/libvlc-module.c:986
 msgid "This private key file (PEM format) is used for server-side TLS."
 msgstr ""
 
-#: src/libvlc-module.c:984
+#: src/libvlc-module.c:988
 msgid "HTTP/TLS Certificate Authority"
 msgstr ""
 
-#: src/libvlc-module.c:986
+#: src/libvlc-module.c:990
 msgid ""
 "This X.509 certificate file (PEM format) can optionally be used to "
 "authenticate remote clients in TLS sessions."
 msgstr ""
 
-#: src/libvlc-module.c:989
+#: src/libvlc-module.c:993
 msgid "HTTP/TLS Certificate Revocation List"
 msgstr "HTTP/TLS 인증서 폐기 목록"
 
-#: src/libvlc-module.c:991
+#: src/libvlc-module.c:995
 msgid ""
 "This file countains an optional CRL to prevent remove clients from using "
 "revoked certificates in TLS sessions."
 msgstr ""
 
-#: src/libvlc-module.c:994
+#: src/libvlc-module.c:998
 msgid "SOCKS server"
 msgstr "SOCKS 서버"
 
-#: src/libvlc-module.c:996
+#: src/libvlc-module.c:1000
 msgid ""
 "SOCKS proxy server to use. This must be of the form address:port. It will be "
 "used for all TCP connections"
@@ -2980,98 +2980,98 @@ msgstr ""
 "사용할 SOCKS 프록시 서버. 반드시 주소:포트 형식이어야 합니다. 모든 TCP 연결"
 "에 사용됩니다"
 
-#: src/libvlc-module.c:999
+#: src/libvlc-module.c:1003
 msgid "SOCKS user name"
 msgstr "SOCKS 사용자 이름"
 
-#: src/libvlc-module.c:1001
+#: src/libvlc-module.c:1005
 msgid "User name to be used for connection to the SOCKS proxy."
 msgstr "SOCKS 프록시 연결에 사용할 사용자명."
 
-#: src/libvlc-module.c:1003
+#: src/libvlc-module.c:1007
 msgid "SOCKS password"
 msgstr "SOCKS 비밀번호"
 
-#: src/libvlc-module.c:1005
+#: src/libvlc-module.c:1009
 msgid "Password to be used for connection to the SOCKS proxy."
 msgstr "SOCKS 프록시 연결에 사용할 비밀번호."
 
-#: src/libvlc-module.c:1007
+#: src/libvlc-module.c:1011
 msgid "Title metadata"
 msgstr "제목 메타데이터"
 
-#: src/libvlc-module.c:1009
+#: src/libvlc-module.c:1013
 msgid "Allows you to specify a \"title\" metadata for an input."
 msgstr "입력에 \"제목\" 메타데이터 지정 허용."
 
-#: src/libvlc-module.c:1011
+#: src/libvlc-module.c:1015
 msgid "Author metadata"
 msgstr "저자 메타데이터"
 
-#: src/libvlc-module.c:1013
+#: src/libvlc-module.c:1017
 msgid "Allows you to specify an \"author\" metadata for an input."
 msgstr "입력에 \"저자\" 메타데이터 지정 허용."
 
-#: src/libvlc-module.c:1015
+#: src/libvlc-module.c:1019
 msgid "Artist metadata"
 msgstr "아티스트 메타데이터"
 
-#: src/libvlc-module.c:1017
+#: src/libvlc-module.c:1021
 msgid "Allows you to specify an \"artist\" metadata for an input."
 msgstr "입력에 \"아티스트\" 메타데이터 지정 허용."
 
-#: src/libvlc-module.c:1019
+#: src/libvlc-module.c:1023
 msgid "Genre metadata"
 msgstr "장르 메타데이터"
 
-#: src/libvlc-module.c:1021
+#: src/libvlc-module.c:1025
 msgid "Allows you to specify a \"genre\" metadata for an input."
 msgstr "입력에 \"장르\" 메타데이터 지정 허용."
 
-#: src/libvlc-module.c:1023
+#: src/libvlc-module.c:1027
 msgid "Copyright metadata"
 msgstr "저작권 메타데이터"
 
-#: src/libvlc-module.c:1025
+#: src/libvlc-module.c:1029
 msgid "Allows you to specify a \"copyright\" metadata for an input."
 msgstr ". "
 
-#: src/libvlc-module.c:1027
+#: src/libvlc-module.c:1031
 msgid "Description metadata"
 msgstr "설명 메타데이터"
 
-#: src/libvlc-module.c:1029
+#: src/libvlc-module.c:1033
 msgid "Allows you to specify a \"description\" metadata for an input."
 msgstr "입력에 \"설명\" 메타데이터 지정 허용."
 
-#: src/libvlc-module.c:1031
+#: src/libvlc-module.c:1035
 msgid "Date metadata"
 msgstr "날짜 메타데이터"
 
-#: src/libvlc-module.c:1033
+#: src/libvlc-module.c:1037
 msgid "Allows you to specify a \"date\" metadata for an input."
 msgstr "입력에 \"날짜\" 메타데이터 지정 허용."
 
-#: src/libvlc-module.c:1035
+#: src/libvlc-module.c:1039
 msgid "URL metadata"
 msgstr "URL 메타데이터"
 
-#: src/libvlc-module.c:1037
+#: src/libvlc-module.c:1041
 msgid "Allows you to specify a \"url\" metadata for an input."
 msgstr "입력에 \"url\" 메타데이터 지정 허용."
 
-#: src/libvlc-module.c:1041
+#: src/libvlc-module.c:1045
 msgid ""
 "This option can be used to alter the way VLC selects its codecs "
 "(decompression methods). Only advanced users should alter this option as it "
 "can break playback of all your streams."
 msgstr ""
 
-#: src/libvlc-module.c:1045
+#: src/libvlc-module.c:1049
 msgid "Preferred decoders list"
 msgstr "선호하는 디코더 목록"
 
-#: src/libvlc-module.c:1047
+#: src/libvlc-module.c:1051
 msgid ""
 "List of codecs that VLC will use in priority. For instance, 'dummy,a52' will "
 "try the dummy and a52 codecs before trying the other ones. Only advanced "
@@ -3081,63 +3081,63 @@ msgstr ""
 "하기전에 dummy 및 a52 를 시도합니다. 모든 스트림 재생을 중단시킬수 있기때문"
 "에 고급 사용자만 변경할수 있습니다."
 
-#: src/libvlc-module.c:1052
+#: src/libvlc-module.c:1056
 msgid "Preferred encoders list"
 msgstr "선호하는 인코더 목록"
 
-#: src/libvlc-module.c:1054
+#: src/libvlc-module.c:1058
 msgid ""
 "This allows you to select a list of encoders that VLC will use in priority."
 msgstr "VLC 가 우선적으로 사용할 인코더 목록을 선택하게 허용합니다."
 
-#: src/libvlc-module.c:1063
+#: src/libvlc-module.c:1067
 msgid ""
 "These options allow you to set default global options for the stream output "
 "subsystem."
 msgstr ""
 
-#: src/libvlc-module.c:1066
+#: src/libvlc-module.c:1070
 msgid "Default stream output chain"
 msgstr "기본 스트림 출력 체인"
 
-#: src/libvlc-module.c:1068
+#: src/libvlc-module.c:1072
 msgid ""
 "You can enter here a default stream output chain. Refer to the documentation "
 "to learn how to build such chains. Warning: this chain will be enabled for "
 "all streams."
 msgstr ""
 
-#: src/libvlc-module.c:1072
+#: src/libvlc-module.c:1076
 msgid "Enable streaming of all ES"
 msgstr "모든 ES의 스트리밍 사용"
 
-#: src/libvlc-module.c:1074
+#: src/libvlc-module.c:1078
 msgid "Stream all elementary streams (video, audio and subtitles)"
 msgstr "모든 요소 스트림 실시간 재생 (비디오, 오디오 및 자막)"
 
-#: src/libvlc-module.c:1076
+#: src/libvlc-module.c:1080
 msgid "Display while streaming"
 msgstr "스트리밍 시 화면 표시"
 
-#: src/libvlc-module.c:1078
+#: src/libvlc-module.c:1082
 msgid "Play locally the stream while streaming it."
 msgstr "스트리밍 동안 스트림 부분적으로 재생."
 
-#: src/libvlc-module.c:1080
+#: src/libvlc-module.c:1084
 msgid "Enable video stream output"
 msgstr "영상 스트림 출력 사용"
 
-#: src/libvlc-module.c:1082
+#: src/libvlc-module.c:1086
 msgid ""
 "Choose whether the video stream should be redirected to the stream output "
 "facility when this last one is enabled."
 msgstr ""
 
-#: src/libvlc-module.c:1085
+#: src/libvlc-module.c:1089
 msgid "Enable audio stream output"
 msgstr "음성 스트림 출력 사용"
 
-#: src/libvlc-module.c:1087
+#: src/libvlc-module.c:1091
 msgid ""
 "Choose whether the audio stream should be redirected to the stream output "
 "facility when this last one is enabled."
@@ -3145,89 +3145,89 @@ msgstr ""
 "오디오 스트림 출력 기구의 마지막 것이 유효하게 되어 있으면 출력 기구에 리디렉"
 "트 되어야 할 경우, 선택 가능합니다. "
 
-#: src/libvlc-module.c:1090
+#: src/libvlc-module.c:1094
 msgid "Enable SPU stream output"
 msgstr "SPU 스트림 출력 사용"
 
-#: src/libvlc-module.c:1092
+#: src/libvlc-module.c:1096
 msgid ""
 "Choose whether the SPU streams should be redirected to the stream output "
 "facility when this last one is enabled."
 msgstr ""
 
-#: src/libvlc-module.c:1095
+#: src/libvlc-module.c:1099
 msgid "Keep stream output open"
 msgstr "스트림 출력 열림 유지"
 
-#: src/libvlc-module.c:1097
+#: src/libvlc-module.c:1101
 msgid ""
 "This allows you to keep an unique stream output instance across multiple "
 "playlist item (automatically insert the gather stream output if not "
 "specified)"
 msgstr ""
 
-#: src/libvlc-module.c:1101
+#: src/libvlc-module.c:1105
 msgid "Stream output muxer caching (ms)"
 msgstr "스트림 출력 먹서 캐싱 (ms)"
 
-#: src/libvlc-module.c:1103
+#: src/libvlc-module.c:1107
 msgid ""
 "This allow you to configure the initial caching amount for stream output  "
 "muxer. This value should be set in milliseconds."
 msgstr ""
 
-#: src/libvlc-module.c:1106
+#: src/libvlc-module.c:1110
 msgid "Preferred packetizer list"
 msgstr "선호하는 패킷타이저 목록"
 
-#: src/libvlc-module.c:1108
+#: src/libvlc-module.c:1112
 msgid ""
 "This allows you to select the order in which VLC will choose its packetizers."
 msgstr ""
 
-#: src/libvlc-module.c:1111
+#: src/libvlc-module.c:1115
 msgid "Mux module"
 msgstr "Mux 모듈"
 
-#: src/libvlc-module.c:1113
+#: src/libvlc-module.c:1117
 msgid "This is a legacy entry to let you configure mux modules"
 msgstr "mux 모듈을 설정하는 구식의 방법입니다. "
 
-#: src/libvlc-module.c:1115
+#: src/libvlc-module.c:1119
 msgid "Access output module"
 msgstr "접근 출력 모듈"
 
-#: src/libvlc-module.c:1117
+#: src/libvlc-module.c:1121
 msgid "This is a legacy entry to let you configure access output modules"
 msgstr "접근 출력 모듈을 설정하는 레거시 항목입니다. "
 
-#: src/libvlc-module.c:1119
+#: src/libvlc-module.c:1123
 msgid "Control SAP flow"
 msgstr "SAP flow 제어"
 
-#: src/libvlc-module.c:1121
+#: src/libvlc-module.c:1125
 msgid ""
 "If this option is enabled, the flow on the SAP multicast address will be "
 "controlled. This is needed if you want to make announcements on the MBone."
 msgstr ""
 
-#: src/libvlc-module.c:1125
+#: src/libvlc-module.c:1129
 msgid "SAP announcement interval"
 msgstr "SAP 알림 간격"
 
-#: src/libvlc-module.c:1127
+#: src/libvlc-module.c:1131
 msgid ""
 "When the SAP flow control is disabled, this lets you set the fixed interval "
 "between SAP announcements."
 msgstr ""
 
-#: src/libvlc-module.c:1136
+#: src/libvlc-module.c:1140
 msgid ""
 "These options allow you to enable special CPU optimizations. You should "
 "always leave all these enabled."
 msgstr ""
 
-#: src/libvlc-module.c:1141
+#: src/libvlc-module.c:1145
 msgid ""
 "These options allow you to select default modules. Leave these alone unless "
 "you really know what you are doing."
@@ -3235,11 +3235,11 @@ msgstr ""
 "이 옵션을 통해 기본 모듈을 선택할 수 있습니다. 이에 대한 내용을 잘 모른다면 "
 "그대로 두십시오."
 
-#: src/libvlc-module.c:1144
+#: src/libvlc-module.c:1148
 msgid "Memory copy module"
 msgstr "메모리 복사 모듈"
 
-#: src/libvlc-module.c:1146
+#: src/libvlc-module.c:1150
 msgid ""
 "You can select which memory copy module you want to use. By default VLC will "
 "select the fastest one supported by your hardware."
@@ -3247,30 +3247,30 @@ msgstr ""
 "사용할 메모리 복사 모듈을 선택합니다. 기본적으로 VLC는 하드웨어가 지원하는 가"
 "장 빠른 방식을 선택합니다."
 
-#: src/libvlc-module.c:1149
+#: src/libvlc-module.c:1153
 msgid "Access module"
 msgstr "접근 모듈"
 
-#: src/libvlc-module.c:1151
+#: src/libvlc-module.c:1155
 msgid ""
 "This allows you to force an access module. You can use it if the correct "
 "access is not automatically detected. You should not set this as a global "
 "option unless you really know what you are doing."
 msgstr ""
 
-#: src/libvlc-module.c:1155
+#: src/libvlc-module.c:1159
 msgid "Stream filter module"
 msgstr "스트림 필터 모듈"
 
-#: src/libvlc-module.c:1157
+#: src/libvlc-module.c:1161
 msgid "Stream filters are used to modify the stream that is being read. "
 msgstr "스트림 필터는 읽고 있는 스트림을 변경하는데 사용됩니다."
 
-#: src/libvlc-module.c:1159
+#: src/libvlc-module.c:1163
 msgid "Demux module"
 msgstr "demux 모듈"
 
-#: src/libvlc-module.c:1161
+#: src/libvlc-module.c:1165
 msgid ""
 "Demultiplexers are used to separate the \"elementary\" streams (like audio "
 "and video streams). You can use it if the correct demuxer is not "
@@ -3278,21 +3278,21 @@ msgid ""
 "you really know what you are doing."
 msgstr ""
 
-#: src/libvlc-module.c:1166
+#: src/libvlc-module.c:1170
 msgid "VoD server module"
 msgstr "VoD 서버 모듈"
 
-#: src/libvlc-module.c:1168
+#: src/libvlc-module.c:1172
 msgid ""
 "You can select which VoD server module you want to use. Set this to "
 "`vod_rtsp' to switch back to the old, legacy module."
 msgstr ""
 
-#: src/libvlc-module.c:1171
+#: src/libvlc-module.c:1175
 msgid "Allow real-time priority"
 msgstr "실시간 우선순위 허용"
 
-#: src/libvlc-module.c:1173
+#: src/libvlc-module.c:1177
 msgid ""
 "Running VLC in real-time priority will allow for much more precise "
 "scheduling and yield better, especially when streaming content. It can "
@@ -3300,105 +3300,105 @@ msgid ""
 "only activate this if you know what you're doing."
 msgstr ""
 
-#: src/libvlc-module.c:1179
+#: src/libvlc-module.c:1183
 msgid "Adjust VLC priority"
 msgstr "VLC 우선순위 조정"
 
-#: src/libvlc-module.c:1181
+#: src/libvlc-module.c:1185
 msgid ""
 "This option adds an offset (positive or negative) to VLC default priorities. "
 "You can use it to tune VLC priority against other programs, or against other "
 "VLC instances."
 msgstr ""
 
-#: src/libvlc-module.c:1185
+#: src/libvlc-module.c:1189
 msgid "(Experimental) Don't do caching at the access level."
 msgstr "(실험적인) 접근 수준의 캐시하지 않음."
 
-#: src/libvlc-module.c:1187
+#: src/libvlc-module.c:1191
 msgid ""
 "This option is useful if you want to lower the latency when reading a stream"
 msgstr "스트림을 읽을때 낮은 대기시간을 원할때 이 옵션은 유용합니다"
 
-#: src/libvlc-module.c:1190
+#: src/libvlc-module.c:1194
 msgid "Modules search path"
 msgstr "모듈 검색 경로"
 
-#: src/libvlc-module.c:1192
+#: src/libvlc-module.c:1196
 msgid ""
 "Additional path for VLC to look for its modules. You can add several paths "
 "by concatenating them using \" PATH_SEP \" as separator"
 msgstr ""
 
-#: src/libvlc-module.c:1195
+#: src/libvlc-module.c:1199
 msgid "Data search path"
 msgstr "데이터 검색 경로"
 
-#: src/libvlc-module.c:1197
+#: src/libvlc-module.c:1201
 msgid "Override the default data/share search path."
 msgstr "기본 데이터/공유 검색 경로를 덮어씁니다."
 
-#: src/libvlc-module.c:1199
+#: src/libvlc-module.c:1203
 msgid "VLM configuration file"
 msgstr "VLM 설정 파일"
 
-#: src/libvlc-module.c:1201
+#: src/libvlc-module.c:1205
 msgid "Read a VLM configuration file as soon as VLM is started."
 msgstr "VLM 이 시작 하자마자 VLM 설정 파일 읽기."
 
-#: src/libvlc-module.c:1203
+#: src/libvlc-module.c:1207
 msgid "Use a plugins cache"
 msgstr "플러그인 캐시 사용"
 
-#: src/libvlc-module.c:1205
+#: src/libvlc-module.c:1209
 msgid "Use a plugins cache which will greatly improve the startup time of VLC."
 msgstr "VLC 의 시작 시간을 크게 향상시키는 플러그인 캐시 사용."
 
-#: src/libvlc-module.c:1207
+#: src/libvlc-module.c:1211
 msgid "Locally collect statistics"
 msgstr ""
 
-#: src/libvlc-module.c:1209
+#: src/libvlc-module.c:1213
 msgid "Collect miscellaneous local statistics about the playing media."
 msgstr ""
 
-#: src/libvlc-module.c:1211
+#: src/libvlc-module.c:1215
 msgid "Run as daemon process"
 msgstr "데몬 프로세스로 실행"
 
-#: src/libvlc-module.c:1213
+#: src/libvlc-module.c:1217
 msgid "Runs VLC as a background daemon process."
 msgstr "VLC 를 백그라운드 데몬 프로세스로 실행."
 
-#: src/libvlc-module.c:1215
+#: src/libvlc-module.c:1219
 msgid "Write process id to file"
 msgstr "파일에 프로세스 id 쓰기"
 
-#: src/libvlc-module.c:1217
+#: src/libvlc-module.c:1221
 msgid "Writes process id into specified file."
 msgstr "지정된 파일에 프로세스 id 쓰기."
 
-#: src/libvlc-module.c:1219
+#: src/libvlc-module.c:1223
 msgid "Log to file"
 msgstr "로그를 파일로 저장"
 
-#: src/libvlc-module.c:1221
+#: src/libvlc-module.c:1225
 msgid "Log all VLC messages to a text file."
 msgstr "모든 VLC 메시지를 텍스트 파일에 기록."
 
-#: src/libvlc-module.c:1223
+#: src/libvlc-module.c:1227
 msgid "Log to syslog"
 msgstr "로그를 syslog로 보냄"
 
-#: src/libvlc-module.c:1225
+#: src/libvlc-module.c:1229
 msgid "Log all VLC messages to syslog (UNIX systems)."
 msgstr "모든 VLC 메시지를 syslog 에 기록 (유닉스 시스텀)."
 
-#: src/libvlc-module.c:1227
+#: src/libvlc-module.c:1231
 msgid "Allow only one running instance"
 msgstr "하나의 개체로만 실행"
 
-#: src/libvlc-module.c:1230
+#: src/libvlc-module.c:1234
 msgid ""
 "Allowing only one running instance of VLC can sometimes be useful, for "
 "example if you associated VLC with some media types and you don't want a new "
@@ -3411,7 +3411,7 @@ msgstr ""
 "운 VLC 인스턴스가 열리기를 원하지 않을때. 이 옵션은 이미 실행중인 인스턴스로 "
 "파일을 재생하거나 대기열에 넣는것을 허용합니다."
 
-#: src/libvlc-module.c:1237
+#: src/libvlc-module.c:1241
 msgid ""
 "Allowing only one running instance of VLC can sometimes be useful, for "
 "example if you associated VLC with some media types and you don't want a new "
@@ -3427,27 +3427,27 @@ msgstr ""
 "Bus 세션 데몬 및 실행중인 VLC 인스턴스가 D-Bus 제어 인터페이스 사용이 필요합"
 "니다."
 
-#: src/libvlc-module.c:1246
+#: src/libvlc-module.c:1250
 msgid "VLC is started from file association"
 msgstr "파일 연결로 VLC 이 시작되었음"
 
-#: src/libvlc-module.c:1248
+#: src/libvlc-module.c:1252
 msgid "Tell VLC that it is being launched due to a file association in the OS"
 msgstr "OS 의 파일 연결때문에 VLC 이 실행되었다고 알리기"
 
-#: src/libvlc-module.c:1251
+#: src/libvlc-module.c:1255
 msgid "One instance when started from file"
 msgstr "파일에서 시작될 때 오직 하나의 개체 만을 사용"
 
-#: src/libvlc-module.c:1253
+#: src/libvlc-module.c:1257
 msgid "Allow only one running instance when started from file."
 msgstr "파일에서 시작될때 한개의 실행 인스턴스만 허용."
 
-#: src/libvlc-module.c:1255
+#: src/libvlc-module.c:1259
 msgid "Increase the priority of the process"
 msgstr "프로세스의 우선순위 증가"
 
-#: src/libvlc-module.c:1257
+#: src/libvlc-module.c:1261
 msgid ""
 "Increasing the priority of the process will very likely improve your playing "
 "experience as it allows VLC not to be disturbed by other applications that "
@@ -3457,11 +3457,11 @@ msgid ""
 "machine."
 msgstr ""
 
-#: src/libvlc-module.c:1265
+#: src/libvlc-module.c:1269
 msgid "Enqueue items to playlist when in one instance mode"
 msgstr "단일 인스턴스 모드시 항목 재생목록 대기열에 넣기"
 
-#: src/libvlc-module.c:1267
+#: src/libvlc-module.c:1271
 msgid ""
 "When using the one instance only option, enqueue items to playlist and keep "
 "playing current item."
@@ -3469,142 +3469,142 @@ msgstr ""
 "단일 인스턴스 옵션 사용시, 항목 재생목록 대기열에 넣기 및 현재 항목 재생 유"
 "지."
 
-#: src/libvlc-module.c:1276
+#: src/libvlc-module.c:1280
 msgid ""
 "These options define the behavior of the playlist. Some of them can be "
 "overridden in the playlist dialog box."
 msgstr ""
 
-#: src/libvlc-module.c:1279
+#: src/libvlc-module.c:1283
 msgid "Automatically preparse files"
 msgstr "자동으로 파일 미리 읽기"
 
-#: src/libvlc-module.c:1281
+#: src/libvlc-module.c:1285
 msgid ""
 "Automatically preparse files added to the playlist (to retrieve some "
 "metadata)."
 msgstr "재생목록에 들어온 파일을 미리 읽어서 정보를 파악합니다."
 
-#: src/libvlc-module.c:1284
+#: src/libvlc-module.c:1288
 msgid "Album art policy"
 msgstr "앨범 아트 정책"
 
-#: src/libvlc-module.c:1286
+#: src/libvlc-module.c:1290
 msgid "Choose how album art will be downloaded."
 msgstr "어떻게 앨범 아트를 다운로드할지 선택."
 
-#: src/libvlc-module.c:1292
+#: src/libvlc-module.c:1296
 msgid "Manual download only"
 msgstr "자동으로 다운로드하지 않음"
 
-#: src/libvlc-module.c:1293
+#: src/libvlc-module.c:1297
 msgid "When track starts playing"
 msgstr "트랙 재생이 시작될때"
 
-#: src/libvlc-module.c:1294
+#: src/libvlc-module.c:1298
 msgid "As soon as track is added"
 msgstr "트랙이 추가 되자마자"
 
-#: src/libvlc-module.c:1296
+#: src/libvlc-module.c:1300
 msgid "Services discovery modules"
 msgstr "서비스 검색 모듈"
 
-#: src/libvlc-module.c:1298
+#: src/libvlc-module.c:1302
 msgid ""
 "Specifies the services discovery modules to preload, separated by colons. "
 "Typical value is \"sap\"."
 msgstr ""
 
-#: src/libvlc-module.c:1301
+#: src/libvlc-module.c:1305
 msgid "Play files randomly forever"
 msgstr "항상 무작위 파일 재생"
 
-#: src/libvlc-module.c:1303
+#: src/libvlc-module.c:1307
 msgid "VLC will randomly play files in the playlist until interrupted."
 msgstr "사용자가 직접 멈출 때까지 재생목록 내의 임의의 파일을 반복 재생합니다."
 
-#: src/libvlc-module.c:1305
+#: src/libvlc-module.c:1309
 msgid "Repeat all"
 msgstr "전체 반복"
 
-#: src/libvlc-module.c:1307
+#: src/libvlc-module.c:1311
 msgid "VLC will keep playing the playlist indefinitely."
 msgstr "순서대로 반복 재생합니다."
 
-#: src/libvlc-module.c:1309
+#: src/libvlc-module.c:1313
 msgid "Repeat current item"
 msgstr "현재 항목 반복"
 
-#: src/libvlc-module.c:1311
+#: src/libvlc-module.c:1315
 msgid "VLC will keep playing the current playlist item."
 msgstr "지금 재생중인 항목을 반복합니다."
 
-#: src/libvlc-module.c:1313
+#: src/libvlc-module.c:1317
 msgid "Play and stop"
 msgstr "재생 / 멈춤"
 
-#: src/libvlc-module.c:1315
+#: src/libvlc-module.c:1319
 msgid "Stop the playlist after each played playlist item."
 msgstr "재생목록 항목이 하나 끝날 때마다 멈춥니다."
 
-#: src/libvlc-module.c:1317
+#: src/libvlc-module.c:1321
 msgid "Play and exit"
 msgstr "재생 후 종료"
 
-#: src/libvlc-module.c:1319
+#: src/libvlc-module.c:1323
 msgid "Exit if there are no more items in the playlist."
 msgstr "재생목록에 더 이상 항목이 없으면 종료."
 
-#: src/libvlc-module.c:1321
+#: src/libvlc-module.c:1325
 msgid "Play and pause"
 msgstr "재생 및 일시중지"
 
-#: src/libvlc-module.c:1323
+#: src/libvlc-module.c:1327
 msgid "Pause each item in the playlist on the last frame."
 msgstr "재생목록의 각 항목마다 마지막 프레임에서 정지."
 
-#: src/libvlc-module.c:1325
+#: src/libvlc-module.c:1329
 msgid "Auto start"
 msgstr "자동 시작"
 
-#: src/libvlc-module.c:1326
+#: src/libvlc-module.c:1330
 msgid "Automatically start playing the playlist content once it's loaded."
 msgstr "재생목록의 컨턴트가 읽어지면 자동 재생 시작."
 
-#: src/libvlc-module.c:1329
+#: src/libvlc-module.c:1333
 msgid "Use media library"
 msgstr "미디어 라이브러리 사용"
 
-#: src/libvlc-module.c:1331
+#: src/libvlc-module.c:1335
 msgid ""
 "The media library is automatically saved and reloaded each time you start "
 "VLC."
 msgstr ""
 "미디어 라이브러리는 자동으로 저장되고 VLC 이 시작될때마다 새로읽어 집니다."
 
-#: src/libvlc-module.c:1334
+#: src/libvlc-module.c:1338
 msgid "Load Media Library"
 msgstr "미디어 라이브러리 불러오기"
 
-#: src/libvlc-module.c:1336
+#: src/libvlc-module.c:1340
 msgid "Enable this option to load the SQL-based Media Library at VLC startup"
 msgstr ""
 
-#: src/libvlc-module.c:1338 modules/gui/qt4/ui/sprefs_interface.h:520
+#: src/libvlc-module.c:1342 modules/gui/qt4/ui/sprefs_interface.h:520
 msgid "Display playlist tree"
 msgstr "재생목록 트리 표시"
 
-#: src/libvlc-module.c:1340
+#: src/libvlc-module.c:1344
 msgid ""
 "The playlist can use a tree to categorize some items, like the contents of a "
 "directory."
 msgstr ""
 
-#: src/libvlc-module.c:1349
+#: src/libvlc-module.c:1353
 msgid "These settings are the global VLC key bindings, known as \"hotkeys\"."
 msgstr "이 설정은 \"단축키\"로 알고있는 전역 VLC 키 바인딩입니다."
 
-#: src/libvlc-module.c:1352 src/video_output/vout_intf.c:303
+#: src/libvlc-module.c:1356 src/video_output/vout_intf.c:303
 #: modules/gui/macosx/MainMenu.m:310 modules/gui/macosx/MainMenu.m:377
 #: modules/gui/macosx/MainMenu.m:1220 modules/gui/macosx/MainMenu.m:1238
 #: modules/gui/macosx/simple_prefs.m:306
@@ -3613,79 +3613,79 @@ msgstr "이 설정은 \"단축키\"로 알고있는 전역 VLC 키 바인딩입�
 msgid "Fullscreen"
 msgstr "전체화면"
 
-#: src/libvlc-module.c:1353
+#: src/libvlc-module.c:1357
 msgid "Select the hotkey to use to swap fullscreen state."
 msgstr "전체화면 상태 바꾸기에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1354
+#: src/libvlc-module.c:1358
 msgid "Leave fullscreen"
 msgstr "전체화면 끄기"
 
-#: src/libvlc-module.c:1355
+#: src/libvlc-module.c:1359
 msgid "Select the hotkey to use to leave fullscreen state."
 msgstr "전체화면 상태 나가기에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1356 modules/gui/macosx/MainWindow.m:179
+#: src/libvlc-module.c:1360 modules/gui/macosx/MainWindow.m:179
 msgid "Play/Pause"
 msgstr "재생/일시정지"
 
-#: src/libvlc-module.c:1357
+#: src/libvlc-module.c:1361
 msgid "Select the hotkey to use to swap paused state."
 msgstr "일시중지 상태 바꾸기에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1358
+#: src/libvlc-module.c:1362
 msgid "Pause only"
 msgstr "일시정지"
 
-#: src/libvlc-module.c:1359
+#: src/libvlc-module.c:1363
 msgid "Select the hotkey to use to pause."
 msgstr "일시중지에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1360
+#: src/libvlc-module.c:1364
 msgid "Play only"
 msgstr "재생"
 
-#: src/libvlc-module.c:1361
+#: src/libvlc-module.c:1365
 msgid "Select the hotkey to use to play."
 msgstr "재생에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1362 modules/gui/macosx/MainMenu.m:274
+#: src/libvlc-module.c:1366 modules/gui/macosx/MainMenu.m:274
 #: modules/gui/qt4/components/controller.hpp:115
 #: modules/gui/qt4/components/controller.hpp:125
 msgid "Faster"
 msgstr "빨리 재생"
 
-#: src/libvlc-module.c:1363 src/libvlc-module.c:1369
+#: src/libvlc-module.c:1367 src/libvlc-module.c:1373
 msgid "Select the hotkey to use for fast forward playback."
 msgstr "재생 빨리 감기에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1364 modules/gui/macosx/MainMenu.m:272
+#: src/libvlc-module.c:1368 modules/gui/macosx/MainMenu.m:272
 #: modules/gui/qt4/components/controller.hpp:115
 #: modules/gui/qt4/components/controller.hpp:125
 msgid "Slower"
 msgstr "천천히 재생"
 
-#: src/libvlc-module.c:1365 src/libvlc-module.c:1371
+#: src/libvlc-module.c:1369 src/libvlc-module.c:1375
 msgid "Select the hotkey to use for slow motion playback."
 msgstr "슬로우 모션 재생에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1366
+#: src/libvlc-module.c:1370
 msgid "Normal rate"
 msgstr "보통 비율"
 
-#: src/libvlc-module.c:1367
+#: src/libvlc-module.c:1371
 msgid "Select the hotkey to set the playback rate back to normal."
 msgstr "재생 비율을 보통으로 설정할 단축키 선택."
 
-#: src/libvlc-module.c:1368 modules/gui/qt4/menus.cpp:843
+#: src/libvlc-module.c:1372 modules/gui/qt4/menus.cpp:843
 msgid "Faster (fine)"
 msgstr "빠르게 (조금)"
 
-#: src/libvlc-module.c:1370 modules/gui/qt4/menus.cpp:851
+#: src/libvlc-module.c:1374 modules/gui/qt4/menus.cpp:851
 msgid "Slower (fine)"
 msgstr "느리게 (조금)"
 
-#: src/libvlc-module.c:1372 modules/control/hotkeys.c:687
+#: src/libvlc-module.c:1376 modules/control/hotkeys.c:687
 #: modules/gui/macosx/about.m:216 modules/gui/macosx/MainMenu.m:277
 #: modules/gui/macosx/MainMenu.m:365 modules/gui/macosx/MainMenu.m:373
 #: modules/gui/macosx/MainMenu.m:1165 modules/gui/macosx/wizard.m:312
@@ -3696,11 +3696,11 @@ msgstr "느리게 (조금)"
 msgid "Next"
 msgstr "다음"
 
-#: src/libvlc-module.c:1373
+#: src/libvlc-module.c:1377
 msgid "Select the hotkey to use to skip to the next item in the playlist."
 msgstr "재생목록에서 다음 항목으로 넘김에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1374 modules/control/hotkeys.c:693
+#: src/libvlc-module.c:1378 modules/control/hotkeys.c:693
 #: modules/gui/macosx/about.m:217 modules/gui/macosx/MainMenu.m:276
 #: modules/gui/macosx/MainMenu.m:366 modules/gui/macosx/MainMenu.m:372
 #: modules/gui/macosx/MainMenu.m:1164
@@ -3709,11 +3709,11 @@ msgstr "재생목록에서 다음 항목으로 넘김에 사용할 단축키 선
 msgid "Previous"
 msgstr "이전"
 
-#: src/libvlc-module.c:1375
+#: src/libvlc-module.c:1379
 msgid "Select the hotkey to use to skip to the previous item in the playlist."
 msgstr "재생목록에서 이전 항목으로 넘김에 사용할 단축키 선택."
 
-#: src/libvlc-module.c:1376 modules/gui/macosx/MainMenu.m:267
+#: src/libvlc-module.c:1380 modules/gui/macosx/MainMenu.m:267
 #: modules/gui/macosx/MainMenu.m:364 modules/gui/macosx/MainMenu.m:371
 #: modules/gui/macosx/MainMenu.m:1156 modules/gui/macosx/MainWindow.m:185
 #: modules/gui/qt4/components/controller.hpp:114
@@ -3722,11 +3722,11 @@ msgstr "재생목록에서 이전 항목으로 넘김에 사용할 단축키 선
 msgid "Stop"
 msgstr "정지"
 
-#: src/libvlc-module.c:1377
+#: src/libvlc-module.c:1381
 msgid "Select the hotkey to stop playback."
 msgstr "재생 중지 단축키 선택."
 
-#: src/libvlc-module.c:1378 modules/gui/fbosd.c:128 modules/gui/fbosd.c:196
+#: src/libvlc-module.c:1382 modules/gui/fbosd.c:128 modules/gui/fbosd.c:196
 #: modules/gui/macosx/bookmarks.m:96 modules/gui/macosx/bookmarks.m:105
 #: modules/gui/macosx/MainWindow.m:196 modules/gui/macosx/VideoEffects.m:146
 #: modules/gui/macosx/VideoEffects.m:168 modules/video_filter/marq.c:157
@@ -3735,735 +3735,735 @@ msgstr "재생 중지 단축키 선택."
 msgid "Position"
 msgstr "위치"
 
-#: src/libvlc-module.c:1379
+#: src/libvlc-module.c:1383
 msgid "Select the hotkey to display the position."
 msgstr "위치 표시 단축키 선택."
 
-#: src/libvlc-module.c:1381
+#: src/libvlc-module.c:1385
 msgid "Very short backwards jump"
 msgstr "매우 짧게 뒤로 건너뛰기"
 
-#: src/libvlc-module.c:1383
+#: src/libvlc-module.c:1387
 msgid "Select the hotkey to make a very short backwards jump."
 msgstr "매우 짧게 뒤로 건너뛰기 단축키 선택."
 
-#: src/libvlc-module.c:1384
+#: src/libvlc-module.c:1388
 msgid "Short backwards jump"
 msgstr "짧게 뒤로 건너뛰기"
 
-#: src/libvlc-module.c:1386
+#: src/libvlc-module.c:1390
 msgid "Select the hotkey to make a short backwards jump."
 msgstr "짧게 뒤로 건너뛰기 단축키 선택."
 
-#: src/libvlc-module.c:1387
+#: src/libvlc-module.c:1391
 msgid "Medium backwards jump"
 msgstr "보통 뒤로 건너뛰기"
 
-#: src/libvlc-module.c:1389
+#: src/libvlc-module.c:1393
 msgid "Select the hotkey to make a medium backwards jump."
 msgstr "보통 뒤로 건너뛰기 단축키 선택."
 
-#: src/libvlc-module.c:1390
+#: src/libvlc-module.c:1394
 msgid "Long backwards jump"
 msgstr "길게 뒤로 건너뛰기"
 
-#: src/libvlc-module.c:1392
+#: src/libvlc-module.c:1396
 msgid "Select the hotkey to make a long backwards jump."
 msgstr "길게 뒤로 건너뛰기 단축키 선택."
 
-#: src/libvlc-module.c:1394
+#: src/libvlc-module.c:1398
 msgid "Very short forward jump"
 msgstr "매우 짧게 앞으로 건너뛰기"
 
-#: src/libvlc-module.c:1396
+#: src/libvlc-module.c:1400
 msgid "Select the hotkey to make a very short forward jump."
 msgstr "매우 짧게 앞으로 건너뛰기 단축키 선택."
 
-#: src/libvlc-module.c:1397
+#: src/libvlc-module.c:1401
 msgid "Short forward jump"
 msgstr "짧게 앞으로 건너뛰기"
 
-#: src/libvlc-module.c:1399
+#: src/libvlc-module.c:1403
 msgid "Select the hotkey to make a short forward jump."
 msgstr "짧게 앞으로 건너뛰기 단축키 선택."
 
-#: src/libvlc-module.c:1400
+#: src/libvlc-module.c:1404
 msgid "Medium forward jump"
 msgstr "보통 앞으로 건너뛰기"
 
-#: src/libvlc-module.c:1402
+#: src/libvlc-module.c:1406
 msgid "Select the hotkey to make a medium forward jump."
 msgstr "보통 앞으로 건너뛰기 단축키 선택."
 
-#: src/libvlc-module.c:1403
+#: src/libvlc-module.c:1407
 msgid "Long forward jump"
 msgstr "길게 앞으로 건너뛰기"
 
-#: src/libvlc-module.c:1405
+#: src/libvlc-module.c:1409
 msgid "Select the hotkey to make a long forward jump."
 msgstr "길게 앞으로 건너뛰기 단축키 선택."
 
-#: src/libvlc-module.c:1406 modules/control/hotkeys.c:704
+#: src/libvlc-module.c:1410 modules/control/hotkeys.c:704
 msgid "Next frame"
 msgstr "다음 프레임"
 
-#: src/libvlc-module.c:1408
+#: src/libvlc-module.c:1412
 msgid "Select the hotkey to got to the next video frame."
 msgstr "다음 비디오 프레임으로 가기 단축키 선택."
 
-#: src/libvlc-module.c:1410
+#: src/libvlc-module.c:1414
 msgid "Very short jump length"
 msgstr "매우 짧게 건너뛰기 길이"
 
-#: src/libvlc-module.c:1411
+#: src/libvlc-module.c:1415
 msgid "Very short jump length, in seconds."
 msgstr "매우 짧게 건너뛰기 길이(초)."
 
-#: src/libvlc-module.c:1412
+#: src/libvlc-module.c:1416
 msgid "Short jump length"
 msgstr "짧게 건너뛰기 길이"
 
-#: src/libvlc-module.c:1413
+#: src/libvlc-module.c:1417
 msgid "Short jump length, in seconds."
 msgstr "짧게 건너뛰기 길이(초)."
 
-#: src/libvlc-module.c:1414
+#: src/libvlc-module.c:1418
 msgid "Medium jump length"
 msgstr "보통 건너뛰기 길이"
 
-#: src/libvlc-module.c:1415
+#: src/libvlc-module.c:1419
 msgid "Medium jump length, in seconds."
 msgstr "보통 건너뛰기 길이(초)."
 
-#: src/libvlc-module.c:1416
+#: src/libvlc-module.c:1420
 msgid "Long jump length"
 msgstr "길게 건너뛰기 길이"
 
-#: src/libvlc-module.c:1417
+#: src/libvlc-module.c:1421
 msgid "Long jump length, in seconds."
 msgstr "길게 건너뛰기 길이(초)."
 
-#: src/libvlc-module.c:1419 modules/control/hotkeys.c:183
+#: src/libvlc-module.c:1423 modules/control/hotkeys.c:183
 #: modules/gui/qt4/components/controller.hpp:118
 #: modules/gui/qt4/components/controller.hpp:130 modules/gui/qt4/menus.cpp:914
 #: modules/gui/skins2/commands/cmd_quit.cpp:44
 msgid "Quit"
 msgstr "종료"
 
-#: src/libvlc-module.c:1420
+#: src/libvlc-module.c:1424
 msgid "Select the hotkey to quit the application."
 msgstr "응용 프로그램 종료 단축키 선택."
 
-#: src/libvlc-module.c:1421
+#: src/libvlc-module.c:1425
 msgid "Navigate up"
 msgstr "위로 탐색"
 
-#: src/libvlc-module.c:1422
+#: src/libvlc-module.c:1426
 msgid "Select the key to move the selector up in DVD menus."
 msgstr "DVD 메뉴 위로 선택기 이동할 키 선택."
 
-#: src/libvlc-module.c:1423
+#: src/libvlc-module.c:1427
 msgid "Navigate down"
 msgstr "아래로 탐색"
 
-#: src/libvlc-module.c:1424
+#: src/libvlc-module.c:1428
 msgid "Select the key to move the selector down in DVD menus."
 msgstr "DVD 메뉴 아래로 선택기 이동할 키 선택."
 
-#: src/libvlc-module.c:1425
+#: src/libvlc-module.c:1429
 msgid "Navigate left"
 msgstr "왼쪽으로 탐색"
 
-#: src/libvlc-module.c:1426
+#: src/libvlc-module.c:1430
 msgid "Select the key to move the selector left in DVD menus."
 msgstr "DVD 메뉴 왼쪽으로 선택기 이동할 키 선택."
 
-#: src/libvlc-module.c:1427
+#: src/libvlc-module.c:1431
 msgid "Navigate right"
 msgstr "오른쪽으로 탐색"
 
-#: src/libvlc-module.c:1428
+#: src/libvlc-module.c:1432
 msgid "Select the key to move the selector right in DVD menus."
 msgstr "DVD 메뉴 오른쪽으로 선택기 이동할 키 선택."
 
-#: src/libvlc-module.c:1429
+#: src/libvlc-module.c:1433
 msgid "Activate"
 msgstr "활성화"
 
-#: src/libvlc-module.c:1430
+#: src/libvlc-module.c:1434
 msgid "Select the key to activate selected item in DVD menus."
 msgstr "DVD 메뉴의 선택된 항목 활성 키 선택."
 
-#: src/libvlc-module.c:1431 modules/gui/qt4/dialogs/toolbar.cpp:395
+#: src/libvlc-module.c:1435 modules/gui/qt4/dialogs/toolbar.cpp:395
 msgid "Go to the DVD menu"
 msgstr "DVD 메뉴로 이동"
 
-#: src/libvlc-module.c:1432
+#: src/libvlc-module.c:1436
 msgid "Select the key to take you to the DVD menu"
 msgstr "DVD 메뉴 불러올 키 선택"
 
-#: src/libvlc-module.c:1433
+#: src/libvlc-module.c:1437
 msgid "Select previous DVD title"
 msgstr "이전 DVD 타이틀 선택"
 
-#: src/libvlc-module.c:1434
+#: src/libvlc-module.c:1438
 msgid "Select the key to choose the previous title from the DVD"
 msgstr "DVD 에서 이전 타이틀 선택할 키 선택"
 
-#: src/libvlc-module.c:1435
+#: src/libvlc-module.c:1439
 msgid "Select next DVD title"
 msgstr "다음 DVD 타이틀 선택"
 
-#: src/libvlc-module.c:1436
+#: src/libvlc-module.c:1440
 msgid "Select the key to choose the next title from the DVD"
 msgstr "DVD 에서 다음 타이틀 선택할 키 선택"
 
-#: src/libvlc-module.c:1437
+#: src/libvlc-module.c:1441
 msgid "Select prev DVD chapter"
 msgstr "이전 DVD 챕터 선택"
 
-#: src/libvlc-module.c:1438
+#: src/libvlc-module.c:1442
 msgid "Select the key to choose the previous chapter from the DVD"
 msgstr "DVD 에서 이전 챕터 선택할 키 선택"
 
-#: src/libvlc-module.c:1439
+#: src/libvlc-module.c:1443
 msgid "Select next DVD chapter"
 msgstr "다음 DVD 챕터 선택"
 
-#: src/libvlc-module.c:1440
+#: src/libvlc-module.c:1444
 msgid "Select the key to choose the next chapter from the DVD"
 msgstr "DVD 에서 다음 챕터 선택할 키 선택"
 
-#: src/libvlc-module.c:1441
+#: src/libvlc-module.c:1445
 msgid "Volume up"
 msgstr "볼륨 높임"
 
-#: src/libvlc-module.c:1442
+#: src/libvlc-module.c:1446
 msgid "Select the key to increase audio volume."
 msgstr "오디오 음량 키울 키 선택."
 
-#: src/libvlc-module.c:1443
+#: src/libvlc-module.c:1447
 msgid "Volume down"
 msgstr "볼륨 낮춤"
 
-#: src/libvlc-module.c:1444
+#: src/libvlc-module.c:1448
 msgid "Select the key to decrease audio volume."
 msgstr "오디오 음량 줄일 키 선택."
 
-#: src/libvlc-module.c:1445 modules/access/v4l2/video.c:189
+#: src/libvlc-module.c:1449 modules/access/v4l2/video.c:189
 #: modules/gui/macosx/MainMenu.m:295 modules/gui/macosx/MainMenu.m:367
 #: modules/gui/macosx/MainMenu.m:376 modules/gui/macosx/MainMenu.m:1210
 #: modules/gui/macosx/MainWindow.m:194 modules/gui/qt4/menus.cpp:573
 msgid "Mute"
 msgstr "소리끄기"
 
-#: src/libvlc-module.c:1446
+#: src/libvlc-module.c:1450
 msgid "Select the key to mute audio."
 msgstr "오디오 소리끄기할 키 선택."
 
-#: src/libvlc-module.c:1447
+#: src/libvlc-module.c:1451
 msgid "Subtitle delay up"
 msgstr "자막 지연 늘리기"
 
-#: src/libvlc-module.c:1448
+#: src/libvlc-module.c:1452
 msgid "Select the key to increase the subtitle delay."
 msgstr "자막 지연 늘릴 키 선택."
 
-#: src/libvlc-module.c:1449
+#: src/libvlc-module.c:1453
 msgid "Subtitle delay down"
 msgstr "자막 지연 줄이기"
 
-#: src/libvlc-module.c:1450
+#: src/libvlc-module.c:1454
 msgid "Select the key to decrease the subtitle delay."
 msgstr "자막 지연 줄일 키 선택."
 
-#: src/libvlc-module.c:1451
+#: src/libvlc-module.c:1455
 msgid "Subtitle position up"
 msgstr "자막 위치 위로"
 
-#: src/libvlc-module.c:1452
+#: src/libvlc-module.c:1456
 msgid "Select the key to move subtitles higher."
 msgstr "자막을 위로 이동하려면 키를 선택하세요."
 
-#: src/libvlc-module.c:1453
+#: src/libvlc-module.c:1457
 msgid "Subtitle position down"
 msgstr ""
 
-#: src/libvlc-module.c:1454
+#: src/libvlc-module.c:1458
 msgid "Select the key to move subtitles lower."
 msgstr "자막을 아래로 옮길 키 선택."
 
-#: src/libvlc-module.c:1455
+#: src/libvlc-module.c:1459
 msgid "Audio delay up"
 msgstr "음성 지연 증가"
 
-#: src/libvlc-module.c:1456
+#: src/libvlc-module.c:1460
 msgid "Select the key to increase the audio delay."
 msgstr "오디오 지연 늘릴 키 선택. "
 
-#: src/libvlc-module.c:1457
+#: src/libvlc-module.c:1461
 msgid "Audio delay down"
 msgstr "음성 지연 감소"
 
-#: src/libvlc-module.c:1458
+#: src/libvlc-module.c:1462
 msgid "Select the key to decrease the audio delay."
 msgstr "오디오 지연 줄일 키 선택."
 
-#: src/libvlc-module.c:1465
+#: src/libvlc-module.c:1469
 msgid "Play playlist bookmark 1"
 msgstr "재생목록 북마크 1 재생"
 
-#: src/libvlc-module.c:1466
+#: src/libvlc-module.c:1470
 msgid "Play playlist bookmark 2"
 msgstr "재생목록 북마크 2 재생"
 
-#: src/libvlc-module.c:1467
+#: src/libvlc-module.c:1471
 msgid "Play playlist bookmark 3"
 msgstr "재생목록 북마크 3 재생"
 
-#: src/libvlc-module.c:1468
+#: src/libvlc-module.c:1472
 msgid "Play playlist bookmark 4"
 msgstr "재생목록 북마크 4 재생"
 
-#: src/libvlc-module.c:1469
+#: src/libvlc-module.c:1473
 msgid "Play playlist bookmark 5"
 msgstr "재생목록 북마크 5 재생"
 
-#: src/libvlc-module.c:1470
+#: src/libvlc-module.c:1474
 msgid "Play playlist bookmark 6"
 msgstr "재생목록 북마크 6 재생"
 
-#: src/libvlc-module.c:1471
+#: src/libvlc-module.c:1475
 msgid "Play playlist bookmark 7"
 msgstr "재생목록 북마크 7 재생"
 
-#: src/libvlc-module.c:1472
+#: src/libvlc-module.c:1476
 msgid "Play playlist bookmark 8"
 msgstr "재생목록 북마크 8 재생"
 
-#: src/libvlc-module.c:1473
+#: src/libvlc-module.c:1477
 msgid "Play playlist bookmark 9"
 msgstr "재생목록 북마크 9 재생"
 
-#: src/libvlc-module.c:1474
+#: src/libvlc-module.c:1478
 msgid "Play playlist bookmark 10"
 msgstr "재생목록 북마크 10 재생"
 
-#: src/libvlc-module.c:1475
+#: src/libvlc-module.c:1479
 msgid "Select the key to play this bookmark."
 msgstr "이 북마크 재생할 키 선택."
 
-#: src/libvlc-module.c:1476
+#: src/libvlc-module.c:1480
 msgid "Set playlist bookmark 1"
 msgstr "재생목록 북마크 1 설정"
 
-#: src/libvlc-module.c:1477
+#: src/libvlc-module.c:1481
 msgid "Set playlist bookmark 2"
 msgstr "재생목록 북마크 2 설정"
 
-#: src/libvlc-module.c:1478
+#: src/libvlc-module.c:1482
 msgid "Set playlist bookmark 3"
 msgstr "재생목록 북마크 3 설정"
 
-#: src/libvlc-module.c:1479
+#: src/libvlc-module.c:1483
 msgid "Set playlist bookmark 4"
 msgstr "재생목록 북마크 4 설정"
 
-#: src/libvlc-module.c:1480
+#: src/libvlc-module.c:1484
 msgid "Set playlist bookmark 5"
 msgstr "재생목록 북마크 5 설정"
 
-#: src/libvlc-module.c:1481
+#: src/libvlc-module.c:1485
 msgid "Set playlist bookmark 6"
 msgstr "재생목록 북마크 6 설정"
 
-#: src/libvlc-module.c:1482
+#: src/libvlc-module.c:1486
 msgid "Set playlist bookmark 7"
 msgstr "재생목록 북마크 7 설정"
 
-#: src/libvlc-module.c:1483
+#: src/libvlc-module.c:1487
 msgid "Set playlist bookmark 8"
 msgstr "재생목록 북마크 8 설정"
 
-#: src/libvlc-module.c:1484
+#: src/libvlc-module.c:1488
 msgid "Set playlist bookmark 9"
 msgstr "재생목록 북마크 9 설정"
 
-#: src/libvlc-module.c:1485
+#: src/libvlc-module.c:1489
 msgid "Set playlist bookmark 10"
 msgstr "재생목록 북마크 10 설정"
 
-#: src/libvlc-module.c:1486
+#: src/libvlc-module.c:1490
 msgid "Select the key to set this playlist bookmark."
 msgstr "이 재생목록을 북마크 설정할 키 선택."
 
-#: src/libvlc-module.c:1488
+#: src/libvlc-module.c:1492
 msgid "Playlist bookmark 1"
 msgstr "재생목록 북마크 1"
 
-#: src/libvlc-module.c:1489
+#: src/libvlc-module.c:1493
 msgid "Playlist bookmark 2"
 msgstr "재생목록 북마크 2"
 
-#: src/libvlc-module.c:1490
+#: src/libvlc-module.c:1494
 msgid "Playlist bookmark 3"
 msgstr "재생목록 북마크 3"
 
-#: src/libvlc-module.c:1491
+#: src/libvlc-module.c:1495
 msgid "Playlist bookmark 4"
 msgstr "재생목록 북마크 4"
 
-#: src/libvlc-module.c:1492
+#: src/libvlc-module.c:1496
 msgid "Playlist bookmark 5"
 msgstr "재생목록 북마크 5"
 
-#: src/libvlc-module.c:1493
+#: src/libvlc-module.c:1497
 msgid "Playlist bookmark 6"
 msgstr "재생목록 북마크 6"
 
-#: src/libvlc-module.c:1494
+#: src/libvlc-module.c:1498
 msgid "Playlist bookmark 7"
 msgstr "재생목록 북마크 7"
 
-#: src/libvlc-module.c:1495
+#: src/libvlc-module.c:1499
 msgid "Playlist bookmark 8"
 msgstr "재생목록 북마크 8"
 
-#: src/libvlc-module.c:1496
+#: src/libvlc-module.c:1500
 msgid "Playlist bookmark 9"
 msgstr "재생목록 북마크 9"
 
-#: src/libvlc-module.c:1497
+#: src/libvlc-module.c:1501
 msgid "Playlist bookmark 10"
 msgstr "재생목록 북마크 10"
 
-#: src/libvlc-module.c:1499
+#: src/libvlc-module.c:1503
 msgid "This allows you to define playlist bookmarks."
 msgstr "이것은 재생목록 북마크 정의를 허용합니다."
 
-#: src/libvlc-module.c:1501
+#: src/libvlc-module.c:1505
 msgid "Cycle audio track"
 msgstr "오디오 트랙 순환"
 
-#: src/libvlc-module.c:1502
+#: src/libvlc-module.c:1506
 msgid "Cycle through the available audio tracks(languages)."
 msgstr "사용가능한 오디오 트랙(언어) 순환."
 
-#: src/libvlc-module.c:1503
+#: src/libvlc-module.c:1507
 msgid "Cycle subtitle track"
 msgstr "자막 트랙 순환"
 
-#: src/libvlc-module.c:1504
+#: src/libvlc-module.c:1508
 msgid "Cycle through the available subtitle tracks."
 msgstr "사용가능한 자막 트랙 순환."
 
-#: src/libvlc-module.c:1505
+#: src/libvlc-module.c:1509
 msgid "Cycle source aspect ratio"
 msgstr "원본 가로세로비 순환"
 
-#: src/libvlc-module.c:1506
+#: src/libvlc-module.c:1510
 msgid "Cycle through a predefined list of source aspect ratios."
 msgstr "미리 정의된 소스 가로세로 비 목록 순환."
 
-#: src/libvlc-module.c:1507
+#: src/libvlc-module.c:1511
 msgid "Cycle video crop"
 msgstr "영상 잘라내기 순환"
 
-#: src/libvlc-module.c:1508
+#: src/libvlc-module.c:1512
 msgid "Cycle through a predefined list of crop formats."
 msgstr "미리 정의된 잘라내기 형식 목록 순환."
 
-#: src/libvlc-module.c:1509
+#: src/libvlc-module.c:1513
 msgid "Toggle autoscaling"
 msgstr "자동크기조정 토글"
 
-#: src/libvlc-module.c:1510
+#: src/libvlc-module.c:1514
 msgid "Activate or deactivate autoscaling."
 msgstr "자동크기조정 활성화 또는 비활성화."
 
-#: src/libvlc-module.c:1511
+#: src/libvlc-module.c:1515
 msgid "Increase scale factor"
 msgstr "배율 요소 늘림"
 
-#: src/libvlc-module.c:1512
+#: src/libvlc-module.c:1516
 msgid "Increase scale factor."
 msgstr "배율 요소 늘림."
 
-#: src/libvlc-module.c:1513
+#: src/libvlc-module.c:1517
 msgid "Decrease scale factor"
 msgstr "배율 요소 줄임"
 
-#: src/libvlc-module.c:1514
+#: src/libvlc-module.c:1518
 msgid "Decrease scale factor."
 msgstr "배율 요소 줄임."
 
-#: src/libvlc-module.c:1515
+#: src/libvlc-module.c:1519
 msgid "Cycle deinterlace modes"
 msgstr "순환 디인터레이스 모드"
 
-#: src/libvlc-module.c:1516
+#: src/libvlc-module.c:1520
 msgid "Cycle through deinterlace modes."
 msgstr "디인터레이스 모드 순환."
 
-#: src/libvlc-module.c:1517
+#: src/libvlc-module.c:1521
 msgid "Show controller in fullscreen"
 msgstr ""
 
-#: src/libvlc-module.c:1518
+#: src/libvlc-module.c:1522
 msgid "Show interface"
 msgstr "인터페이스 보기"
 
-#: src/libvlc-module.c:1519
+#: src/libvlc-module.c:1523
 msgid "Raise the interface above all other windows."
 msgstr "인터페이스를 다른 모든 윈도우의 위로 올립니다."
 
-#: src/libvlc-module.c:1520
+#: src/libvlc-module.c:1524
 msgid "Hide interface"
 msgstr "인터페이스 숨기기"
 
-#: src/libvlc-module.c:1521
+#: src/libvlc-module.c:1525
 msgid "Lower the interface below all other windows."
 msgstr "인터페이스를 다른 모든 윈도우의 밑으로 내립니다."
 
-#: src/libvlc-module.c:1522
+#: src/libvlc-module.c:1526
 msgid "Boss key"
 msgstr ""
 
-#: src/libvlc-module.c:1523
+#: src/libvlc-module.c:1527
 msgid "Hide the interface and pause playback."
 msgstr ""
 
-#: src/libvlc-module.c:1524
+#: src/libvlc-module.c:1528
 msgid "Take video snapshot"
 msgstr "비디오 스냅샷 찍기"
 
-#: src/libvlc-module.c:1525
+#: src/libvlc-module.c:1529
 msgid "Takes a video snapshot and writes it to disk."
 msgstr "비디오 스냅샷 찍기 및 디스크에 쓰기."
 
-#: src/libvlc-module.c:1527 modules/gui/macosx/MainMenu.m:268
+#: src/libvlc-module.c:1531 modules/gui/macosx/MainMenu.m:268
 #: modules/gui/qt4/components/controller.hpp:117
 #: modules/gui/qt4/components/controller.hpp:128
 #: modules/stream_out/record.c:60
 msgid "Record"
 msgstr "녹음/녹화"
 
-#: src/libvlc-module.c:1528
+#: src/libvlc-module.c:1532
 msgid "Record access filter start/stop."
 msgstr "기록 접근 필터 시작/중지."
 
-#: src/libvlc-module.c:1530
+#: src/libvlc-module.c:1534
 msgid "Normal/Repeat/Loop"
 msgstr "일반/반복/순환"
 
-#: src/libvlc-module.c:1531
+#: src/libvlc-module.c:1535
 msgid "Toggle Normal/Repeat/Loop playlist modes"
 msgstr "일반/반복/순환 재생목록 모드 토글"
 
-#: src/libvlc-module.c:1534
+#: src/libvlc-module.c:1538
 msgid "Toggle random playlist playback"
 msgstr "임의 재생목록 재생 토글"
 
-#: src/libvlc-module.c:1539 src/libvlc-module.c:1540
+#: src/libvlc-module.c:1543 src/libvlc-module.c:1544
 msgid "Un-Zoom"
 msgstr "축소/확대 복원"
 
-#: src/libvlc-module.c:1542 src/libvlc-module.c:1543
+#: src/libvlc-module.c:1546 src/libvlc-module.c:1547
 msgid "Crop one pixel from the top of the video"
 msgstr "비디오의 상단에서 한 픽셀 잘라내기"
 
-#: src/libvlc-module.c:1544 src/libvlc-module.c:1545
+#: src/libvlc-module.c:1548 src/libvlc-module.c:1549
 msgid "Uncrop one pixel from the top of the video"
 msgstr "비디오의 상단에 한 픽셀 붙여넣기"
 
-#: src/libvlc-module.c:1547 src/libvlc-module.c:1548
+#: src/libvlc-module.c:1551 src/libvlc-module.c:1552
 msgid "Crop one pixel from the left of the video"
 msgstr "비디오의 왼쪽에서 한 픽셀 잘라내기"
 
-#: src/libvlc-module.c:1549 src/libvlc-module.c:1550
+#: src/libvlc-module.c:1553 src/libvlc-module.c:1554
 msgid "Uncrop one pixel from the left of the video"
 msgstr "비디오의 왼쪽에 한 픽셀 붙여넣기"
 
-#: src/libvlc-module.c:1552 src/libvlc-module.c:1553
+#: src/libvlc-module.c:1556 src/libvlc-module.c:1557
 msgid "Crop one pixel from the bottom of the video"
 msgstr "비디오의 하단에서 한 픽셀 잘라내기"
 
-#: src/libvlc-module.c:1554 src/libvlc-module.c:1555
+#: src/libvlc-module.c:1558 src/libvlc-module.c:1559
 msgid "Uncrop one pixel from the bottom of the video"
 msgstr "비디오의 하단에 한 픽셀 붙여넣기"
 
-#: src/libvlc-module.c:1557 src/libvlc-module.c:1558
+#: src/libvlc-module.c:1561 src/libvlc-module.c:1562
 msgid "Crop one pixel from the right of the video"
 msgstr "비디오의 오른쪽에서 한 픽셀 잘라내기"
 
-#: src/libvlc-module.c:1559 src/libvlc-module.c:1560
+#: src/libvlc-module.c:1563 src/libvlc-module.c:1564
 msgid "Uncrop one pixel from the right of the video"
 msgstr "비디오의 오른쪽에 한 픽셀 붙여넣기"
 
-#: src/libvlc-module.c:1562
+#: src/libvlc-module.c:1566
 msgid "Toggle wallpaper mode in video output"
 msgstr "비디오 출력의 배경 모드 토글"
 
-#: src/libvlc-module.c:1564
+#: src/libvlc-module.c:1568
 msgid "Toggle wallpaper mode in video output."
 msgstr ""
 
-#: src/libvlc-module.c:1566 src/libvlc-module.c:1567
+#: src/libvlc-module.c:1570 src/libvlc-module.c:1571
 msgid "Display OSD menu on top of video output"
 msgstr "비디오 출력의 상단에 OSD 메뉴 표시"
 
-#: src/libvlc-module.c:1568
+#: src/libvlc-module.c:1572
 msgid "Do not display OSD menu on video output"
 msgstr "비디오 출력에 OSD 메뉴 표시 안함"
 
-#: src/libvlc-module.c:1569
+#: src/libvlc-module.c:1573
 msgid "Do not display OSD menu on top of video output"
 msgstr "비디오 출력의 상단에 OSD 표시 안함"
 
-#: src/libvlc-module.c:1570
+#: src/libvlc-module.c:1574
 msgid "Highlight widget on the right"
 msgstr "오른쪽에 위젯 강조"
 
-#: src/libvlc-module.c:1572
+#: src/libvlc-module.c:1576
 msgid "Move OSD menu highlight to the widget on the right"
 msgstr "OSD 메뉴 강조를 위젯의 오른쪽으로 이동"
 
-#: src/libvlc-module.c:1573
+#: src/libvlc-module.c:1577
 msgid "Highlight widget on the left"
 msgstr "왼쪽에 위젯 강조"
 
-#: src/libvlc-module.c:1575
+#: src/libvlc-module.c:1579
 msgid "Move OSD menu highlight to the widget on the left"
 msgstr "OSD 메뉴 강조를 위젯의 왼쪽으로 이동"
 
-#: src/libvlc-module.c:1576
+#: src/libvlc-module.c:1580
 msgid "Highlight widget on top"
 msgstr "상단에 위젯 강조"
 
-#: src/libvlc-module.c:1578
+#: src/libvlc-module.c:1582
 msgid "Move OSD menu highlight to the widget on top"
 msgstr "OSD 메뉴 강조를 위젯의 상단으로 이동"
 
-#: src/libvlc-module.c:1579
+#: src/libvlc-module.c:1583
 msgid "Highlight widget below"
 msgstr "하단에 위젯 강조"
 
-#: src/libvlc-module.c:1581
+#: src/libvlc-module.c:1585
 msgid "Move OSD menu highlight to the widget below"
 msgstr "OSD 메뉴 강조를 위젯의 하단으로 이동"
 
-#: src/libvlc-module.c:1582
+#: src/libvlc-module.c:1586
 msgid "Select current widget"
 msgstr "현재 위젯 선택"
 
-#: src/libvlc-module.c:1584
+#: src/libvlc-module.c:1588
 msgid "Selecting current widget performs the associated action."
 msgstr ""
 
-#: src/libvlc-module.c:1586
+#: src/libvlc-module.c:1590
 msgid "Cycle through audio devices"
 msgstr "오디오 장치 순환"
 
-#: src/libvlc-module.c:1587
+#: src/libvlc-module.c:1591
 msgid "Cycle through available audio devices"
 msgstr "사용가능한 오디오 장치 순환"
 
-#: src/libvlc-module.c:1718 src/video_output/vout_intf.c:309
+#: src/libvlc-module.c:1722 src/video_output/vout_intf.c:309
 #: modules/gui/macosx/MainMenu.m:312 modules/gui/macosx/MainMenu.m:378
 #: modules/gui/macosx/MainMenu.m:1219
 #: modules/gui/qt4/components/controller.hpp:116
 msgid "Snapshot"
 msgstr "스냅샷"
 
-#: src/libvlc-module.c:1735
+#: src/libvlc-module.c:1739
 msgid "Window properties"
 msgstr "창 속성"
 
-#: src/libvlc-module.c:1793
+#: src/libvlc-module.c:1797
 msgid "Subpictures"
 msgstr "부화면"
 
-#: src/libvlc-module.c:1801 modules/codec/subsdec.c:179
+#: src/libvlc-module.c:1805 modules/codec/subsdec.c:181
 #: modules/demux/kate_categories.c:41 modules/demux/kate_categories.c:54
 #: modules/demux/subtitle.c:73 share/lua/http/dialogs/create_stream.html:153
 #: modules/gui/qt4/ui/profiles.h:502 modules/gui/qt4/ui/profiles.h:504
 msgid "Subtitles"
 msgstr "자막"
 
-#: src/libvlc-module.c:1818 modules/stream_out/transcode/transcode.c:115
+#: src/libvlc-module.c:1822 modules/stream_out/transcode/transcode.c:115
 msgid "Overlays"
 msgstr "중첩"
 
-#: src/libvlc-module.c:1828
+#: src/libvlc-module.c:1832
 msgid "Track settings"
 msgstr "트랙 설정"
 
-#: src/libvlc-module.c:1860
+#: src/libvlc-module.c:1864
 msgid "Playback control"
 msgstr "재생 제어"
 
-#: src/libvlc-module.c:1888
+#: src/libvlc-module.c:1892
 msgid "Default devices"
 msgstr "기본 장치"
 
-#: src/libvlc-module.c:1897
+#: src/libvlc-module.c:1901
 msgid "Network settings"
 msgstr "네트워크 설정"
 
-#: src/libvlc-module.c:1922
+#: src/libvlc-module.c:1926
 msgid "Socks proxy"
 msgstr "Socks 프록시"
 
-#: src/libvlc-module.c:1931 modules/demux/kate_categories.c:47
+#: src/libvlc-module.c:1935 modules/demux/kate_categories.c:47
 msgid "Metadata"
 msgstr "메타데이터"
 
-#: src/libvlc-module.c:2031
+#: src/libvlc-module.c:2035
 msgid "Decoders"
 msgstr "디코더"
 
-#: src/libvlc-module.c:2038 modules/access/v4l2/video.c:69
+#: src/libvlc-module.c:2042 modules/access/v4l2/video.c:69
 #: modules/gui/macosx/playlistinfo.m:100
 msgid "Input"
 msgstr "입력"
 
-#: src/libvlc-module.c:2074
+#: src/libvlc-module.c:2078
 msgid "VLM"
 msgstr "VLM"
 
-#: src/libvlc-module.c:2104
+#: src/libvlc-module.c:2108
 msgid "CPU"
 msgstr "CPU"
 
-#: src/libvlc-module.c:2123
+#: src/libvlc-module.c:2127
 msgid "Special modules"
 msgstr "특별 모듈"
 
-#: src/libvlc-module.c:2129 modules/gui/qt4/dialogs/plugins.cpp:70
+#: src/libvlc-module.c:2133 modules/gui/qt4/dialogs/plugins.cpp:70
 msgid "Plugins"
 msgstr "플러그인"
 
-#: src/libvlc-module.c:2136
+#: src/libvlc-module.c:2140
 msgid "Performance options"
 msgstr "성능 옵션"
 
-#: src/libvlc-module.c:2265
+#: src/libvlc-module.c:2269
 msgid "Hot keys"
 msgstr "단축키"
 
-#: src/libvlc-module.c:2696
+#: src/libvlc-module.c:2700
 msgid "Jump sizes"
 msgstr "건너뛰기 크기"
 
-#: src/libvlc-module.c:2773
+#: src/libvlc-module.c:2777
 msgid "print help for VLC (can be combined with --advanced and --help-verbose)"
 msgstr "VLC 도움말 인쇄 (--advanced 및 --help-verbose 와 조합할수 있습니다)"
 
-#: src/libvlc-module.c:2776
+#: src/libvlc-module.c:2780
 msgid "Exhaustive help for VLC and its modules"
 msgstr "VLC 상세 도움말 및 모듈"
 
-#: src/libvlc-module.c:2778
+#: src/libvlc-module.c:2782
 msgid ""
 "print help for VLC and all its modules (can be combined with --advanced and "
 "--help-verbose)"
@@ -4471,19 +4471,19 @@ msgstr ""
 "VLC 도움말 및 모든 모듈 인쇄 (--advanced 및 --help-verbose 와 조합할수 있습니"
 "다)"
 
-#: src/libvlc-module.c:2781
+#: src/libvlc-module.c:2785
 msgid "ask for extra verbosity when displaying help"
 msgstr "도움말을 표시할때 추가 상세설명 묻기"
 
-#: src/libvlc-module.c:2783
+#: src/libvlc-module.c:2787
 msgid "print a list of available modules"
 msgstr "이용가능한 모듈 목록 인쇄"
 
-#: src/libvlc-module.c:2785
+#: src/libvlc-module.c:2789
 msgid "print a list of available modules with extra detail"
 msgstr "이용가능한 모듈의 목록을 상세 정보와 함께 출력"
 
-#: src/libvlc-module.c:2787
+#: src/libvlc-module.c:2791
 msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose). Prefix the module name with = for strict matches."
@@ -4491,27 +4491,27 @@ msgstr ""
 "지정한 모듈의 도움말 인쇄 (--advanced 및 --help-verbose 를 조합할수 있음). "
 "꼭 맞게하려면 모듈의 접두사를 = 로 하세요."
 
-#: src/libvlc-module.c:2791
+#: src/libvlc-module.c:2795
 msgid "no configuration option will be loaded nor saved to config file"
 msgstr "설정 옵션이 읽어지지 않았거나 설정 파일에 저장되지 않았습니다"
 
-#: src/libvlc-module.c:2793
+#: src/libvlc-module.c:2797
 msgid "reset the current config to the default values"
 msgstr "현재의 설정값을 기본값으로 초기화"
 
-#: src/libvlc-module.c:2795
+#: src/libvlc-module.c:2799
 msgid "use alternate config file"
 msgstr "다른 설정 파일 사용"
 
-#: src/libvlc-module.c:2797
+#: src/libvlc-module.c:2801
 msgid "resets the current plugins cache"
 msgstr "현재 플러그인 캐시 초기화"
 
-#: src/libvlc-module.c:2799
+#: src/libvlc-module.c:2803
 msgid "print version information"
 msgstr "버전 정보 인쇄"
 
-#: src/libvlc-module.c:2837
+#: src/libvlc-module.c:2841
 msgid "main program"
 msgstr "메인 프로그램"
 
@@ -9535,7 +9535,7 @@ msgstr "5.1"
 msgid "Pulseaudio audio output"
 msgstr "Pulseaudio 오디오 출력"
 
-#: modules/audio_output/pulse.c:946
+#: modules/audio_output/pulse.c:957
 msgid "Audio device"
 msgstr ""
 
@@ -10060,7 +10060,7 @@ msgid ""
 "Do not contact the VideoLAN project about this issue.\n"
 msgstr ""
 
-#: modules/codec/avcodec/encoder.c:770 modules/codec/avcodec/encoder.c:779
+#: modules/codec/avcodec/encoder.c:773 modules/codec/avcodec/encoder.c:782
 msgid "VLC could not open the encoder."
 msgstr "VLC 가 인코더를 열수 없습니다."
 
@@ -10445,7 +10445,7 @@ msgid ""
 "(Input / Codecs > Audio codecs > FluidSynth).\n"
 msgstr ""
 
-#: modules/codec/kate.c:194 modules/codec/subsdec.c:171
+#: modules/codec/kate.c:194 modules/codec/subsdec.c:173
 msgid "Formatted Subtitles"
 msgstr "형식화된 자막"
 
@@ -11174,210 +11174,210 @@ msgstr ""
 #. The character encoding name in parenthesis corresponds to that used for
 #. the GetACP translation. "Windows-1252" applies to Western European
 #. languages using the Latin alphabet.
-#: modules/codec/subsdec.c:95
+#: modules/codec/subsdec.c:97
 msgid "Default (Windows-1252)"
 msgstr ""
 
-#: modules/codec/subsdec.c:96
+#: modules/codec/subsdec.c:98
 msgid "System codeset"
 msgstr ""
 
-#: modules/codec/subsdec.c:97
+#: modules/codec/subsdec.c:99
 msgid "Universal (UTF-8)"
 msgstr "Universal (UTF-8)"
 
-#: modules/codec/subsdec.c:98
+#: modules/codec/subsdec.c:100
 msgid "Universal (UTF-16)"
 msgstr "Universal (UTF-16)"
 
-#: modules/codec/subsdec.c:99
+#: modules/codec/subsdec.c:101
 msgid "Universal (big endian UTF-16)"
 msgstr "Universal (빅 엔디안 UTF-16)"
 
-#: modules/codec/subsdec.c:100
+#: modules/codec/subsdec.c:102
 msgid "Universal (little endian UTF-16)"
 msgstr "Universal (리틀 엔디안 UTF-16)"
 
-#: modules/codec/subsdec.c:101
+#: modules/codec/subsdec.c:103
 msgid "Universal, Chinese (GB18030)"
 msgstr "Universal, 중국어 (GB18030)"
 
-#: modules/codec/subsdec.c:105
+#: modules/codec/subsdec.c:107
 msgid "Western European (Latin-9)"
 msgstr "서유럽어 (Latin-9)"
 
-#: modules/codec/subsdec.c:106
+#: modules/codec/subsdec.c:108
 msgid "Western European (Windows-1252)"
 msgstr "서유럽어 (Windows-1252)"
 
-#: modules/codec/subsdec.c:107
+#: modules/codec/subsdec.c:109
 msgid "Western European (IBM 00850)"
 msgstr ""
 
-#: modules/codec/subsdec.c:109
+#: modules/codec/subsdec.c:111
 msgid "Eastern European (Latin-2)"
 msgstr "동유럽어 (Latin-2)"
 
-#: modules/codec/subsdec.c:110
+#: modules/codec/subsdec.c:112
 msgid "Eastern European (Windows-1250)"
 msgstr "동유럽어 (Windows-1250)"
 
-#: modules/codec/subsdec.c:112
+#: modules/codec/subsdec.c:114
 msgid "Esperanto (Latin-3)"
 msgstr "에스페란토어 (Latin-3)"
 
-#: modules/codec/subsdec.c:114
+#: modules/codec/subsdec.c:116
 msgid "Nordic (Latin-6)"
 msgstr "Nordic (Latin-6)"
 
-#: modules/codec/subsdec.c:116
+#: modules/codec/subsdec.c:118
 msgid "Cyrillic (Windows-1251)"
 msgstr "키릴어 (Windows-1251)"
 
-#: modules/codec/subsdec.c:117
+#: modules/codec/subsdec.c:119
 msgid "Russian (KOI8-R)"
 msgstr "러시아어 (KOI8-R)"
 
-#: modules/codec/subsdec.c:118
+#: modules/codec/subsdec.c:120
 msgid "Ukrainian (KOI8-U)"
 msgstr "우크라이나 (KOI8-U)"
 
-#: modules/codec/subsdec.c:120
+#: modules/codec/subsdec.c:122
 msgid "Arabic (ISO 8859-6)"
 msgstr "아라비아어 (ISO 8859-6)"
 
-#: modules/codec/subsdec.c:121
+#: modules/codec/subsdec.c:123
 msgid "Arabic (Windows-1256)"
 msgstr "아라비아어 (Windows-1256)"
 
-#: modules/codec/subsdec.c:123
+#: modules/codec/subsdec.c:125
 msgid "Greek (ISO 8859-7)"
 msgstr "그리스어 (ISO 8859-7)"
 
-#: modules/codec/subsdec.c:124
+#: modules/codec/subsdec.c:126
 msgid "Greek (Windows-1253)"
 msgstr "그리스어 (Windows-1253)"
 
-#: modules/codec/subsdec.c:126
+#: modules/codec/subsdec.c:128
 msgid "Hebrew (ISO 8859-8)"
 msgstr "헤브루어 (ISO 8859-8)"
 
-#: modules/codec/subsdec.c:127
+#: modules/codec/subsdec.c:129
 msgid "Hebrew (Windows-1255)"
 msgstr "헤브루어 (Windows-1255)"
 
-#: modules/codec/subsdec.c:129
+#: modules/codec/subsdec.c:131
 msgid "Turkish (ISO 8859-9)"
 msgstr "터키어 (ISO 8859-9)"
 
-#: modules/codec/subsdec.c:130
+#: modules/codec/subsdec.c:132
 msgid "Turkish (Windows-1254)"
 msgstr "터키어 (Windows-1254)"
 
-#: modules/codec/subsdec.c:133
+#: modules/codec/subsdec.c:135
 msgid "Thai (TIS 620-2533/ISO 8859-11)"
 msgstr "태국어 (TIS 620-2533/ISO 8859-11)"
 
-#: modules/codec/subsdec.c:134
+#: modules/codec/subsdec.c:136
 msgid "Thai (Windows-874)"
 msgstr "태국어 (Windows-874)"
 
-#: modules/codec/subsdec.c:136
+#: modules/codec/subsdec.c:138
 msgid "Baltic (Latin-7)"
 msgstr "발트어 (Latin-7)"
 
-#: modules/codec/subsdec.c:137
+#: modules/codec/subsdec.c:139
 msgid "Baltic (Windows-1257)"
 msgstr "발트어 (Windows-1257)"
 
-#: modules/codec/subsdec.c:140
+#: modules/codec/subsdec.c:142
 msgid "Celtic (Latin-8)"
 msgstr "설틱어 (Latin-8)"
 
-#: modules/codec/subsdec.c:143
+#: modules/codec/subsdec.c:145
 msgid "South-Eastern European (Latin-10)"
 msgstr "남동유럽어 (Latin-10)"
 
-#: modules/codec/subsdec.c:145
+#: modules/codec/subsdec.c:147
 msgid "Simplified Chinese (ISO-2022-CN-EXT)"
 msgstr "중국어 간체 (ISO-2022-CN-EXT)"
 
-#: modules/codec/subsdec.c:146
+#: modules/codec/subsdec.c:148
 msgid "Simplified Chinese Unix (EUC-CN)"
 msgstr "Unix 중국어 간체 (EUC-CN)"
 
-#: modules/codec/subsdec.c:147
+#: modules/codec/subsdec.c:149
 msgid "Japanese (7-bits JIS/ISO-2022-JP-2)"
 msgstr "일본어 (7-bits JIS/ISO-2022-JP-2)"
 
-#: modules/codec/subsdec.c:148
+#: modules/codec/subsdec.c:150
 msgid "Japanese Unix (EUC-JP)"
 msgstr "일본어 Unix (EUC-JP)"
 
-#: modules/codec/subsdec.c:149
+#: modules/codec/subsdec.c:151
 msgid "Japanese (Shift JIS)"
 msgstr "일본어 (Shift JIS)"
 
-#: modules/codec/subsdec.c:150
+#: modules/codec/subsdec.c:152
 msgid "Korean (EUC-KR/CP949)"
 msgstr "한국어 (EUC-KR/CP949)"
 
-#: modules/codec/subsdec.c:151
+#: modules/codec/subsdec.c:153
 msgid "Korean (ISO-2022-KR)"
 msgstr "한국어 (ISO-2022-KR)"
 
-#: modules/codec/subsdec.c:152
+#: modules/codec/subsdec.c:154
 msgid "Traditional Chinese (Big5)"
 msgstr "전통 중국어 (Big5)"
 
-#: modules/codec/subsdec.c:153
+#: modules/codec/subsdec.c:155
 msgid "Traditional Chinese Unix (EUC-TW)"
 msgstr "전통 중국어 Unix (EUC-TW)"
 
-#: modules/codec/subsdec.c:154
+#: modules/codec/subsdec.c:156
 msgid "Hong-Kong Supplementary (HKSCS)"
 msgstr "광동어 (HKSCS)"
 
-#: modules/codec/subsdec.c:156
+#: modules/codec/subsdec.c:158
 msgid "Vietnamese (VISCII)"
 msgstr "베트남어 (VISCII)"
 
-#: modules/codec/subsdec.c:157
+#: modules/codec/subsdec.c:159
 msgid "Vietnamese (Windows-1258)"
 msgstr "베트남어 (Windows-1258)"
 
-#: modules/codec/subsdec.c:164
+#: modules/codec/subsdec.c:166
 msgid "Subtitles text encoding"
 msgstr "자막 텍스트 인코딩"
 
-#: modules/codec/subsdec.c:165
+#: modules/codec/subsdec.c:167
 msgid "Set the encoding used in text subtitles"
 msgstr "텍스트 자막에 사용되는 인코딩 설정"
 
-#: modules/codec/subsdec.c:166
+#: modules/codec/subsdec.c:168
 msgid "Subtitles justification"
 msgstr "자막 자리맞춤"
 
-#: modules/codec/subsdec.c:167
+#: modules/codec/subsdec.c:169
 msgid "Set the justification of subtitles"
 msgstr "자막의 자리맞춤 설정"
 
-#: modules/codec/subsdec.c:168
+#: modules/codec/subsdec.c:170
 msgid "UTF-8 subtitles autodetection"
 msgstr "UTF-8 자막 자동 인식"
 
-#: modules/codec/subsdec.c:169
+#: modules/codec/subsdec.c:171
 msgid ""
 "This enables automatic detection of UTF-8 encoding within subtitles files."
 msgstr "이것은 자막 파일에서 UTF-8 인코딩 자동 감지를 사용하게함."
 
-#: modules/codec/subsdec.c:172
+#: modules/codec/subsdec.c:174
 msgid ""
 "Some subtitle formats allow for text formatting. VLC partly implements this, "
 "but you can choose to disable all formatting."
 msgstr ""
 
-#: modules/codec/subsdec.c:180
+#: modules/codec/subsdec.c:182
 msgid "Text subtitles decoder"
 msgstr "텍스트 자막 디코더"
 
@@ -11391,7 +11391,7 @@ msgstr "텍스트 자막 디코더"
 #.
 #. This MUST be a valid iconv character set. If unsure, please refer
 #. the VideoLAN translators mailing list.
-#: modules/codec/subsdec.c:292 modules/demux/avi/avi.c:96
+#: modules/codec/subsdec.c:294 modules/demux/avi/avi.c:96
 msgctxt "GetACP"
 msgid "CP1252"
 msgstr "CP949"
@@ -12374,7 +12374,7 @@ msgstr "VBI & 문자다중방송"
 msgid "DBus"
 msgstr "DBus"
 
-#: modules/control/dbus/dbus.c:141
+#: modules/control/dbus/dbus.c:140
 msgid "D-Bus control interface"
 msgstr "D-Bus 제어 인터페이스"
 
@@ -12453,7 +12453,7 @@ msgstr "음량 제어"
 msgid "Position Control"
 msgstr "위치 제어"
 
-#: modules/control/hotkeys.c:97 modules/gui/macosx/intf.m:2041
+#: modules/control/hotkeys.c:97 modules/gui/macosx/intf.m:2062
 msgid "Ignore"
 msgstr "무시"
 
@@ -13539,11 +13539,11 @@ msgstr "HTTP 터널 포트"
 msgid "Port to use for tunneling the RTSP/RTP over HTTP."
 msgstr "HTTP 을 통한 RTSP/RTP 터널링에 사용할 포트."
 
-#: modules/demux/live555.cpp:635
+#: modules/demux/live555.cpp:632
 msgid "RTSP authentication"
 msgstr "RTSP 인증"
 
-#: modules/demux/live555.cpp:636
+#: modules/demux/live555.cpp:633
 msgid "Please enter a valid login name and a password."
 msgstr "정확한 로그인 이름 및 비밀번호를 입력하세요."
 
@@ -15069,33 +15069,33 @@ msgstr ""
 msgid "(no item is being played)"
 msgstr "(재생 중인 항목이 없음)"
 
-#: modules/gui/macosx/intf.m:698 modules/gui/qt4/dialogs/messages.cpp:75
+#: modules/gui/macosx/intf.m:701 modules/gui/qt4/dialogs/messages.cpp:75
 #: modules/gui/qt4/ui/messages_panel.h:141
 #: modules/gui/qt4/ui/messages_panel.h:146
 msgid "Messages"
 msgstr "메시지"
 
-#: modules/gui/macosx/intf.m:699
+#: modules/gui/macosx/intf.m:702
 msgid "Open CrashLog..."
 msgstr "충돌 로그 열기..."
 
-#: modules/gui/macosx/intf.m:700
+#: modules/gui/macosx/intf.m:703
 msgid "Save this Log..."
 msgstr "이 로그 저장..."
 
-#: modules/gui/macosx/intf.m:703
+#: modules/gui/macosx/intf.m:706
 msgid "Send"
 msgstr "보내기"
 
-#: modules/gui/macosx/intf.m:704
+#: modules/gui/macosx/intf.m:707
 msgid "Don't Send"
 msgstr "보내지 않기"
 
-#: modules/gui/macosx/intf.m:705 modules/gui/macosx/intf.m:706
+#: modules/gui/macosx/intf.m:708 modules/gui/macosx/intf.m:709
 msgid "VLC crashed previously"
 msgstr "이전에 VLC 가 멈추었습니다"
 
-#: modules/gui/macosx/intf.m:707
+#: modules/gui/macosx/intf.m:710
 msgid ""
 "Do you want to send details on the crash to VLC's development team?\n"
 "\n"
@@ -15108,42 +15108,42 @@ msgstr ""
 "원한다면, VLC 멈춤전에 무엇을 했는지와 같이 다른 도움이 되는 정보를 몇 줄 입"
 "력할수 있습니다: 샘플 파일의 다운로드 링크, 네트워크 스트림의 URL, ..."
 
-#: modules/gui/macosx/intf.m:708
+#: modules/gui/macosx/intf.m:711
 msgid "I agree to be possibly contacted about this bugreport."
 msgstr ""
 
-#: modules/gui/macosx/intf.m:709
+#: modules/gui/macosx/intf.m:712
 msgid ""
 "Only your default E-Mail address will be submitted, including no further "
 "information."
 msgstr "어떤 다른 정보도 포함하지 않고 기본 이메일 주소만 보냅니다."
 
-#: modules/gui/macosx/intf.m:2000
+#: modules/gui/macosx/intf.m:2021
 msgid "No CrashLog found"
 msgstr "충돌 로그를 찾을수 없음"
 
-#: modules/gui/macosx/intf.m:2000 modules/gui/macosx/prefs.m:230
+#: modules/gui/macosx/intf.m:2021 modules/gui/macosx/prefs.m:230
 #: modules/gui/macosx/simple_prefs.m:758
 msgid "Continue"
 msgstr "계속"
 
-#: modules/gui/macosx/intf.m:2000
+#: modules/gui/macosx/intf.m:2021
 msgid "Couldn't find any trace of a previous crash."
 msgstr ""
 
-#: modules/gui/macosx/intf.m:2039
+#: modules/gui/macosx/intf.m:2060
 msgid "Remove old preferences?"
 msgstr "오래된 선택사항을 제거 하시겠습니까?"
 
-#: modules/gui/macosx/intf.m:2040
+#: modules/gui/macosx/intf.m:2061
 msgid "We just found an older version of VLC's preferences files."
 msgstr "지금 이전 버전의 VLC 선택사항 파일을 찾았습니다."
 
-#: modules/gui/macosx/intf.m:2041
+#: modules/gui/macosx/intf.m:2062
 msgid "Move To Trash and Relaunch VLC"
 msgstr "휴지통으로 이동 및 VLC 재실행"
 
-#: modules/gui/macosx/intf.m:2156
+#: modules/gui/macosx/intf.m:2177
 #, c-format
 msgid "VLC Debug Log (%s).rtfd"
 msgstr "VLC 디버그 로그 (%s).rtfd"
@@ -16110,7 +16110,7 @@ msgstr "HTML 재생목록"
 msgid "Save Playlist"
 msgstr "재생목록 저장"
 
-#: modules/gui/macosx/playlist.m:1188
+#: modules/gui/macosx/playlist.m:1190
 msgid "Meta-information"
 msgstr "메타-정보"
 
@@ -25817,8 +25817,9 @@ msgid "Thanks"
 msgstr "감사"
 
 #: modules/gui/qt4/ui/about.h:188
+#, fuzzy
 msgid "Licence"
-msgstr ""
+msgstr "라이센스"
 
 #: modules/gui/qt4/ui/equalizer.h:132 modules/gui/qt4/ui/open_disk.h:297
 #: modules/gui/qt4/ui/open_net.h:91 modules/gui/qt4/ui/profiles.h:460
@@ -25834,16 +25835,18 @@ msgid "Preset"
 msgstr "프리셋"
 
 #: modules/gui/qt4/ui/messages_panel.h:142
+#, fuzzy
 msgid "Verbosity:"
-msgstr ""
+msgstr "상세설명 (0,1,2)"
 
 #: modules/gui/qt4/ui/messages_panel.h:145
 msgid "&Save as..."
 msgstr "다른 이름으로 저장(&S)..."
 
 #: modules/gui/qt4/ui/messages_panel.h:147
+#, fuzzy
 msgid "Modules Tree"
-msgstr ""
+msgstr "모듈(_M)..."
 
 #: modules/gui/qt4/ui/open.h:243
 #: modules/gui/qt4/ui/podcast_configuration.h:101
@@ -25931,12 +25934,14 @@ msgid "SVCD/VCD"
 msgstr "SVCD/VCD"
 
 #: modules/gui/qt4/ui/open_disk.h:304
+#, fuzzy
 msgid "Disable Disc Menus"
-msgstr ""
+msgstr "화면 보호기 끄기"
 
 #: modules/gui/qt4/ui/open_disk.h:306
+#, fuzzy
 msgid "No disc menus"
-msgstr ""
+msgstr "DVD 메뉴"
 
 #: modules/gui/qt4/ui/open_disk.h:307
 msgid "Disc device"
@@ -25983,8 +25988,9 @@ msgid "Network Protocol"
 msgstr "네트워크 프로토콜"
 
 #: modules/gui/qt4/ui/open_net.h:93
+#, fuzzy
 msgid "Please enter a network URL:"
-msgstr ""
+msgstr "새 프로파일 이름을 입력하세요."
 
 #: modules/gui/qt4/ui/open_net.h:94
 msgid ""
@@ -26095,16 +26101,18 @@ msgid "Keep original audio track"
 msgstr "원본 오디오 트랙 유지"
 
 #: modules/gui/qt4/ui/profiles.h:500
+#, fuzzy
 msgid "Sample Rate"
-msgstr ""
+msgstr "샘플 레이트"
 
 #: modules/gui/qt4/ui/profiles.h:501
 msgid "Audio codec"
 msgstr "음성 코덱"
 
 #: modules/gui/qt4/ui/profiles.h:503
+#, fuzzy
 msgid "Overlay subtitles on the video"
-msgstr ""
+msgstr "중첩/자막"
 
 #: modules/gui/qt4/ui/sout.h:329
 msgid "Destinations"
@@ -26129,8 +26137,9 @@ msgid "Activate Transcoding"
 msgstr "트랜스코딩 활성화"
 
 #: modules/gui/qt4/ui/sout.h:339
+#, fuzzy
 msgid "Destination Setup"
-msgstr ""
+msgstr "대상"
 
 #: modules/gui/qt4/ui/sout.h:340
 msgid "Miscellaneous Options"
@@ -26149,8 +26158,9 @@ msgid "Generated stream output string"
 msgstr "생성된 스트림 출력 문자열"
 
 #: modules/gui/qt4/ui/sout.h:347
+#, fuzzy
 msgid "Option Setup"
-msgstr ""
+msgstr "옵션"
 
 #: modules/gui/qt4/ui/sprefs_audio.h:434
 msgid " %"
@@ -26161,20 +26171,23 @@ msgid "Output module:"
 msgstr "출력 모듈:"
 
 #: modules/gui/qt4/ui/sprefs_audio.h:441
+#, fuzzy
 msgid "Visualization:"
-msgstr ""
+msgstr "시각화"
 
 #: modules/gui/qt4/ui/sprefs_audio.h:442
+#, fuzzy
 msgid "Enable Time-Stretching audio"
-msgstr ""
+msgstr "오디오 사용"
 
 #: modules/gui/qt4/ui/sprefs_audio.h:443
 msgid "Dolby Surround:"
 msgstr "돌비 서라운드:"
 
 #: modules/gui/qt4/ui/sprefs_audio.h:444
+#, fuzzy
 msgid "Replay gain mode:"
-msgstr ""
+msgstr "리플레이 게인 모드"
 
 #: modules/gui/qt4/ui/sprefs_audio.h:445
 msgid "Headphone surround effect"
@@ -26193,12 +26206,14 @@ msgid "Password:"
 msgstr "비밀번호:"
 
 #: modules/gui/qt4/ui/sprefs_audio.h:450
+#, fuzzy
 msgid "Username:"
-msgstr ""
+msgstr "사용자 이름"
 
 #: modules/gui/qt4/ui/sprefs_audio.h:451
+#, fuzzy
 msgid "Submit played tracks stats to Last.fm"
-msgstr ""
+msgstr "재생 중인 곡을 last.fm에 전송"
 
 #: modules/gui/qt4/ui/sprefs_input.h:335
 msgid "Codecs"
@@ -26217,24 +26232,29 @@ msgid "Use GPU accelerated decoding"
 msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_input.h:339
+#, fuzzy
 msgid "Skip H.264 in-loop deblocking filter"
-msgstr ""
+msgstr "순환 필터 건너뛰기"
 
 #: modules/gui/qt4/ui/sprefs_input.h:340
+#, fuzzy
 msgid "Video quality post-processing level"
-msgstr ""
+msgstr "비디오 후처리 필터"
 
 #: modules/gui/qt4/ui/sprefs_input.h:341
+#, fuzzy
 msgid "Optical drive"
-msgstr ""
+msgstr "광 SDI"
 
 #: modules/gui/qt4/ui/sprefs_input.h:342
+#, fuzzy
 msgid "Default optical device"
-msgstr ""
+msgstr "기본 장치"
 
 #: modules/gui/qt4/ui/sprefs_input.h:346
+#, fuzzy
 msgid "Damaged or incomplete AVI file"
-msgstr ""
+msgstr "이미지 속성 필터"
 
 #: modules/gui/qt4/ui/sprefs_input.h:349
 msgid "HTTP proxy URL"
@@ -26245,16 +26265,19 @@ msgid "HTTP (default)"
 msgstr "HTTP (기본)"
 
 #: modules/gui/qt4/ui/sprefs_input.h:351
+#, fuzzy
 msgid "RTP over RTSP (TCP)"
-msgstr ""
+msgstr "RTSP (TCP) 을 통한 RTP 사용"
 
 #: modules/gui/qt4/ui/sprefs_input.h:352
+#, fuzzy
 msgid "Live555 stream transport"
-msgstr ""
+msgstr "파일 스트림 출력"
 
 #: modules/gui/qt4/ui/sprefs_input.h:353
+#, fuzzy
 msgid "Default caching policy"
-msgstr ""
+msgstr "기본 캐싱 수준"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:504
 msgid "Instances"
@@ -26281,16 +26304,19 @@ msgid "Save recently played items"
 msgstr "최근 재생된 항목 저장"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:515
+#, fuzzy
 msgid "Album art download policy:"
-msgstr ""
+msgstr "앨범 아트 다운로드 정책"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:516
+#, fuzzy
 msgid "Activate updates notifier"
-msgstr ""
+msgstr "업데이트 가능 알림 활성화"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:518
+#, fuzzy
 msgid "Menus language:"
-msgstr ""
+msgstr "음성 언어"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:521
 msgid "Pause on the last frame of a video"
@@ -26301,72 +26327,83 @@ msgid "File extensions association"
 msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_interface.h:523
+#, fuzzy
 msgid "Set up associations..."
-msgstr ""
+msgstr "설정..."
 
 #: modules/gui/qt4/ui/sprefs_interface.h:524
+#, fuzzy
 msgid "Configure Media Library"
-msgstr ""
+msgstr "미디어 라이브러리 불러오기"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:525
 msgid "Look and feel"
 msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_interface.h:526
+#, fuzzy
 msgid "Use custom skin"
-msgstr ""
+msgstr "스킨 선택"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:528
 msgid "This is VLC's default interface, with a native look and feel."
 msgstr "기본 모양 및 느낌을 제공하는 VLC의 기본 인터페이스입니다."
 
 #: modules/gui/qt4/ui/sprefs_interface.h:530
+#, fuzzy
 msgid "Use native style"
-msgstr ""
+msgstr "자막 파일 이용"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:531
+#, fuzzy
 msgid "Show controls in full screen mode"
-msgstr ""
+msgstr "전체화면 모드에서 제어기 보이기"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:532
+#, fuzzy
 msgid "Start in minimal view mode"
-msgstr ""
+msgstr "전체화면 모드로 비디오 시작"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:533
 msgid "Pause playback when minimized"
 msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_interface.h:534
+#, fuzzy
 msgid "Integrate video in interface"
-msgstr ""
+msgstr "메인 인터페이스에 영상 출력을 포함시킵니다."
 
 #: modules/gui/qt4/ui/sprefs_interface.h:535
 msgid "Resize interface to video size"
 msgstr "비디오 크기에 인터페이스 크기조정"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:536
+#, fuzzy
 msgid "Show systray icon"
-msgstr ""
+msgstr "시스템 트레이 아이콘"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:537
 msgid "Systray popup when minimized"
 msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_interface.h:538
+#, fuzzy
 msgid "Force window style:"
-msgstr ""
+msgstr "다음 위젯 형식:"
 
 #: modules/gui/qt4/ui/sprefs_interface.h:539
 msgid "Skin resource file:"
 msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_subtitles.h:272
+#, fuzzy
 msgid "Enable On Screen Display (OSD)"
-msgstr ""
+msgstr "화면표시메뉴"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.h:273
+#, fuzzy
 msgid "Show media title on video start"
-msgstr ""
+msgstr "비디오에 미디어 제목 보이기"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.h:275
 msgid "Subtitles Language"
@@ -26381,8 +26418,9 @@ msgid "Default encoding"
 msgstr "기본 인코딩"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.h:278
+#, fuzzy
 msgid "Subtitles effects"
-msgstr ""
+msgstr "자막 코덱"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.h:281
 msgid "Font color"
@@ -26393,8 +26431,9 @@ msgid "Add a shadow"
 msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_subtitles.h:285
+#, fuzzy
 msgid "Add a background"
-msgstr ""
+msgstr "배경"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.h:287
 #: modules/gui/qt4/ui/video_effects.h:1312
@@ -26425,8 +26464,9 @@ msgid "KVA"
 msgstr "KVA"
 
 #: modules/gui/qt4/ui/sprefs_video.h:349
+#, fuzzy
 msgid "Deinterlacing"
-msgstr ""
+msgstr "디인터레이스"
 
 #: modules/gui/qt4/ui/sprefs_video.h:350
 msgid "Force Aspect Ratio"
@@ -26501,8 +26541,9 @@ msgid "Do you want to download it ?"
 msgstr ""
 
 #: modules/gui/qt4/ui/video_effects.h:1310
+#, fuzzy
 msgid "Essential"
-msgstr ""
+msgstr "spatial"
 
 #: modules/gui/qt4/ui/video_effects.h:1324
 #: modules/gui/qt4/ui/video_effects.h:1333
@@ -26510,12 +26551,14 @@ msgid ">HHHHHH;#"
 msgstr ">HHHHHH;#"
 
 #: modules/gui/qt4/ui/video_effects.h:1325
+#, fuzzy
 msgid "Negate colors"
-msgstr ""
+msgstr "색상 반전"
 
 #: modules/gui/qt4/ui/video_effects.h:1338
+#, fuzzy
 msgid "Colors"
-msgstr ""
+msgstr "색상"
 
 #: modules/gui/qt4/ui/video_effects.h:1339
 msgid "Interactive Zoom"
@@ -26555,28 +26598,33 @@ msgid "Edge weightning"
 msgstr ""
 
 #: modules/gui/qt4/ui/video_effects.h:1374
+#, fuzzy
 msgid "Output Color Filtermode"
-msgstr ""
+msgstr "출력 파일"
 
 #: modules/gui/qt4/ui/video_effects.h:1375
+#, fuzzy
 msgid "Brightness (%)"
-msgstr ""
+msgstr "밝기"
 
 #: modules/gui/qt4/ui/video_effects.h:1376
+#, fuzzy
 msgid "Darkness limit"
-msgstr ""
+msgstr "어두움 제한"
 
 #: modules/gui/qt4/ui/video_effects.h:1377
 msgid "Mark analyzed Pixels"
 msgstr ""
 
 #: modules/gui/qt4/ui/video_effects.h:1379
+#, fuzzy
 msgid "Filter threshold (%)"
-msgstr ""
+msgstr "필터 한계값"
 
 #: modules/gui/qt4/ui/video_effects.h:1380
+#, fuzzy
 msgid "Filter smoothness (%)"
-msgstr ""
+msgstr "필터 부드러움 (%)"
 
 #: modules/gui/qt4/ui/video_effects.h:1384
 msgid "Motion detect"
@@ -26587,16 +26635,19 @@ msgid "Anti-Flickering"
 msgstr ""
 
 #: modules/gui/qt4/ui/video_effects.h:1387
+#, fuzzy
 msgid "Soften"
-msgstr ""
+msgstr "소프트"
 
 #: modules/gui/qt4/ui/video_effects.h:1391
+#, fuzzy
 msgid "Spatial blur"
-msgstr ""
+msgstr "공간화"
 
 #: modules/gui/qt4/ui/video_effects.h:1393
+#, fuzzy
 msgid "Mirror"
-msgstr ""
+msgstr "에러"
 
 #: modules/gui/qt4/ui/vlm.h:287
 msgid "VLM configurator"
@@ -26650,16 +26701,6 @@ msgstr "순환"
 msgid "Media Manager List"
 msgstr "미디어 관리자 목록"
 
-#~ msgid "Error when sending the Crash Report"
-#~ msgstr "멈춤 보고 전송시 오류"
-
-#, fuzzy
-#~ msgid "Use systems codecs if available, for WMV codecs"
-#~ msgstr "가능하면 시스템 코덱 사용 (품질이 좋아짐)"
-
-#~ msgid "Dump"
-#~ msgstr "덤프"
-
 #~ msgid "Probe DVB card for capabilities"
 #~ msgstr "DVB 카드 성능 탐지"
 
@@ -26670,8 +26711,30 @@ msgstr "미디어 관리자 목록"
 #~ "일부 DVB 카드는 성능 탐지가 되지 않는것 같습니다, 만약 어떤 문제점을 경험"
 #~ "한다면 기능을 사용안함으로 할수 있습니다."
 
+#, fuzzy
+#~ msgid "Satellite scanning config"
+#~ msgstr "위성 고도"
+
+#, fuzzy
+#~ msgid "DVB"
+#~ msgstr "DV"
+
 #~ msgid "DVB input with v4l2 support"
 #~ msgstr "v4l2 지원 DVB 입력"
+
+#, fuzzy
+#~ msgid "Opus audio decoder"
+#~ msgstr "Speex 오디오 디코더"
+
+#~ msgid "Error when sending the Crash Report"
+#~ msgstr "멈춤 보고 전송시 오류"
+
+#, fuzzy
+#~ msgid "Use systems codecs if available, for WMV codecs"
+#~ msgstr "가능하면 시스템 코덱 사용 (품질이 좋아짐)"
+
+#~ msgid "Dump"
+#~ msgstr "덤프"
 
 #~ msgid "dbus"
 #~ msgstr "dbus"
@@ -28548,9 +28611,6 @@ msgstr "미디어 관리자 목록"
 #~ msgid "Choose the program"
 #~ msgstr "프로그램의 선택"
 
-#~ msgid "_Modules..."
-#~ msgstr "모듈(_M)..."
-
 #~ msgid "Open the module manager"
 #~ msgstr "모듈·매니저"
 
@@ -29073,14 +29133,6 @@ msgstr "미디어 관리자 목록"
 #, fuzzy
 #~ msgid "Session groupname"
 #~ msgstr "세션 이름"
-
-#, fuzzy
-#~ msgid "Satellite scanning config"
-#~ msgstr "위성 고도"
-
-#, fuzzy
-#~ msgid "DVB"
-#~ msgstr "DV"
 
 #, fuzzy
 #~ msgid "Default Volume"
@@ -30039,10 +30091,6 @@ msgstr "미디어 관리자 목록"
 #~ msgstr "지우기"
 
 #, fuzzy
-#~ msgid "Verbosity Level"
-#~ msgstr "상세설명 (0,1,2)"
-
-#, fuzzy
 #~ msgid "Message filter"
 #~ msgstr "장면 필터"
 
@@ -30242,10 +30290,6 @@ msgstr "미디어 관리자 목록"
 #, fuzzy
 #~ msgid "Default port (server mode)"
 #~ msgstr "VoD 서버 모듈"
-
-#, fuzzy
-#~ msgid "Embed video in interface"
-#~ msgstr "메인 인터페이스에 영상 출력을 포함시킵니다."
 
 #, fuzzy
 #~ msgid "Refresh"
@@ -31001,10 +31045,6 @@ msgstr "미디어 관리자 목록"
 #~ msgstr "뉴 에이지"
 
 #, fuzzy
-#~ msgid "Please enter a name for the new node."
-#~ msgstr "새 프로파일 이름을 입력하세요."
-
-#, fuzzy
 #~ msgid "UDP/RTP Multicast"
 #~ msgstr "UDP 멀티캐스트"
 
@@ -31383,10 +31423,6 @@ msgstr "미디어 관리자 목록"
 #, fuzzy
 #~ msgid "Check for updates..."
 #~ msgstr "업데이트 확인(&U)..."
-
-#, fuzzy
-#~ msgid "No DVD Menus"
-#~ msgstr "DVD 메뉴"
 
 #, fuzzy
 #~ msgid "Disk Device"

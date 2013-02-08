@@ -848,7 +848,7 @@ static int Open(vlc_object_t *obj)
      * TODO? tlength could be adaptively increased to reduce wakeups. */
     attr.tlength = pa_usec_to_bytes(AOUT_MIN_PREPARE_TIME, &ss);
     attr.prebuf = 0; /* trigger manually */
-    attr.minreq = -1;
+    attr.minreq = attr.tlength / 3;
     attr.fragsize = 0; /* not used for output */
 
     /* Allocate structures */

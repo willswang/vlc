@@ -100,6 +100,7 @@
     input_item_t * p_item;
 
     BOOL b_awakeFromNib;
+    BOOL b_stats;
 }
 
 - (void)initPanel;

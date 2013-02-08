@@ -126,6 +126,8 @@ ffmpeg: ffmpeg-$(FFMPEG_VERSION).tar.gz .sum-ffmpeg
 ifdef HAVE_WIN32
 	sed -i "s/std=c99/std=gnu99/" $@-$(FFMPEG_VERSION)/configure
 endif
+	$(APPLY) $(SRC)/ffmpeg/libavcodec-a25d912.patch
+	$(APPLY) $(SRC)/ffmpeg/swfdec.patch
 	$(MOVE)
 
 .ffmpeg: ffmpeg

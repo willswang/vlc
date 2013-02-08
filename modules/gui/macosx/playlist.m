@@ -1544,8 +1544,10 @@
     NSPasteboard *o_pasteboard = [info draggingPasteboard];
 
     /* Drag & Drop inside the playlist */
-    if( [[o_pasteboard types] containsObject: @"VLCPlaylistItemPboardType"] )
-    {
+    if ([[o_pasteboard types] containsObject: @"VLCPlaylistItemPboardType"]) {
+        if (index == -1) // this is no valid target, sanitize to top of table
+            index = 0;
+
         int i_row = 0;
         playlist_item_t *p_new_parent, *p_item = NULL;
         NSArray *o_all_items = [o_nodes_array arrayByAddingObjectsFromArray: o_items_array];

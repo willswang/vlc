@@ -646,7 +646,7 @@ void _drawFrameInRect(NSRect frameRect)
     {
         o_string_shadow = [[NSShadow alloc] init];
         [o_string_shadow setShadowColor: [NSColor colorWithCalibratedWhite:1.0 alpha:0.5]];
-        [o_string_shadow setShadowOffset:NSMakeSize(0.0, -1.5)];
+        [o_string_shadow setShadowOffset:NSMakeSize(0.0, -1.0)];
         [o_string_shadow setShadowBlurRadius:0.0];
     }
 
