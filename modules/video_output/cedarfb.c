@@ -110,7 +110,7 @@ static int Open(vlc_object_t *object)
     if (libcedarx_display_open() < 0)
         goto free_out;
 
-    if (libcedarx_display_request_layer(0) < 0)
+    if (libcedarx_display_request_layer(1) < 0)
         goto close_out;
 
     /* */
