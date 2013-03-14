@@ -70,9 +70,13 @@ struct decoder_sys_t
 };
 
 static void request_buffer(cedarx_picture_t * pic, void *sys) {
+    cedarx_info_t stream_info;
     decoder_t *p_dec = sys; 
     
     if (p_dec) {
+	libcedarx_get_stream_info(&stream_info);
+    	p_dec->fmt_out.video.i_width = stream_info.width;
+    	p_dec->fmt_out.video.i_height = stream_info.height;
         picture_t *p_pic = decoder_NewPicture(p_dec);    
         if (p_pic) {
             pic->y[0] = p_pic->p[0].p_pixels;
