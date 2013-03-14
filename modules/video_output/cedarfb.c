@@ -89,10 +89,10 @@ static int Open(vlc_object_t *object)
 
     switch (vd->fmt.i_chroma) {
         case VLC_CODEC_MV12:
+        case VLC_CODEC_MV16:
             break;
         default:
-            vd->fmt.i_chroma = VLC_CODEC_MV12;
-            break;
+            return VLC_EGENERIC;
     }
 
     /* Allocate instance and initialize some members */
@@ -203,17 +203,26 @@ static picture_pool_t *Pool(vout_display_t *vd, unsigned count)
         if (!sys->picture) {
             picture_resource_t rsc;
 
-            sys->picture = malloc(count * sizeof(picture_t *));
-            if (!sys->picture)
-                return NULL;
-
             memset(&rsc, 0, sizeof(rsc));
             rsc.p[0].i_pitch = PIXEL_ALIGN(vd->fmt.i_width);
             rsc.p[0].i_lines = PIXEL_ALIGN(vd->fmt.i_height);
             rsc.p[1].i_pitch = PIXEL_ALIGN(vd->fmt.i_width);
-            rsc.p[1].i_lines = PIXEL_ALIGN(vd->fmt.i_height / 2);
-            for (i = 0; i < count; i ++) {
+            switch (vd->fmt.i_chroma) {
+                case VLC_CODEC_MV12:
+                    rsc.p[1].i_lines = PIXEL_ALIGN(vd->fmt.i_height / 2);
+                    break;
+                case VLC_CODEC_MV16:
+                    rsc.p[1].i_lines = PIXEL_ALIGN(vd->fmt.i_height);
+                    break;
+                default:
+                    return NULL;
+            }
 
+            sys->picture = malloc(count * sizeof(picture_t *));
+            if (!sys->picture)
+                return NULL;
+
+            for (i = 0; i < count; i ++) {
                 sys->picture[i] = picture_NewFromResource(&vd->fmt, &rsc);
                 if (!sys->picture[i]) {
                     sys->picture_count = i;

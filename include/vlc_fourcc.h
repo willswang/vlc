@@ -209,8 +209,8 @@
 #define VLC_CODEC_NV21      VLC_FOURCC('N','V','2','1')
 /* 2 planes Y/UV MB 4:2:0 */
 #define VLC_CODEC_MV12      VLC_FOURCC('M','V','1','2')
-/* 2 planes Y/VU MB 4:2:0 */
-#define VLC_CODEC_MV21      VLC_FOURCC('M','V','2','1')
+/* 2 planes Y/VU MB 4:2:2 */
+#define VLC_CODEC_MV16      VLC_FOURCC('M','V','1','6')
 /* 2 planes Y/UV 4:2:2 */
 #define VLC_CODEC_NV16      VLC_FOURCC('N','V','1','6')
 /* 2 planes Y/VU 4:2:2 */
